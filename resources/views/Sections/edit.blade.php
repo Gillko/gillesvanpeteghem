@@ -1,0 +1,1 @@
+C:\MAMP\htdocs\gillesvanpeteghem\resources/views/Sections/edit.blade.php
