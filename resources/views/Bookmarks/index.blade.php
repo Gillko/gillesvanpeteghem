@@ -1,0 +1,1 @@
+C:\MAMP\htdocs\gillesvanpeteghem\resources/views/Bookmark/index.blade.php

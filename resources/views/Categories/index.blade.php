@@ -1,0 +1,1 @@
+C:\MAMP\htdocs\gillesvanpeteghem\resources/views/Categories/index.blade.php

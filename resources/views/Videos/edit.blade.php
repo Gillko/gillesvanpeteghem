@@ -1,0 +1,1 @@
+C:\MAMP\htdocs\gillesvanpeteghem\resources/views/Videos/edit.blade.php
