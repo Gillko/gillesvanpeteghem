@@ -1,6 +1,11 @@
 <?php namespace App\Http\Controllers;
 
 use Illuminate\Routing\Controller;
+use Input;
+use Validator;
+use Redirect;
+use Session;
+use App\Type;
 
 class TypesController extends Controller {
 
@@ -12,7 +17,11 @@ class TypesController extends Controller {
 	 */
 	public function index()
 	{
-		//
+		/*Get the types*/
+        $types = Type::all();
+
+        /*Load the view and pass the types*/
+		return \View::make('types.index')->with('types', $types);
 	}
 
 	/**
@@ -23,7 +32,8 @@ class TypesController extends Controller {
 	 */
 	public function create()
 	{
-		//
+		$types = Type::all();
+		return \View::make('types.create')->with('types', $types);
 	}
 
 	/**
@@ -34,7 +44,36 @@ class TypesController extends Controller {
 	 */
 	public function store()
 	{
-     //   
+     $input = Input::all();
+
+		/*Validation*/
+        $rules = array(
+        	'type_title' => 'required',
+        	'type_description' => 'required',
+        	'type_created' => 'required',
+        );
+
+        /*Run the validation rules on the inputs from the form*/
+        $validator = Validator::make($input, $rules);
+
+        if($validator->passes())
+        {
+            /*We make a band object*/
+            $types = new Type();
+
+            $types->type_title = $input['type_title'];
+            $types->type_description = $input['type_description'];
+            $types->type_created = $input['type_created'];
+            
+            $types->save();
+
+            /*Redirect*/
+            Session::flash('message', 'Successfully created a bookmark!');
+            return Redirect::to('types');
+        }
+        else {
+            return Redirect::to('types/create')->withInput()->withErrors($validator);
+        }   
 	}
 
 	/**
