@@ -16,6 +16,11 @@ Route::get('/', function () {
 	return view('index');
 });
 
+/* =========== ROUTES FOR TYPES ===========  */
+    Route::resource('types', 'TypesController');
+    Route::get('/types', 'TypesController@index');
+    Route::get('/types/create', 'TypesController@create');
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
