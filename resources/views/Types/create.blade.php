@@ -6,6 +6,6 @@
     {{ Form::label('type_description', 'Description')}}
     {{ Form::text('type_description') }}
     {{ Form::label('type_created', 'Created')}}
-    {{ Form::date('type_created') }}
+    {{ Form::datetime('type_created', Carbon\Carbon::now()->format('Y-m-d,h:m:s')) }}
     {{ Form::submit('Create a Type!') }}
 {{ Form::close() }}
