@@ -4,7 +4,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model {
 
-	protected $fillable = [];
+	//protected $fillable = [];
 
 	protected $table ='categories';
 
@@ -34,6 +34,6 @@ class Category extends Model {
 
     public function type()
     {
-        return $this->belongsTo('App\Type');
+        return $this->belongsTo('Type', 'type_id', 'type_id');
     }
 }
