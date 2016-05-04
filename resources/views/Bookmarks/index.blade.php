@@ -1,1 +1,1 @@
-C:\MAMP\htdocs\gillesvanpeteghem\resources/views/Bookmark/index.blade.php
+<p>INDEX OF BOOKMARKS</p>
