@@ -21,6 +21,11 @@ Route::get('/', function () {
     Route::get('/types', 'TypesController@index');
     Route::get('/types/create', 'TypesController@create');
 
+/* =========== ROUTES FOR CATEGORY ===========  */
+    Route::resource('categories', 'CategoriesController');
+    Route::get('/categories', 'CategoriesController@index');
+    Route::get('/categories/create', 'CategoriesController@create');
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
