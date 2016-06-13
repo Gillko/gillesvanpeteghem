@@ -119,9 +119,14 @@ class TypesController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function destroy($id)
+	public function destroy($type_id)
 	{
-		//
+		$types = Type::find($type_id);
+		$types->delete();
+
+		/*Redirect*/
+		Session::flash('message', 'Successfully deleted the type!');
+		return Redirect::to('types');
 	}
 
 }
