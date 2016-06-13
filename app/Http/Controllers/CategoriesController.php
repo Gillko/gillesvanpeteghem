@@ -54,10 +54,10 @@ class CategoriesController extends Controller
 
 		/*Validation*/
         $rules = array(
-        	'category_title' => 'required',
-        	'category_description' => 'required',
-        	'category_created' => 'required',
-        	'type_id' => 'required'
+        	'category_title' 		=> 'required',
+        	'category_description' 	=> 'required',
+        	'category_created' 		=> 'required',
+        	'type_id' 				=> 'required'
         );
 
         /*Run the validation rules on the inputs from the form*/
@@ -68,10 +68,10 @@ class CategoriesController extends Controller
             /*We make a category object*/
             $categories = new Category();
 
-            $categories->category_title = $input['category_title'];
-            $categories->category_description = $input['category_description'];
-            $categories->category_created = $input['category_created'];
-            $categories->type_id = $input['type_id'];
+            $categories->category_title 		= $input['category_title'];
+            $categories->category_description 	= $input['category_description'];
+            $categories->category_created 		= $input['category_created'];
+            $categories->type_id 				= $input['type_id'];
 
             $categories->save();
 
@@ -127,8 +127,13 @@ class CategoriesController extends Controller
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function destroy($id)
+	public function destroy($category_id)
 	{
-		//
+		$categories = Category::find($category_id);
+		$categories->delete();
+
+		/*Redirect*/
+		Session::flash('message', 'Successfully deleted the category!');
+		return Redirect::to('categories');
 	}
 }
