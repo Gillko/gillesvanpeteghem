@@ -1,13 +1,18 @@
-<?php namespace App\Http\Controllers;
+<?php
 
-use Illuminate\Routing\Controller;
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
 use Input;
 use Validator;
 use Redirect;
+use Session;
+use App\Bookmark;
+/*use App\Type;*/
 
-class BookmarksController extends Controller {
-
-	/**
+class BookmarksController extends Controller
+{
+    /**
 	 * Display a listing of the resource.
 	 * GET /bookmark
 	 *
@@ -16,12 +21,10 @@ class BookmarksController extends Controller {
 	public function index()
 	{
 		/*Get the bookmarks*/
-        //$bookmarks = Bookmark::all();
+        $bookmarks = Bookmark::all();
 
         /*Load the view and pass the bookmarks*/
-        return \View::make('bookmarks.index');
-        //return View::make('bookmarks.index');
-            //->with('bookmarks', $bookmarks);
+		return \View::make('bookmarks.index')->with('bookmarks', $bookmarks);
 	}
 
 	/**
@@ -32,9 +35,11 @@ class BookmarksController extends Controller {
 	 */
 	public function create()
 	{
-		//$bookmarks = Bookmark::all();
+		$bookmarks = Bookmark::all();
 
-        return \View::make('bookmarks.create');//->with('bookmarks', $bookmarks);
+		$categories = \DB::table('categories')->lists('category_title', 'category_id');
+
+		return \View::make('bookmarks.create')->with('categories', $categories);
 	}
 
 	/**
@@ -45,7 +50,7 @@ class BookmarksController extends Controller {
 	 */
 	public function store()
 	{
-		$input = Input::all();
+     $input = Input::all();
 
 		/*Validation*/
         $rules = array(
@@ -53,6 +58,7 @@ class BookmarksController extends Controller {
         	'bookmark_url'		=> 'required',
         	'bookmark_image'	=> 'required',
         	'bookmark_created'	=> 'required',
+        	'category_id' 		=> 'required'
         );
 
         /*Run the validation rules on the inputs from the form*/
@@ -60,14 +66,15 @@ class BookmarksController extends Controller {
 
         if($validator->passes())
         {
-            /*We make a band object*/
+            /*We make a category object*/
             $bookmarks = new Bookmark();
 
-            $bookmarks->bookmark_title = $request->input('bookmark_title');
-            $bookmarks->bookmark_url = $request->input('bookmark_url');
-            $bookmarks->bookmark_image = $request->input('bookmark_image');
-            $bookmarks->bookmark_created = $request->input('bookmark_created');
-            
+            $bookmarks->bookmark_title = $input['bookmark_title'];
+            $bookmarks->bookmark_url = $input['bookmark_url'];
+            $bookmarks->bookmark_image = $input['bookmark_image'];
+            $bookmarks->bookmark_created = $input['bookmark_created'];
+            $bookmarks->category_id = $input['category_id'];
+
             $bookmarks->save();
 
             /*Redirect*/
@@ -81,7 +88,7 @@ class BookmarksController extends Controller {
 
 	/**
 	 * Display the specified resource.
-	 * GET /bookmark/{id}
+	 * GET /category/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -93,7 +100,7 @@ class BookmarksController extends Controller {
 
 	/**
 	 * Show the form for editing the specified resource.
-	 * GET /bookmark/{id}/edit
+	 * GET /category/{id}/edit
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -105,7 +112,7 @@ class BookmarksController extends Controller {
 
 	/**
 	 * Update the specified resource in storage.
-	 * PUT /bookmark/{id}
+	 * PUT /category/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -117,14 +124,18 @@ class BookmarksController extends Controller {
 
 	/**
 	 * Remove the specified resource from storage.
-	 * DELETE /bookmark/{id}
+	 * DELETE /category/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function destroy($id)
+	public function destroy($bookmark_id)
 	{
-		//
-	}
+		$bookmarks = CateBookmarkgory::find($bookmark_id);
+		$bookmarks->delete();
 
+		/*Redirect*/
+		Session::flash('message', 'Successfully deleted the bookmark!');
+		return Redirect::to('bookmarks');
+	}
 }
