@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'cairoregular';
+  src: url("../fonts/cairo-regular1.woff2") format("woff2"), url("../fonts/cairo-regular1.woff") format("woff"); }
+.title-bar-background {
+  background-color: #FFFFFF; }
+  .title-bar-background .menu-icon-color::after {
+    background-color: #2C5EAB;
+    box-shadow: 0 7px 0 #2C5EAB, 0 14px 0 #2C5EAB; }
+  .title-bar-background img.logo {
+    width: 90px;
+    height: 100px; }
+
+.title-bar-center {
+  text-align: center; }
+
+.top-bar-center {
+  text-align: center;
+  padding-bottom: 100px; }
+  .top-bar-center.top-bar-background {
+    background-color: #FFFFFF; }
+    .top-bar-center.top-bar-background ul {
+      background-color: #FFFFFF; }
+  .top-bar-center .top-bar-inner {
+    display: inline-block; }
+    .top-bar-center .top-bar-inner .menu-bottom > li {
+      vertical-align: bottom; }
+    .top-bar-center .top-bar-inner ul li a {
+      font-family: "cairoregular";
+      font-size: 18px;
+      color: #2C5EAB; }
+      .top-bar-center .top-bar-inner ul li a:hover {
+        text-decoration: underline; }
+    .top-bar-center .top-bar-inner ul li .logo {
+      width: 90px;
+      height: 100px; }
+
+.container .content p {
+  font-family: "cairoregular";
+  font-size: 14px;
+  text-align: justify; }
+.container .content .title h1 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: "Lato";
+  font-size: 48px;
+  text-align: center; }
+.container .content .blueBox {
+  background-color: #2C5EAB;
+  padding-bottom: 50px; }
+.container .content .whiteBox {
+  background-color: #FFFFFF;
+  padding-bottom: 50px; }
+.container .content .colorBlue {
+  color: #2C5EAB; }
+.container .content .colorWhite {
+  color: #FFFFFF; }
+.container .content .line {
+  border-bottom: dashed 1px;
+  height: 125px; }
+.container .content .portrait {
+  padding-bottom: 30px; }
+  .container .content .portrait img {
+    border-radius: 125px;
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px; }
+.container footer {
+  background-color: #AAC7CA;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  color: #2C5EAB;
+  font-family: "cairoregular"; }
+  .container footer img {
+    width: 30px;
+    height: 30px; }
+    .container footer img:hover {
+      opacity: 0.2; }
+
+@media only screen and (max-width: 639px) {
+  .title-bar-center button {
+    float: right;
+    margin-top: 85px; }
+
+  .top-bar-center .top-bar-inner .menu-bottom > li {
+    vertical-align: middle;
+    display: inline;
+    text-align: left; }
+    .top-bar-center .top-bar-inner .menu-bottom > li.menu-text {
+      display: none; } }
+.dropdown.menu .is-dropdown-submenu-parent.is-down-arrow > a::after {
+  border-color: #AAC7CA transparent transparent; }
+
+/*# sourceMappingURL=app.css.map */
