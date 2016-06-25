@@ -2,3 +2,157 @@
 
 //@import "node_modules/foundation/scss/foundation";
 
+@import "variables";
+
+.title-bar-background{
+	background-color: $backgroundWhite;
+	.menu-icon-color::after{
+		background-color: $backgroundBlueMain;
+		box-shadow: 0 7px 0 $backgroundBlueMain, 0 14px 0 $backgroundBlueMain;
+	}
+	img{
+		&.logo{
+			width: 90px;
+			height: 100px;
+		}
+	}
+}
+
+.title-bar-center{
+	text-align: center;
+}
+
+.top-bar-center{
+	text-align: center;
+	padding-bottom: 100px;
+	&.top-bar-background{
+		background-color: $backgroundWhite;
+		ul{
+			background-color: $backgroundWhite;
+		}
+	}
+	.top-bar-inner{
+		display: inline-block;
+		.menu-bottom{
+			> li{
+				vertical-align: bottom;
+			}
+		}
+		ul{
+			li{
+				a{
+					font-family: $Cairo;
+					font-size:	$h2;
+					color: $colorBlueMain;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+				.logo{
+					width: 90px;
+					height: 100px;
+				}
+			}
+		}
+	}
+}
+
+.container{
+	.content{
+		p{
+			font-family: $Cairo;
+			font-size: $p;
+			text-align: justify;
+		}
+		.title {
+			h1{
+				padding-top: 50px;
+				padding-bottom: 50px;
+				font-family: $Lato;
+				font-size: $h1;
+				text-align: center;
+			}
+		}
+		.blueBox{
+			background-color: $backgroundBlueMain;
+			padding-bottom: 50px;
+		}
+		.whiteBox{
+			background-color: $backgroundWhite;
+			padding-bottom: 50px;
+		}
+		.colorBlue{
+			color: $colorBlue;
+		}
+		.colorWhite{
+			color: $colorWhite;
+		}
+		.line{
+			border-bottom: dashed 1px;
+			height: 125px;
+		}
+		.portrait{
+			padding-bottom: 30px;
+			img{
+				border-radius: 125px;
+				display: block;
+				margin: 0 auto;
+				width: 250px;
+				height: 250px;
+			}
+		}
+	}
+	footer{
+		background-color: $backgroundBlueSecond;
+		padding-top: 50px;
+		padding-bottom: 25px;
+		color: $colorBlue;
+		font-family: $Cairo;
+		img{
+			width: 30px;
+			height: 30px;
+			&:hover{
+				opacity: 0.2;
+			}
+		}
+	}
+}
+
+//Media Queries
+@media only screen and (max-width: 639px) {
+	.title-bar-center{
+		button{
+		    float: right;
+		    margin-top: 85px;
+		}
+	}
+	.top-bar-center{
+		.top-bar-inner{
+			.menu-bottom{
+				>li{
+					vertical-align: middle;
+					display: inline;
+					text-align: left;
+					&.menu-text{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+//Overrride Foundation CSS
+.dropdown{
+	&.menu{
+		.is-dropdown-submenu-parent{
+			&.is-down-arrow{
+				> a{
+					&::after{
+						border-color: $colorBlueSecond transparent transparent;
+					}
+				}
+			}
+		}
+	}
+}
