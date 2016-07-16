@@ -5,22 +5,60 @@
          url('../fonts/cairo-regular1.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'arialregular';
+    src: url('../fonts/arial-webfont.woff2') format('woff2'),
+         url('../fonts/arial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'krungthep';
+    src: url('../fonts/krungthep-webfont.woff2') format('woff2'),
+         url('../fonts/krungthep-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bradley_hand_itc_ttregular';
+    src: url('../fonts/bradley_hand_itc_tt-webfont.woff2') format('woff2'),
+         url('../fonts/bradley_hand_itc_tt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 //Background Colors
 $backgroundWhite: 		#FFFFFF;
-$backgroundBlueMain:	#2C5EAB;
+$backgroundBlueMain:	#4DA1CB;
 $backgroundBlueSecond:	#AAC7CA;
+
+$backgroundGray:		#B3B3B3;
+$backgroundGrayLight:	#CDCDCD;
+$backgroundGrayLighter:	#E6E6E6;
 
 //Text Colors
 $colorWhite:			#FFFFFF;
-$colorBlue:				#2C5EAB;
-$colorBlueMain:			#2C5EAB;
+$colorGray:				#666666;
+$colorBlue:				#4DA1CB;
+$colorBlueDarker:		#1182BA;
 $colorBlueSecond:		#AAC7CA;
 
 //Font Sizes
-$h1: 					48px;
-$h2:					18px;
+$h1: 					33px;
+$quote:					31px;
+$h2:					34px;
 $p:						14px;
+$social:                40px;
+
 
 //Fonts
 $Lato:					'Lato';
 $Cairo:					'cairoregular';
+
+$Arial:					'arialregular';
+$Krungthep:				'krungthep';
+$Bradley:               'bradley_hand_itc_ttregular';

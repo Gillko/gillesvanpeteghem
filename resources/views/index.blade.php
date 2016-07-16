@@ -21,160 +21,153 @@
         <div class="title-bar title-bar-center title-bar-background" data-responsive-toggle="example-menu" data-hide-for="medium">
             <div class="title-bar-title">
                 <a href="/">
-                    <img src="../resources/assets/img/gilles_vanpeteghem_logo.png" class="logo">
+                    <h1 class="logo">GILVAN</h1>
                 </a>
             </div>
             <button class="menu-icon menu-icon-color" type="button" data-toggle></button>
         </div>
       
-        <div class="top-bar top-bar-center top-bar-background" id="example-menu">
-            <div class="top-bar-inner">
-                <ul class="dropdown menu menu-bottom" data-dropdown-menu>
-                    <li>
-                        <a href="#who">who</a>
-                        <!-- <ul class="menu vertical">
-                            <li><a href="#">Who First</a></li>
-                            <li><a href="#">Who Second</a></li>
-                            <li><a href="#">Who Third</a></li>
-                        </ul> -->
-                    </li>
-                    <li>
-                        <a href="#what">what</a>
-                    </li>
-                    <li class="menu-text">
+        <div class="top-bar-background">
+            <div class="row">
+                <div class="large-12">
+                    <div class="top-bar top-bar-background" id="example-menu">
+                        <div class="top-bar-left">
                         <a href="/">
-                            <img src="../resources/assets/img/gilles_vanpeteghem_logo.png" class="logo">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#why">why</a>
-                    </li>
-                    <li>
-                        <a href="#when">when</a>
-                    </li>
-                </ul>
+                            <h1 class="logo">GILVAN</h1>
+                            </a>
+                          </div>
+                          <div class="top-bar-right top-bar-background">
+                            <ul class="dropdown menu menu-bottom" data-dropdown-menu>
+                                <li>
+                                    <a href="#work">work</a>
+                                </li>
+                                <li>
+                                    <a href="#inspiration">inspiration</a>
+                                </li>
+                                <li>
+                                    <a href="#about">about</a>
+                                </li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container">
             <div class="content">
-                <div class="blueBox colorWhite">
+                <div class="backgroundbox">
                     <div class="row">
-                        <div class="title large-12 column">
-                            <h1 id="who">Gilles Vanpeteghem</h1>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="large-4 medium-3 small-1 columns">
-                            <div class="line"></div>
-                        </div>
-                        <div class="large-4 medium-6 small-10 columns portrait">
-                            <img src="../resources/assets/img/gilles_vanpeteghem.jpg" alt="Gilles Vanpeteghem">
-                        </div>
-                        <div class="large-4 medium-3 small-1 columns">
-                            <div class="line"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="large-6 medium-6 small-12 columns">
-                            <p>
-                                Welcome on my one page website. As you can see I love simplicity! My name is Gilles Vanpeteghem and I'm a 26 year old web developer from Ghent. I am the last born <i class="em em-baby_bottle"></i> in a family <i class="em em-family"></i> of 3 children. Born and raised, you could have guessed, in Ghent. Only the best city in the world, just kidding. But it's a great city. <i class="em em-city_sunrise"></i>
-                            </p>
-                            <p>
-                                In my spare time I play lots of snooker and/or pool. <i class="em em-8ball"></i> I'm kinda obsessed by the game. In the past I've played competition pool and in September I will be playing compitition snooker for the first time. Next to snooker I like to play a video game once in a while. <i class="em em-video_game"></i> Also I'd like to go out with friends sometime to have a beer. <i class="em em-beer"></i> Or on some occasions to have some beers. <i class="em em-beers"></i> <!-- <i class="em em-stuck_out_tongue"></i> -->
-                            </p>
-                        </div>
-                        <div class="large-6 medium-6 small-12 columns">
-                            <p>
-                                I have a great interest in everything multimedia related. <i class="em em-iphone"></i> I'm online everyday. <i class="em em-computer"></i> Lorem ipsum dolor sit amet, ad ullum inermis nostrum per. Nam quidam aliquando democritum et, id appareat intellegebat ius. Cu sea augue aeque delicatissimi, ei alia sapientem eam. Ea erant rationibus mel. Vel ex error graece, aperiam ancillae mei ex. Elitr homero vidisse mea id, tota viderer philosophia per ne.
-                            </p>
-                            <p>
-                                Eros menandri deseruisse sed ne, esse consetetur appellantur sit eu. Eu mundi dicam scripta eam, ex brute corrumpit omittantur per. Ius ea tantas prodesset, enim praesent te vis. Eu facilis oportere repudiandae mea, no harum suavitate per. In quando detracto prodesset vel, no usu dicant verear.
-                            </p>
+                        <div class="quote large-12 column">
+                            <h1 class="blueDarker" id="who">I'm a webdeveloper</h1>
+                            <h1 class="white actual-quote">They don't make bugs like <br/> bunny anymore.</h1>
+                            <p class="white">Olav Mjelde</p>
                         </div>
                     </div>
                 </div>
-                <div class="whiteBox colorBlue">
+                <div class="grayBox">
                     <div class="row">
-                        <div class="title large-12 column">
-                            <h1 id="what">What</h1>
+                        <div class="title large-2 column">
+                            <h1 id="work">Work</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-12 column">
+                            <p>Eros menandri deseruisse sed ne, esse consetetur appellantur sit eu. Eu mundi dicam scripta eam, ex brute corrumpit omittantur per. Ius ea tantas prodesset, enim praesent te vis. Eu facilis oportere repudiandae mea, no harum suavitate per. In quando detracto prodesset vel, no usu dicant verear. Eros menandri deseruisse sed ne, esse consetetur appellantur sit eu. Eu mundi dicam scripta eam, ex brute corrumpit omittantur per. Ius ea tantas prodesset, enim praesent te vis. Eu facilis oportere repudiandae mea, no harum suavitate per. In quando detracto prodesset vel, no usu dicant verear.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="part large-4 column">
+                            <h1 class="part-light">Design</h1>
+                        </div>
+                        <div class="part large-4 column">
+                           <h1 class="part-dark">Development</h1>
+                        </div>
+                        <div class="part large-4 column">
+                            <h1 class="part-light">SEO/SEA</h1>
                         </div>
                     </div>
                 </div>
-                <div class="blueBox colorWhite">
+                <div class="whiteBox">
+                     <div class="row">
+                        <div class="title large-3 column">
+                            <h1 id="inspiration">Inspiration</h1>
+                        </div>
+                    </div>
                     <div class="row">
-                        <div class="title large-12 column">
-                            <h1 id="why">Why</h1>
+                        <div class="large-12 column">
+                            <p> Eros menandri deseruisse sed ne, esse consetetur appellantur sit eu. Eu mundi dicam scripta eam, ex brute corrumpit omittantur per. Ius ea tantas prodesset, enim praesent te vis. Eu facilis oportere repudiandae mea, no harum suavitate per. In quando detracto prodesset vel, no usu dicant verear. Eros menandri deseruisse sed ne, esse consetetur appellantur sit eu. Eu mundi dicam scripta eam, ex brute corrumpit omittantur per. Ius ea tantas prodesset, enim praesent te vis. Eu facilis oportere repudiandae mea, no harum suavitate per. In quando detracto prodesset vel, no usu dicant verear.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="box large-4 medium-4 small-12 column">
+                             <img src="../resources/assets/img/box.png" class="box">
+                        </div>
+                        <div class="box large-4 medium-4 small-12 column">
+                           <img src="../resources/assets/img/box.png" class="box">
+                        </div>
+                        <div class="box large-4 medium-4 small-12 column">
+                            <img src="../resources/assets/img/box.png" class="box">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="box large-4 medium-4 small-12 column">
+                          <img src="../resources/assets/img/box.png" class="box">
+                        </div>
+                        <div class="box large-4 medium-4 small-12 column">
+                            <img src="../resources/assets/img/box.png" class="box">
+                        </div>
+                        <div class="box large-4 medium-4 small-12 column">
+                            <img src="../resources/assets/img/box.png" class="box">
                         </div>
                     </div>
                 </div>
-                <div class="whiteBox colorBlue">
+                <div class="blueBox about colorWhite">
                     <div class="row">
-                       <div class="title large-12 column">
-                            <h1 id="when">When</h1>
+                        <div class="title large-2 column">
+                            <h1 id="about">About</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-4 column">
+                            <p> Eros menandri deseruisse sed ne, esse consetetur appellantur sit eu. Eu mundi dicam scripta eam, ex brute corrumpit omittantur per. Ius ea tantas prodesset, enim praesent te vis. Eu facilis oportere repudiandae mea, no harum suavitate per. In quando detracto prodesset vel, no usu dicant verear. Eros menandri deseruisse sed ne, esse consetetur appellantur sit eu. Eu mundi dicam scripta eam, ex brute corrumpit omittantur per. Ius ea tantas prodesset, enim praesent te vis. Eu facilis oportere repudiandae mea, no harum suavitate per. In quando detracto prodesset vel, no usu dicant verear.</p>
+                            <p> Eros menandri deseruisse sed ne, esse consetetur appellantur sit eu. Eu mundi dicam scripta eam, ex brute corrumpit omittantur per. Ius ea tantas prodesset, enim praesent te vis. Eu facilis oportere repudiandae mea, no harum suavitate per. In quando detracto prodesset vel, no usu dicant verear. Eros menandri deseruisse sed ne, esse consetetur appellantur sit eu. Eu mundi dicam scripta eam, ex brute corrumpit omittantur per. Ius ea tantas prodesset, enim praesent te vis. Eu facilis oportere repudiandae mea, no harum suavitate per. In quando detracto prodesset vel, no usu dicant verear.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="socialBox blueDarker">
+                    <div class="row">
+                        <div class="large-12 medium-12 small-12 column social">
+                            <div class="social-test">
+                                <h1>Let's get social!</h1>
+                                 <img src="../resources/assets/img/arrow.png" alt="Gilles Vanpeteghem">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <footer>
                 <div class="row">
-                    <!-- <div class="large-4 push-8 columns">
-                        <ul class="home-social">
-                            <li>
-                                <a href="http://www.twitter.com/ZURB" class="twitter"></a>
-                            </li>
-                            <li>
-                                <a href="http://www.facebook.com/ZURB" class="facebook"></a>
-                            </li>
-                            <li>
-                                <a href="http://zurb.com/contact" class="mail"></a>
-                            </li>
-                        </ul>
-                    </div> -->
-                    <div class="large-8 medium-8 small-12 columns">
-                        <!-- <a href="http://zurb.com" class="zurb-logo regular"></a>
-                        <ul class="zurb-links">
-                            <li>
-                                <a href="http://zurb.com/about">About</a>
-                            </li>
-                            <li>
-                                <a href="http://zurb.com/blog">Blog</a>
-                            </li>
-                            <li>
-                                <a href="http://zurb.com/news">News<span class="show-for-medium-up"> &amp; Events</span></a>
-                            </li>
-                            <li>
-                                <a href="http://zurb.com/contact">Contact</a>
-                            </li>
-                            <li>
-                                <a href="http://zurb.com/sitemap">Sitemap</a>
-                            </li>
-                        </ul> -->
-                        <p class="text-left">&copy; Copyright 2016 Gilles Vanpeteghem</p>
+                    <div class="large-6 medium-6 small-12 columns">
+                        <p class="text-left"><span class="blue">2016｜</span><span class="gray">Gilles Vanpeteghem</span></p>
                     </div>
-                    <div class="large-4 medium-4 small-12 columns text-right">
-                        <!-- <a href="http://zurb.com" class="zurb-logo regular"></a>
-                        <ul class="zurb-links">
-                            <li>
-                                <a href="http://zurb.com/about">About</a>
-                            </li>
-                            <li>
-                                <a href="http://zurb.com/blog">Blog</a>
-                            </li>
-                            <li>
-                                <a href="http://zurb.com/news">News<span class="show-for-medium-up"> &amp; Events</span></a>
-                            </li>
-                            <li>
-                                <a href="http://zurb.com/contact">Contact</a>
-                            </li>
-                            <li>
-                                <a href="http://zurb.com/sitemap">Sitemap</a>
-                            </li>
-                        </ul> -->
+                    <div class="large-6 medium-6 small-12 columns text-right">
                         <a href="https://www.facebook.com/g.vanpeteghem" target="_blank">
-                            <img src="../resources/assets/img/facebook.png" class="https://www.facebook.com/g.vanpeteghem">
+                            <img src="../resources/assets/img/facebook.png" alt="https://www.facebook.com/g.vanpeteghem">
+                        </a>
+                        <a href="https://be.linkedin.com/in/gilles-vanpeteghem" target="_blank">
+                              <img src="../resources/assets/img/linkedin.png" alt="https://be.linkedin.com/in/gilles-vanpeteghem">
                         </a>
                         <a href="https://twitter.com/Gilkko" target="_blank">
-                              <img src="../resources/assets/img/twitter.png" class="https://twitter.com/Gilkko">
+                              <img src="../resources/assets/img/twitter.png" alt="https://twitter.com/Gilkko">
+                        </a>
+                        <a href="https://vimeo.com/gillesvanpeteghem" target="_blank">
+                              <img src="../resources/assets/img/vimeo.png" alt="https://vimeo.com/gillesvanpeteghem">
+                        </a>
+                        <a href="http://stackoverflow.com/users/2073428/gilko" target="_blank">
+                              <img src="../resources/assets/img/stackoverflow.png" alt="http://stackoverflow.com/users/2073428/gilko">
+                        </a>
+                        <a href="https://github.com/Gillko" target="_blank">
+                              <img src="../resources/assets/img/github.png" alt="https://github.com/Gillko">
                         </a>
                     </div>
                 </div>
@@ -183,8 +176,6 @@
         <script src="../resources/assets/js/libraries/jquery/jquery-1.12.1.min.js"></script>
         <script src="../resources/assets/js/libraries/foundation/foundation.min.js"></script>
         <script src="../resources/assets/js/libraries/foundation/app.js"></script>
-
-        <!-- <script src="../resources/assets/js/libraries/jquery/jquery-1.12.1.min.js"></script> -->
         <script src="../resources/assets/js/app.js"></script>
     </body>
 </html>
