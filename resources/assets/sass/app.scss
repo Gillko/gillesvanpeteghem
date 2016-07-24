@@ -27,6 +27,10 @@
 			height: 100px;
 		}
 	}
+	.menu-icon-gv{
+		display: block;
+    	margin: 0 auto;
+	}
 }
 
 .title-bar-center{
@@ -242,7 +246,7 @@
 		color: $colorBlue;
 		font-family: $Arial;
 		a{
-			padding-left: 25px;
+			padding-right: 25px;
 		}
 		img{
 			width: 25px;
@@ -256,14 +260,6 @@
 
 //Media Queries
 @media only screen and (max-width: 639px) {
-	.title-bar-center{
-		button{
-		   vertical-align: inherit;
-		   .menu-icon{
-		   		color: $colorWhite;
-		   }
-		}
-	}
 	.title-bar-background{
 		background-color: $backgroundBlueMain;
 		h1{
@@ -278,6 +274,7 @@
 	}
 	.top-bar{
 		.top-bar-left{
+			display: none;
 			visibility: hidden;
     		height: 0px;
 		}
@@ -293,6 +290,14 @@
 						display: none;
 					}
 				}
+			}
+		}
+	}
+	.top-bar-background{
+		ul{
+			padding-top: 0px;
+			li{
+				display: block;
 			}
 		}
 	}

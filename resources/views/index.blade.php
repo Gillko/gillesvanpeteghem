@@ -24,7 +24,7 @@
                     <h1 class="logo">GILVAN</h1>
                 </a>
             </div>
-            <button class="menu-icon menu-icon-color" type="button" data-toggle></button>
+            <button class="menu-icon menu-icon-gv" type="button" data-toggle></button>
         </div>
       
         <div class="top-bar-background">
@@ -139,7 +139,7 @@
                         <div class="large-12 medium-12 small-12 column social">
                             <div class="social-test">
                                 <h1>Let's get social!</h1>
-                                 <img src="../resources/assets/img/arrow.png" alt="Gilles Vanpeteghem">
+                                <img src="../resources/assets/img/arrow.png" alt="Gilles Vanpeteghem">
                             </div>
                         </div>
                     </div>
@@ -150,7 +150,7 @@
                     <div class="large-6 medium-6 small-12 columns">
                         <p class="text-left"><span class="blue">2016｜</span><span class="gray">Gilles Vanpeteghem</span></p>
                     </div>
-                    <div class="large-6 medium-6 small-12 columns text-right">
+                    <div class="large-6 medium-6 small-12 columns text-right socialicons">
                         <a href="https://www.facebook.com/g.vanpeteghem" target="_blank">
                             <img src="../resources/assets/img/facebook.png" alt="https://www.facebook.com/g.vanpeteghem">
                         </a>
