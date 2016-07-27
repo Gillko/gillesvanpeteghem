@@ -152,7 +152,7 @@
                     </div>
                     <div class="large-6 medium-6 small-12 columns text-right socialicons">
                         <a href="https://www.facebook.com/g.vanpeteghem" target="_blank">
-                            <img src="../resources/assets/img/facebook.png" alt="https://www.facebook.com/g.vanpeteghem">
+                            <img src="../resources/assets/img/facebook.png" alt="https://www.facebook.com/vanpeteghemgilles">
                         </a>
                         <a href="https://be.linkedin.com/in/gilles-vanpeteghem" target="_blank">
                               <img src="../resources/assets/img/linkedin.png" alt="https://be.linkedin.com/in/gilles-vanpeteghem">
