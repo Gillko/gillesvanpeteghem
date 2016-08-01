@@ -16,23 +16,29 @@ Route::get('/', function () {
 	return view('index');
 });
 
-/* =========== ROUTES FOR TYPES ===========  */
+    Route::get('login', 'Auth\AuthController@getLogin');
+
+
     Route::resource('types', 'TypesController');
-    Route::get('/types', 'TypesController@index');
-    Route::get('/types/create', 'TypesController@create');
-    Route::delete('/types/{type_id}', 'TypesController@destroy');
-
-/* =========== ROUTES FOR CATEGORY ===========  */
     Route::resource('categories', 'CategoriesController');
-    Route::get('/categories', 'CategoriesController@index');
-    Route::get('/categories/create', 'CategoriesController@create');
-    Route::delete('/categories/{category_id}', 'CategoriesController@destroy');
-
-/* =========== ROUTES FOR BOOKMARKS ===========  */
     Route::resource('bookmarks', 'BookmarksController');
-    Route::get('/bookmarks', 'BookmarksController@index');
-    Route::get('/bookmarks/create', 'BookmarksController@create');
-    Route::delete('/bookmarks/{bookmark_id}', 'BookmarksController@destroy');
+
+    Route::group(['middleware' => ['auth']], function() {
+    /* =========== ROUTES FOR TYPES ===========  */
+        Route::get('/types', 'TypesController@index');
+        Route::get('/types/create', 'TypesController@create');
+        Route::delete('/types/{type_id}', 'TypesController@destroy');
+
+    /* =========== ROUTES FOR CATEGORY ===========  */
+        Route::get('/categories', 'CategoriesController@index');
+        Route::get('/categories/create', 'CategoriesController@create');
+        Route::delete('/categories/{category_id}', 'CategoriesController@destroy');
+
+    /* =========== ROUTES FOR BOOKMARKS ===========  */  
+        Route::get('/bookmarks', 'BookmarksController@index');
+        Route::get('/bookmarks/create', 'BookmarksController@create');
+        Route::delete('/bookmarks/{bookmark_id}', 'BookmarksController@destroy');
+    });    
 
 /*
 |--------------------------------------------------------------------------
