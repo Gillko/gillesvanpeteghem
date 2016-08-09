@@ -5,9 +5,23 @@
     <div class="content">
         <div class="row">
             <div class="large-12">
-                <div class="">Login</div>
-                <form class="" role="" method="POST" action="{{ url('/login') }}">
+                <div class="">Register</div>
+                <form class="" role="form" method="POST" action="{{ url('/register') }}">
                     {!! csrf_field() !!}
+
+                    <div class="{{ $errors->has('name') ? ' has-error' : '' }}">
+                        <label class="">Name</label>
+
+                        <div class="">
+                            <input type="text" class="" name="name" value="{{ old('name') }}">
+
+                            @if ($errors->has('name'))
+                                <span class="">
+                                    <strong>{{ $errors->first('name') }}</strong>
+                                </span>
+                            @endif
+                        </div>
+                    </div>
 
                     <div class="{{ $errors->has('email') ? ' has-error' : '' }}">
                         <label class="">E-Mail Address</label>
@@ -37,23 +51,25 @@
                         </div>
                     </div>
 
-                    <div class="">
+                    <div class="{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
+                        <label class="">Confirm Password</label>
+
                         <div class="">
-                            <div class="">
-                                <label>
-                                    <input type="checkbox" name="remember"> Remember Me
-                                </label>
-                            </div>
+                            <input type="password" class="" name="password_confirmation">
+
+                            @if ($errors->has('password_confirmation'))
+                                <span class="">
+                                    <strong>{{ $errors->first('password_confirmation') }}</strong>
+                                </span>
+                            @endif
                         </div>
                     </div>
 
                     <div class="">
                         <div class="">
                             <button type="submit" class="">
-                                <i class=""></i>Login
+                                <i class=""></i>Register
                             </button>
-
-                            <a class="" href="{{ url('/password/reset') }}">Forgot Your Password?</a>
                         </div>
                     </div>
                 </form>
