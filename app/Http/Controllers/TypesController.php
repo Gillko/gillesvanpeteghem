@@ -7,8 +7,18 @@ use Redirect;
 use Session;
 use App\Type;
 
-class TypesController extends Controller {
-
+class TypesController extends Controller
+{
+	/**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
 	/**
 	 * Display a listing of the resource.
 	 * GET /type
