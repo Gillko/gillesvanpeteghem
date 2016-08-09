@@ -46,12 +46,15 @@
 
 .top-bar-background {
   background-color: #4DA1CB; }
-  .top-bar-background ul {
+  .top-bar-background ul.menu-bottom {
     padding-top: 43px;
     background-color: #4DA1CB; }
-    .top-bar-background ul li a {
+    .top-bar-background ul.menu-bottom li a {
       color: #FFFFFF;
       text-transform: uppercase; }
+
+.dropdown.menu.submenu-background-gv {
+  background-color: #4DA1CB; }
 
 .top-bar-left {
   padding-top: 20px; }

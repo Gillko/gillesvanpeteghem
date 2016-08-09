@@ -39,13 +39,22 @@
 .top-bar-background{
 	background-color: $backgroundBlueMain;
 	ul{
-		padding-top: 43px;
-		background-color: $backgroundBlueMain;
-		li{
-			a{
-				color: $colorWhite;
-				text-transform: uppercase;
+		&.menu-bottom{
+			padding-top: 43px;
+			background-color: $backgroundBlueMain;
+			li{
+				a{
+					color: $colorWhite;
+					text-transform: uppercase;
+				}
 			}
+		}
+	}
+}
+.dropdown{
+	&.menu{
+		&.submenu-background-gv{
+			background-color: $backgroundBlueMain;
 		}
 	}
 }
