@@ -5,8 +5,13 @@
     <div class="content">
         <div class="backgroundbox">
             <div class="row">
+                <div class="quote large-5 column">
+                    <h1 class="blueDarker" id="who">I'm Gilles, a webdeveloper</h1>
+
+                </div>
+            </div>
+            <div class="row">
                 <div class="quote large-12 column">
-                    <h1 class="blueDarker" id="who">I'm a webdeveloper</h1>
                     <h1 class="white actual-quote">They don't make bugs like <br/> bunny anymore.</h1>
                     <p class="white">Olav Mjelde</p>
                 </div>
@@ -14,16 +19,18 @@
         </div>
         <div class="grayBox">
             <div class="row">
-                <div class="title large-2 column">
-                    <h1 id="work">Work</h1>
+                <div class="title large-3 large-centered column">
+                    <h1 id="expertise">expertise</h1>
                 </div>
             </div>
-            <div class="row">
+        </div>
+        
+           <!--  <div class="row">
                 <div class="large-12 column">
                     <p>Eros menandri deseruisse sed ne, esse consetetur appellantur sit eu. Eu mundi dicam scripta eam, ex brute corrumpit omittantur per. Ius ea tantas prodesset, enim praesent te vis. Eu facilis oportere repudiandae mea, no harum suavitate per. In quando detracto prodesset vel, no usu dicant verear. Eros menandri deseruisse sed ne, esse consetetur appellantur sit eu. Eu mundi dicam scripta eam, ex brute corrumpit omittantur per. Ius ea tantas prodesset, enim praesent te vis. Eu facilis oportere repudiandae mea, no harum suavitate per. In quando detracto prodesset vel, no usu dicant verear.</p>
                 </div>
-            </div>
-            <div class="row">
+            </div> -->
+           <!--  <div class="row">
                 <div class="part large-4 column">
                     <h1 class="part-light">Design</h1>
                 </div>
@@ -33,12 +40,20 @@
                 <div class="part large-4 column">
                     <h1 class="part-light">SEO/SEA</h1>
                 </div>
+            </div> -->
+            <div class="row fullWidth-gv">
+                <div class="part large-6 column noPadding-gv grayLightBox">
+                    <h1 class="part-light">Design</h1>
+                </div>
+                <div class="part large-6 column noPadding-gv grayLighterBox">
+                   <h1 class="part-lighter">Development</h1>
+                </div>
             </div>
-        </div>
+    
         <div class="whiteBox">
              <div class="row">
-                <div class="title large-3 column">
-                    <h1 id="inspiration">Inspiration</h1>
+                <div class="title large-3 large-centered column">
+                    <h1 id="skills">skills</h1>
                 </div>
             </div>
             <div class="row">
