@@ -40,20 +40,20 @@
                             <ul class="dropdown menu menu-bottom" data-dropdown-menu>
                                 @if (Auth::guest())
                                     <li>
-                                        <a href="#work">work</a>
+                                        <a href="#expertise">expertise</a>
                                     </li>
                                     <li>
-                                        <a href="#inspiration">inspiration</a>
+                                        <a href="#skills">skills</a>
                                     </li>
                                     <li>
                                         <a href="#about">about</a>
                                     </li>
                                 @else
                                     <li>
-                                        <a href="#work">work</a>
+                                        <a href="#expertise">expertise</a>
                                     </li>
                                     <li>
-                                        <a href="#inspiration">inspiration</a>
+                                        <a href="#skills">skills</a>
                                     </li>
                                     <li>
                                         <a href="#about">about</a>
