@@ -4,7 +4,7 @@
             <p class="text-left"><span class="blue">2016｜</span><span class="gray">Gilles Vanpeteghem</span></p>
         </div>
         <div class="large-6 medium-6 small-12 columns text-right socialicons">
-            <a href="https://www.facebook.com/g.vanpeteghem" target="_blank">
+            <a href="https://www.facebook.com/vanpeteghemgilles" target="_blank">
                 <img src="../resources/assets/img/facebook.png" alt="https://www.facebook.com/vanpeteghemgilles">
             </a>
             <a href="https://be.linkedin.com/in/gilles-vanpeteghem" target="_blank">
