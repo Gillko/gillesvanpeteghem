@@ -3,6 +3,16 @@
 //@import "node_modules/foundation/scss/foundation";
 
 @import "variables";
+.fullWidth-gv {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+.noPadding-gv{
+	padding-left: 0px;
+	padding-right: 0px;
+}
 .blue{
 	color: $colorBlue;
 }
@@ -142,12 +152,16 @@
 			text-align: justify;
 		}
 		.quote{
-			padding-top: 75px;
 			h1{
 				font-family: $Arial;
 				font-size: $h1;
 				text-transform: uppercase;
 				font-size: $quote;
+				font-weight: bold;
+				&#who{
+					padding-top: 75px;
+					border-bottom: solid 2px;
+				}
 				&.actual-quote{
 					font-family: $Krungthep;
 					font-size: $h1;
@@ -162,9 +176,10 @@
 				padding-bottom: 7px; */
 				font-family: $Arial;
 				font-size: $h1;
+				font-weight: bold;
 				text-align: center;
 				text-transform: uppercase;
-				border: solid 3px;
+				border: solid 4px;
 				color: $colorBlueDarker;
 			}
 		}
@@ -181,8 +196,8 @@
 				&.part-light{
 					background-color: $backgroundGrayLight;
 				}
-				&.part-dark{
-					background-color: $backgroundGray;
+				&.part-lighter{
+					background-color: $backgroundGrayLighter;
 				}
 			}
 		}
@@ -204,9 +219,16 @@
 			/* padding-top: 75px;
 			padding-bottom: 10px; */
 		}
-		.grayBox{
+		.grayLightBox{
+			background-color: $backgroundGrayLight;
+			/* padding-bottom: 50px; */
+		}
+		.grayLighterBox{
 			background-color: $backgroundGrayLighter;
-			padding-bottom: 50px;
+			/* padding-bottom: 50px; */
+		}
+		.grayBox{
+			background-color: $backgroundGray;
 		}
 		.blueBox{
 			background-color: $backgroundBlueMain;

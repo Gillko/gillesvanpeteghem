@@ -16,6 +16,16 @@
   src: url("../fonts/bradley_hand_itc_tt-webfont.woff2") format("woff2"), url("../fonts/bradley_hand_itc_tt-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+.fullWidth-gv {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial; }
+
+.noPadding-gv {
+  padding-left: 0px;
+  padding-right: 0px; }
+
 .blue {
   color: #4DA1CB; }
 
@@ -114,16 +124,18 @@
   font-family: "arialregular";
   font-size: 14px;
   text-align: justify; }
-.container .content .quote {
-  padding-top: 75px; }
-  .container .content .quote h1 {
-    font-family: "arialregular";
-    font-size: 33px;
-    text-transform: uppercase;
-    font-size: 31px; }
-    .container .content .quote h1.actual-quote {
-      font-family: "krungthep";
-      font-size: 33px; }
+.container .content .quote h1 {
+  font-family: "arialregular";
+  font-size: 33px;
+  text-transform: uppercase;
+  font-size: 31px;
+  font-weight: bold; }
+  .container .content .quote h1#who {
+    padding-top: 75px;
+    border-bottom: solid 2px; }
+  .container .content .quote h1.actual-quote {
+    font-family: "krungthep";
+    font-size: 33px; }
 .container .content .title {
   padding-top: 25px;
   padding-bottom: 25px; }
@@ -132,9 +144,10 @@
     padding-bottom: 7px; */
     font-family: "arialregular";
     font-size: 33px;
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    border: solid 3px;
+    border: solid 4px;
     color: #1182BA; }
 .container .content .part h1 {
   font-family: "arialregular";
@@ -146,9 +159,9 @@
   font-size: 34px;
   color: #FFFFFF; }
   .container .content .part h1.part-light {
-    background-color: #CDCDCD; }
-  .container .content .part h1.part-dark {
-    background-color: #B3B3B3; }
+    background-color: #e5e5e5; }
+  .container .content .part h1.part-lighter {
+    background-color: #F2F2F2; }
 .container .content .box {
   padding-top: 10px;
   padding-bottom: 10px; }
@@ -164,9 +177,14 @@
 .container .content .socialBox {
   /* padding-top: 75px;
   padding-bottom: 10px; */ }
+.container .content .grayLightBox {
+  background-color: #e5e5e5;
+  /* padding-bottom: 50px; */ }
+.container .content .grayLighterBox {
+  background-color: #F2F2F2;
+  /* padding-bottom: 50px; */ }
 .container .content .grayBox {
-  background-color: #E6E6E6;
-  padding-bottom: 50px; }
+  background-color: #CDCDCD; }
 .container .content .blueBox {
   background-color: #4DA1CB;
   padding-bottom: 50px; }
@@ -196,7 +214,7 @@
     width: 250px;
     height: 250px; }
 .container footer {
-  background-color: #E6E6E6;
+  background-color: #F2F2F2;
   padding-top: 50px;
   padding-bottom: 25px;
   color: #4DA1CB;
