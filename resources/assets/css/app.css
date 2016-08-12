@@ -27,13 +27,7 @@
   padding-right: 0px; }
 
 .blue {
-  color: #4DA1CB; }
-
-.blueDarker {
-  color: #1182BA; }
-
-.white {
-  color: #FFFFFF; }
+  color: #2D77B8; }
 
 .gray {
   color: #666666; }
@@ -94,7 +88,7 @@
       vertical-align: bottom; }
     .top-bar-center .top-bar-inner ul li a {
       font-family: "arialregular";
-      font-size: 34px;
+      font-size: 36px;
       color: #1182BA; }
       .top-bar-center .top-bar-inner ul li a:hover {
         text-decoration: underline; }
@@ -105,6 +99,8 @@
 .container .content .social-test {
   height: 100px;
   position: relative; }
+  .container .content .social-test h1 {
+    color: #2D77B8; }
 .container .content .social {
   float: right;
   /* background-image: url('../img/arrow.png');
@@ -123,7 +119,7 @@
 .container .content p {
   font-family: "arialregular";
   font-size: 14px;
-  text-align: justify; }
+  /* text-align: justify; */ }
 .container .content .quote h1 {
   font-family: "arialregular";
   font-size: 33px;
@@ -132,10 +128,14 @@
   font-weight: bold; }
   .container .content .quote h1#who {
     padding-top: 75px;
-    border-bottom: solid 2px; }
+    border-bottom: solid 2px;
+    color: #2D77B8; }
   .container .content .quote h1.actual-quote {
     font-family: "krungthep";
-    font-size: 33px; }
+    font-size: 33px;
+    color: #FFFFFF; }
+.container .content .quote p {
+  color: #FFFFFF; }
 .container .content .title {
   padding-top: 25px;
   padding-bottom: 25px; }
@@ -148,20 +148,55 @@
     text-align: center;
     text-transform: uppercase;
     border: solid 4px;
-    color: #1182BA; }
-.container .content .part h1 {
-  font-family: "arialregular";
-  font-size: 33px;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  font-size: 34px;
-  color: #FFFFFF; }
-  .container .content .part h1.part-light {
-    background-color: #e5e5e5; }
-  .container .content .part h1.part-lighter {
-    background-color: #F2F2F2; }
+    color: #2D77B8; }
+.container .content .part-gv {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .container .content .part-gv img.development {
+    height: 50px;
+    width: 57px; }
+  .container .content .part-gv img.hardware {
+    height: 50px;
+    width: 33px; }
+  .container .content .part-gv h1 {
+    font-family: "krungthep";
+    font-size: 33px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    font-size: 36px;
+    color: #2D77B8;
+    display: inline-block; }
+    .container .content .part-gv h1.development {
+      background-image: url("../img/development.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding-left: 110px; }
+    .container .content .part-gv h1.hardware {
+      background-image: url("../img/hardware.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding-left: 75px; }
+  .container .content .part-gv p {
+    text-align: left; }
+  .container .content .part-gv ul {
+    font-family: "arialregular";
+    font-size: 14px;
+    list-style: none; }
+    .container .content .part-gv ul li:before {
+      content: ">     "; }
+.container .content .skills {
+  text-align: center; }
+  .container .content .skills p {
+    width: 130px;
+    height: 35px;
+    display: inline-block;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #2D77B8;
+    padding-top: 7px;
+    border-radius: 5px; }
 .container .content .box {
   padding-top: 10px;
   padding-bottom: 10px; }
@@ -195,9 +230,10 @@
     background-size: contain; }
 .container .content .whiteBox {
   background-color: #FFFFFF;
-  padding-bottom: 50px; }
+  padding-top: 75px;
+  padding-bottom: 75px; }
 .container .content .colorBlue {
-  color: #4DA1CB; }
+  color: #2D77B8; }
 .container .content .colorWhite {
   color: #FFFFFF; }
   .container .content .colorWhite .title h1 {
@@ -217,7 +253,7 @@
   background-color: #F2F2F2;
   padding-top: 50px;
   padding-bottom: 25px;
-  color: #4DA1CB;
+  color: #2D77B8;
   font-family: "arialregular"; }
   .container footer a {
     padding-right: 25px; }
@@ -233,7 +269,7 @@
     .title-bar-background h1 {
       text-align: center;
       text-transform: uppercase;
-      font-size: 34px;
+      font-size: 36px;
       border: solid 3px;
       padding-left: 5px;
       padding-right: 5px;
