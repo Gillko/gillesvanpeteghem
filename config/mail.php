@@ -54,6 +54,7 @@ return [
     |
     */
 
+    // 'from' => ['address' => 'support@laracast.com', 'name' => 'Laracasts Support'],
     'from' => ['address' => null, 'name' => null],
 
     /*
