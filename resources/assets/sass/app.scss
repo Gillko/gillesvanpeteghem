@@ -117,9 +117,20 @@
 	}
 }
 
+html,
+body{
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper{
+	min-height: 100%;
+	margin-bottom: -120px;
+}
+
 .container{
 	.content{
-		.social-test{
+		.social-text{
 			height: 100px;
 			position: relative;
 			h1{
@@ -317,22 +328,28 @@
 			}
 		}
 	}
-	footer{
-		background-color: $backgroundGrayLighter;
-		padding-top: 50px;
-		padding-bottom: 25px;
-		color: $colorBlue;
-		font-family: $Arial;
-		a{
-			padding-right: 25px;
+	.push{
+		height: 120px;
+	}
+}
+footer{
+	background-color: $backgroundGrayLighter;
+	padding-top: 50px;
+	padding-bottom: 25px;
+	color: $colorBlue;
+	font-family: $Arial;
+	a{
+		padding-right: 25px;
+	}
+	img{
+		width: 25px;
+		height: 25px;
+		&:hover{
+			opacity: 0.2;
 		}
-		img{
-			width: 25px;
-			height: 25px;
-			&:hover{
-				opacity: 0.2;
-			}
-		}
+	}
+	.footer{
+		height: 120px;
 	}
 }
 
