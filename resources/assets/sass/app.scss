@@ -36,17 +36,20 @@
 		display: block;
     	margin: 0 auto;
 	}
+	.title-bar-title-gv{
+		padding-bottom: 20px;
+	}
 }
 
 .title-bar-center{
 	text-align: center;
 }
 .top-bar-background{
-	background-color: $backgroundBlueMain;
+	background-color: $colorBlue;
 	ul{
 		&.menu-bottom{
 			padding-top: 43px;
-			background-color: $backgroundBlueMain;
+			background-color: $colorBlue;
 			li{
 				a{
 					color: $colorWhite;
@@ -59,7 +62,7 @@
 .dropdown{
 	&.menu{
 		&.submenu-background-gv{
-			background-color: $backgroundBlueMain;
+			background-color: $colorBlue;
 		}
 	}
 }
@@ -169,7 +172,6 @@ body{
 				font-weight: bold;
 				&#who{
 					padding-top: 75px;
-					border-bottom: solid 2px;
 					color: $colorBlue;
 				}
 				&.actual-quote{
@@ -180,6 +182,12 @@ body{
 			}
 			p{
 				color: $colorWhite;
+				&.underline{
+					border-bottom: solid 2px $colorBlue;
+					background-color: $colorBlue;
+					height: 3px;
+					width: 463px;
+				}
 			}
 		}
 		.title{
@@ -200,16 +208,6 @@ body{
 		.part-gv{
 			padding-top: 50px;
 			padding-bottom: 50px;
-			img{
-				&.development{
-					height: 50px;
-					width:  57px;
-				}
-				&.hardware{
-					height: 50px;
-					width:  33px;
-				}
-			}
 			h1{
 				font-family: $Krungthep;
 				font-size: $h1;
@@ -288,13 +286,19 @@ body{
 			background-color: $backgroundGray;
 		}
 		.blueBox{
-			background-color: $backgroundBlueMain;
+			background-color: $colorBlueOpacity;
 			padding-bottom: 50px;
 			&.about{
 				background-image: url('../img/gillesvanpeteghem.png');
 				background-repeat: no-repeat;
-				background-position: 100% 100%;
+				background-position: 50% 100%;
 				background-size: contain;
+			}
+			.about-information-gv{
+				img{
+					display: block;
+					margin: 0 auto;
+				}
 			}
 		}
 		.whiteBox{
@@ -354,9 +358,21 @@ footer{
 }
 
 //Media Queries
+@media only screen and (max-width: 1023px) {
+	.container{
+		.content{
+			.blueBox{
+				&.about{
+					background-image: none;
+				}
+			}
+		}
+	}
+}
+
 @media only screen and (max-width: 639px) {
 	.title-bar-background{
-		background-color: $backgroundBlueMain;
+		background-color: $colorBlue;
 		h1{
 			text-align: center;
 			text-transform: uppercase;
@@ -380,7 +396,7 @@ footer{
 				>li{
 					vertical-align: middle;
 					display: inline;
-					text-align: left;
+					text-align: center;
 					&.menu-text{
 						display: none;
 					}
@@ -392,7 +408,38 @@ footer{
 		ul{
 			padding-top: 0px;
 			li{
+				text-align: center;
 				display: block;
+			}
+		}
+	}
+	.container{
+		.content{
+			.part-gv{
+				h1{
+					font-size: $h1-mob;
+					&.development{
+						padding-left: 70px;
+					}
+					&.hardware{
+						padding-left: 50px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width: 496px) {
+	.container{
+		.content{
+			.quote{
+				p{
+					&.underline{
+						width: 290px;
+					}
+				}
 			}
 		}
 	}

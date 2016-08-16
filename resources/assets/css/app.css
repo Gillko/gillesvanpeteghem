@@ -44,21 +44,23 @@
   .title-bar-background .menu-icon-gv {
     display: block;
     margin: 0 auto; }
+  .title-bar-background .title-bar-title-gv {
+    padding-bottom: 20px; }
 
 .title-bar-center {
   text-align: center; }
 
 .top-bar-background {
-  background-color: #4DA1CB; }
+  background-color: #2D77B8; }
   .top-bar-background ul.menu-bottom {
     padding-top: 43px;
-    background-color: #4DA1CB; }
+    background-color: #2D77B8; }
     .top-bar-background ul.menu-bottom li a {
       color: #FFFFFF;
       text-transform: uppercase; }
 
 .dropdown.menu.submenu-background-gv {
-  background-color: #4DA1CB; }
+  background-color: #2D77B8; }
 
 .top-bar-left {
   padding-top: 20px; }
@@ -137,7 +139,6 @@ body {
   font-weight: bold; }
   .container .content .quote h1#who {
     padding-top: 75px;
-    border-bottom: solid 2px;
     color: #2D77B8; }
   .container .content .quote h1.actual-quote {
     font-family: "krungthep";
@@ -145,6 +146,11 @@ body {
     color: #FFFFFF; }
 .container .content .quote p {
   color: #FFFFFF; }
+  .container .content .quote p.underline {
+    border-bottom: solid 2px #2D77B8;
+    background-color: #2D77B8;
+    height: 3px;
+    width: 463px; }
 .container .content .title {
   padding-top: 25px;
   padding-bottom: 25px; }
@@ -161,12 +167,6 @@ body {
 .container .content .part-gv {
   padding-top: 50px;
   padding-bottom: 50px; }
-  .container .content .part-gv img.development {
-    height: 50px;
-    width: 57px; }
-  .container .content .part-gv img.hardware {
-    height: 50px;
-    width: 33px; }
   .container .content .part-gv h1 {
     font-family: "krungthep";
     font-size: 33px;
@@ -230,13 +230,16 @@ body {
 .container .content .grayBox {
   background-color: #CDCDCD; }
 .container .content .blueBox {
-  background-color: #4DA1CB;
+  background-color: #437bac;
   padding-bottom: 50px; }
   .container .content .blueBox.about {
     background-image: url("../img/gillesvanpeteghem.png");
     background-repeat: no-repeat;
-    background-position: 100% 100%;
+    background-position: 50% 100%;
     background-size: contain; }
+  .container .content .blueBox .about-information-gv img {
+    display: block;
+    margin: 0 auto; }
 .container .content .whiteBox {
   background-color: #FFFFFF;
   padding-top: 75px;
@@ -277,9 +280,12 @@ footer {
   footer .footer {
     height: 120px; }
 
+@media only screen and (max-width: 1023px) {
+  .container .content .blueBox.about {
+    background-image: none; } }
 @media only screen and (max-width: 639px) {
   .title-bar-background {
-    background-color: #4DA1CB; }
+    background-color: #2D77B8; }
     .title-bar-background h1 {
       text-align: center;
       text-transform: uppercase;
@@ -297,14 +303,25 @@ footer {
   .top-bar-center .top-bar-inner .menu-bottom > li {
     vertical-align: middle;
     display: inline;
-    text-align: left; }
+    text-align: center; }
     .top-bar-center .top-bar-inner .menu-bottom > li.menu-text {
       display: none; }
 
   .top-bar-background ul {
     padding-top: 0px; }
     .top-bar-background ul li {
-      display: block; } }
+      text-align: center;
+      display: block; }
+
+  .container .content .part-gv h1 {
+    font-size: 23px; }
+    .container .content .part-gv h1.development {
+      padding-left: 70px; }
+    .container .content .part-gv h1.hardware {
+      padding-left: 50px; } }
+@media only screen and (max-width: 496px) {
+  .container .content .quote p.underline {
+    width: 290px; } }
 @media only screen and (max-width: 351px) {
   .social img {
     display: none; } }
