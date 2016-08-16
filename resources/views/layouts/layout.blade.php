@@ -15,7 +15,7 @@
 		<div class="wrapper">
 			<!-- Responsive navigation -->
 			<div class="title-bar title-bar-center title-bar-background" data-responsive-toggle="example-menu" data-hide-for="medium">
-				<div class="title-bar-title">
+				<div class="title-bar-title title-bar-title-gv">
 					<a href="/">
 						<h1 class="logo">GILVAN</h1>
 					</a>
