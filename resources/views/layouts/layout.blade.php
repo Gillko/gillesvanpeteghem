@@ -41,6 +41,9 @@
 	                                        <a href="{{ url('/#skills') }}">skills</a>
 	                                    </li>
 	                                    <li>
+	                                        <a href="{{ url('/#interests') }}">interests</a>
+	                                    </li>
+	                                    <li>
 	                                        <a href="{{ url('/#about') }}">about</a>
 	                                    </li>
 									@else
@@ -49,6 +52,9 @@
 	                                    </li>
 	                                    <li>
 	                                        <a href="{{ url('/#skills') }}">skills</a>
+	                                    </li>
+	                                    <li>
+	                                        <a href="{{ url('/#skills') }}">interests</a>
 	                                    </li>
 	                                    <li>
 	                                        <a href="{{ url('/#about') }}">about</a>
