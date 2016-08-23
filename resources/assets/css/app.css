@@ -16,6 +16,9 @@
   src: url("../fonts/bradley_hand_itc_tt-webfont.woff2") format("woff2"), url("../fonts/bradley_hand_itc_tt-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+.row-padding-bottom-gv {
+  padding-bottom: 24px; }
+
 .fullWidth-gv {
   width: 100%;
   margin-left: auto;
@@ -173,20 +176,19 @@ body {
     text-align: center;
     text-transform: uppercase;
     padding-top: 5px;
-    padding-bottom: 7px;
-    font-size: 36px;
+    padding-bottom: 30px;
     color: #2D77B8;
     display: inline-block; }
     .container .content .part-gv h1.development {
       background-image: url("../img/development.png");
       background-repeat: no-repeat;
-      background-size: contain;
-      padding-left: 110px; }
+      background-size: 57px 50px;
+      padding-left: 100px; }
     .container .content .part-gv h1.hardware {
       background-image: url("../img/hardware.png");
       background-repeat: no-repeat;
-      background-size: contain;
-      padding-left: 75px; }
+      background-size: 34px 50px;
+      padding-left: 65px; }
   .container .content .part-gv p {
     text-align: left; }
   .container .content .part-gv ul {
@@ -195,9 +197,9 @@ body {
     list-style: none; }
     .container .content .part-gv ul li:before {
       content: ">     "; }
-.container .content .skills {
+.container .content .skills-gv {
   text-align: center; }
-  .container .content .skills p {
+  .container .content .skills-gv p {
     width: 130px;
     height: 35px;
     display: inline-block;
@@ -206,11 +208,15 @@ body {
     background-color: #2D77B8;
     padding-top: 7px;
     border-radius: 5px; }
+  .container .content .skills-gv img {
+    height: 200px;
+    padding-right: 16px;
+    padding-left: 16px; }
 .container .content .box {
   padding-top: 10px;
   padding-bottom: 10px; }
-.container .content .backgroundbox {
-  background-image: url("../img/background.jpg");
+.container .content .backgroundBox-one-gv {
+  background-image: url("../img/backgroundOne.jpg");
   background-repeat: no-repeat center center fixed;
   background-position: 100% 100%;
   -webkit-background-size: cover;
@@ -218,6 +224,23 @@ body {
   -o-background-size: cover;
   background-size: cover;
   height: 713px; }
+.container .content .backgroundBox-two-gv {
+  background-image: url("../img/backgroundTwo.jpg");
+  background-repeat: no-repeat center center fixed;
+  background-position: 100% 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .container .content .backgroundBox-two-gv h1,
+  .container .content .backgroundBox-two-gv p {
+    text-align: center;
+    text-transform: none; }
+  .container .content .backgroundBox-two-gv p {
+    font: "arialregular";
+    font-size: 18px; }
 .container .content .socialBox {
   /* padding-top: 75px;
   padding-bottom: 10px; */ }
@@ -230,16 +253,16 @@ body {
 .container .content .grayBox {
   background-color: #CDCDCD; }
 .container .content .blueBox {
-  background-color: #437bac;
-  padding-bottom: 50px; }
-  .container .content .blueBox.about {
-    background-image: url("../img/gillesvanpeteghem.png");
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
-    background-size: contain; }
-  .container .content .blueBox .about-information-gv img {
-    display: block;
-    margin: 0 auto; }
+  background-color: #2D77B8;
+  /*padding-bottom: 50px;*/ }
+.container .content .blueBoxAbout.about {
+  background-image: url("../img/gillesvanpeteghem.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: contain; }
+.container .content .blueBoxAbout .about-information-gv img {
+  display: block;
+  margin: 0 auto; }
 .container .content .whiteBox {
   background-color: #FFFFFF;
   padding-top: 75px;
@@ -250,6 +273,32 @@ body {
   color: #FFFFFF; }
   .container .content .colorWhite .title h1 {
     color: #FFFFFF; }
+.container .content .background-splitter-gv {
+  /* FF3.6+ */
+  background: -moz-linear-gradient(left, #e5e5e5 50%, #f2f2f2 50%);
+  /* Chrome,Safari4+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #e5e5e5), color-stop(50%, #f2f2f2));
+  /* Chrome10+,Safari5.1+ */
+  background: -webkit-linear-gradient(left, #e5e5e5 50%, #f2f2f2 50%);
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(left, #e5e5e5 50%, #f2f2f2 50%);
+  /* IE10+ */
+  background: -ms-linear-gradient(left, #e5e5e5 50%, #f2f2f2 50%);
+  /* W3C */
+  background: linear-gradient(to right, #e5e5e5 50%, #f2f2f2 50%); }
+.container .content .background-splitter-about-gv {
+  /* FF3.6+ */
+  background: -moz-linear-gradient(left, #2D77B8 50%, #000 50%);
+  /* Chrome,Safari4+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #2D77B8), color-stop(50%, #000));
+  /* Chrome10+,Safari5.1+ */
+  background: -webkit-linear-gradient(left, #2D77B8 50%, #000 50%);
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(left, #2D77B8 50%, #000 50%);
+  /* IE10+ */
+  background: -ms-linear-gradient(left, #2D77B8 50%, #000 50%);
+  /* W3C */
+  background: linear-gradient(to right, #2D77B8 50%, #000 50%); }
 .container .content .line {
   border-bottom: dashed 1px;
   height: 125px; }
@@ -281,8 +330,18 @@ footer {
     height: 120px; }
 
 @media only screen and (max-width: 1023px) {
-  .container .content .blueBox.about {
+  .container .content .background-splitter-about-gv {
+    background: none;
+    background-color: #2D77B8; }
+  .container .content .blueBoxAbout.about {
     background-image: none; } }
+@media only screen and (max-width: 750px) {
+  .container .content .part-gv h1 {
+    font-size: 23px; }
+    .container .content .part-gv h1.development {
+      padding-left: 70px; }
+    .container .content .part-gv h1.hardware {
+      padding-left: 50px; } }
 @media only screen and (max-width: 639px) {
   .title-bar-background {
     background-color: #2D77B8; }
@@ -314,11 +373,10 @@ footer {
       display: block; }
 
   .container .content .part-gv h1 {
-    font-size: 23px; }
-    .container .content .part-gv h1.development {
-      padding-left: 70px; }
-    .container .content .part-gv h1.hardware {
-      padding-left: 50px; } }
+    font-size: 33px; }
+  .container .content .interests-gv img {
+    margin: 0 auto;
+    display: block; } }
 @media only screen and (max-width: 496px) {
   .container .content .quote p.underline {
     width: 290px; } }

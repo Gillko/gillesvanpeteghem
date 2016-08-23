@@ -4,6 +4,9 @@
 
 @import "variables";
 
+.row-padding-bottom-gv{
+	padding-bottom: 24px;
+}
 .fullWidth-gv {
    width: 100%;
    margin-left: auto;
@@ -214,21 +217,20 @@ body{
 				text-align: center;
 				text-transform: uppercase;
 				padding-top: 5px;
-				padding-bottom: 7px;
-				font-size: $h2;
+				padding-bottom: 30px;
 				color: $colorBlue;
 				display: inline-block;
 				&.development{
 					background-image: url('../img/development.png');
 					background-repeat: no-repeat;
-					background-size: contain;
-					padding-left: 110px;
+					background-size: 57px 50px;
+					padding-left: 100px;
 				}
 				&.hardware{
 					background-image: url('../img/hardware.png');
 					background-repeat: no-repeat;
-					background-size: contain;
-					padding-left: 75px;
+					background-size: 34px 50px;
+					padding-left: 65px;
 				}
 			}
 			p{
@@ -243,7 +245,7 @@ body{
 				}
 			}
 		}
-		.skills{
+		.skills-gv{
 			text-align: center;
 			p{
 				width: 130px;
@@ -255,13 +257,18 @@ body{
 				padding-top: 7px;
 				border-radius: 5px;
 			}
+			img {
+				height: 200px;
+				padding-right: 16px;
+				padding-left: 16px;
+			}
 		}
 		.box{
 			padding-top: 10px;
 			padding-bottom: 10px;
 		}
-		.backgroundbox{
-			background-image: url('../img/background.jpg');
+		.backgroundBox-one-gv{
+			background-image: url('../img/backgroundOne.jpg');
 			background-repeat: no-repeat center center fixed;
 			background-position: 100% 100%;
 			-webkit-background-size: cover;
@@ -269,6 +276,26 @@ body{
 			-o-background-size: cover;
 			background-size: cover;
 			height: 713px;
+		}
+		.backgroundBox-two-gv{
+			background-image: url('../img/backgroundTwo.jpg');
+			background-repeat: no-repeat center center fixed;
+			background-position: 100% 100%;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			padding-top: 100px;
+			padding-bottom: 100px;
+			h1,
+			p{
+				text-align: center;
+				text-transform: none;
+			}
+			p{
+				font: $Arial;
+				font-size: $p-title;
+			}
 		}
 		.socialBox{
 			/* padding-top: 75px;
@@ -286,8 +313,10 @@ body{
 			background-color: $backgroundGray;
 		}
 		.blueBox{
-			background-color: $colorBlueOpacity;
-			padding-bottom: 50px;
+			background-color: $colorBlue;
+			/*padding-bottom: 50px;*/
+		}
+		.blueBoxAbout{
 			&.about{
 				background-image: url('../img/gillesvanpeteghem.png');
 				background-repeat: no-repeat;
@@ -316,6 +345,98 @@ body{
 					color: $colorWhite;
 				}
 			}
+		}
+		.background-splitter-gv{
+			/* FF3.6+ */
+	        background: -moz-linear-gradient(
+	            left,
+	            #e5e5e5 50%,
+	            #f2f2f2 50%
+	        );
+	        /* Chrome,Safari4+ */
+	        background: -webkit-gradient(
+	            linear,
+	            left top,
+	            right top,
+	            color-stop(
+	                50%,
+	                #e5e5e5
+	                ), 
+	            color-stop(
+	                50%,
+	                #f2f2f2
+	                )
+	            );
+	        /* Chrome10+,Safari5.1+ */
+	        background: -webkit-linear-gradient(
+	            left,
+	            #e5e5e5 50%,
+	            #f2f2f2 50%
+	        );
+	        /* Opera 11.10+ */
+	        background: -o-linear-gradient(
+	            left,
+	            #e5e5e5 50%,
+	            #f2f2f2 50%
+	        );
+	        /* IE10+ */
+	        background: -ms-linear-gradient(
+	            left,
+	            #e5e5e5 50%,
+	            #f2f2f2 50%
+	        );
+	        /* W3C */
+	        background: linear-gradient(
+	            to right,
+	            #e5e5e5 50%,
+	            #f2f2f2 50%
+	        );
+		}
+		.background-splitter-about-gv{
+			/* FF3.6+ */
+	        background: -moz-linear-gradient(
+	            left,
+	            #2D77B8 50%,
+	            #000 50%
+	        );
+	        /* Chrome,Safari4+ */
+	        background: -webkit-gradient(
+	            linear,
+	            left top,
+	            right top,
+	            color-stop(
+	                50%,
+	                #2D77B8
+	                ), 
+	            color-stop(
+	                50%,
+	                #000
+	                )
+	            );
+	        /* Chrome10+,Safari5.1+ */
+	        background: -webkit-linear-gradient(
+	            left,
+	            #2D77B8 50%,
+	            #000 50%
+	        );
+	        /* Opera 11.10+ */
+	        background: -o-linear-gradient(
+	            left,
+	            #2D77B8 50%,
+	            #000 50%
+	        );
+	        /* IE10+ */
+	        background: -ms-linear-gradient(
+	            left,
+	            #2D77B8 50%,
+	            #000 50%
+	        );
+	        /* W3C */
+	        background: linear-gradient(
+	            to right,
+	            #2D77B8 50%,
+	            #000 50%
+	        );
 		}
 		.line{
 			border-bottom: dashed 1px;
@@ -361,9 +482,31 @@ footer{
 @media only screen and (max-width: 1023px) {
 	.container{
 		.content{
-			.blueBox{
+			.background-splitter-about-gv{
+				background: none;
+				background-color: #2D77B8;
+			}
+			.blueBoxAbout{
 				&.about{
 					background-image: none;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.container{
+		.content{
+			.part-gv{
+				h1{
+					font-size: $h1-mob;
+					&.development{
+						padding-left: 70px;
+					}
+					&.hardware{
+						padding-left: 50px;
+					}
 				}
 			}
 		}
@@ -417,13 +560,13 @@ footer{
 		.content{
 			.part-gv{
 				h1{
-					font-size: $h1-mob;
-					&.development{
-						padding-left: 70px;
-					}
-					&.hardware{
-						padding-left: 50px;
-					}
+					font-size: $h1;
+				}
+			}
+			.interests-gv{
+				img{
+					margin: 0 auto;
+					display: block;
 				}
 			}
 		}
