@@ -1,68 +1,65 @@
-//Fontface
+/* === BEGIN FONTS === */
 @font-face {
-    font-family: 'cairoregular';
-    src: url('../fonts/cairo-regular1.woff2') format('woff2'),
-         url('../fonts/cairo-regular1.woff') format('woff');
+	font-family: 'cairoregular';
+	src: url('../fonts/cairo-regular1.woff2') format('woff2'),
+		 url('../fonts/cairo-regular1.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'arialregular';
-    src: url('../fonts/arial-webfont.woff2') format('woff2'),
-         url('../fonts/arial-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+	font-family: 'arialregular';
+	src: url('../fonts/arial-webfont.woff2') format('woff2'),
+		 url('../fonts/arial-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'krungthep';
-    src: url('../fonts/krungthep-webfont.woff2') format('woff2'),
-         url('../fonts/krungthep-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'krungthep';
+	src: url('../fonts/krungthep-webfont.woff2') format('woff2'),
+		 url('../fonts/krungthep-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'bradley_hand_itc_ttregular';
-    src: url('../fonts/bradley_hand_itc_tt-webfont.woff2') format('woff2'),
-         url('../fonts/bradley_hand_itc_tt-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+	font-family: 'bradley_hand_itc_ttregular';
+	src: url('../fonts/bradley_hand_itc_tt-webfont.woff2') format('woff2'),
+		 url('../fonts/bradley_hand_itc_tt-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
-
-//Background Colors
-$backgroundWhite: 		#FFFFFF;
-$backgroundBlueMain:	#4DA1CB;
-$backgroundBlueSecond:	#AAC7CA;
-
-$backgroundGray:		#CDCDCD;
-$backgroundGrayLight:	#e5e5e5;
-$backgroundGrayLighter:	#F2F2F2;
-
-//Text Colors
-$colorWhite:			#FFFFFF;
-$colorGray:				#666666;
-$colorBlue:				#2D77B8;
-$colorBlueDarker:		#1182BA;
-$colorBlueSecond:		#AAC7CA;
-$colorBlueOpacity:      #437bac;
-
-//Font Sizes
-$h1: 					33px;
-$h1-mob:                23px;
-$quote:					31px;
-$h2:					36px;
-$p:						14px;
-$p-title:               18px;
-$ul:                    14px;
-$social:                40px;
+/* === END FONTS === */
 
 
-//Fonts
-$Lato:					'Lato';
-$Cairo:					'cairoregular';
+/* === BEGIN BACKGROUND COLORS === */
+$grayLight:			#e5e5e5;
+$grayLighter:		#f2f2f2;
+/* === END BACKGROUND COLORS === */
 
-$Arial:					'arialregular';
-$Krungthep:				'krungthep';
-$Bradley:               'bradley_hand_itc_ttregular';
+
+/* === BEGIN TEXT COLORS === */
+$colorWhite:		#ffffff;
+$colorGray:			#666666;
+$colorBlue:			#2d77b8;
+$colorBlueSecond:	#aac7ca;
+/* === END TEXT COLORS === */
+
+
+/* === BEGIN FONT SIZES === */
+$social:			40px;
+$quote:				31px;
+$logo:				36px;
+$h1:				23px;
+$p-title:			18px;
+$p:					14px;
+$ul:				14px;
+/* === END FONT SIZES === */
+
+
+/* === BEGIN FONT NAMES === */
+$Lato:				'Lato';
+$Cairo:				'cairoregular';
+$Arial:				'arialregular';
+$Krungthep:			'krungthep';
+$Bradley:			'bradley_hand_itc_ttregular';
+/* === END FONT NAMES === */
