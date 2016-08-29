@@ -38,14 +38,17 @@ class AuthController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest', ['except' => 'logout']);
+        $this->middleware('guest', ['except' => ['logout', 'getRegister']]);
     }
 
     public function getRegister()
     {
-        if(!Auth::check() || Auth::user()->id !== 1)
-            return redirect('/');
-        return view('auth.register');
+        if(!Auth::check()){//&& Auth::id() !== 1){
+            return redirect('login');
+        }
+            else{
+                 return view('auth.register');
+            }
     }
 
     /**

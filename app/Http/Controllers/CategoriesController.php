@@ -8,7 +8,7 @@ use Validator;
 use Redirect;
 use Session;
 use App\Category;
-/*use App\Type;*/
+use Auth;
 
 class CategoriesController extends Controller
 {
@@ -19,7 +19,7 @@ class CategoriesController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth', ['except' => ['store', 'destroy']]);
     }
     
     /**
@@ -82,6 +82,7 @@ class CategoriesController extends Controller
             $categories->category_description 	= $input['category_description'];
             $categories->category_created 		= $input['category_created'];
             $categories->type_id 				= $input['type_id'];
+            $categories->user_id				= Auth::id();
 
             $categories->save();
 
@@ -101,9 +102,10 @@ class CategoriesController extends Controller
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show($category_id)
 	{
-		//
+		$category = Category::find($category_id);
+		return \View::make('categories.show')->with('category', $category);
 	}
 
 	/**

@@ -8,7 +8,7 @@ use Validator;
 use Redirect;
 use Session;
 use App\Bookmark;
-/*use App\Type;*/
+use Auth;
 
 class BookmarksController extends Controller
 {
@@ -19,7 +19,7 @@ class BookmarksController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth', ['except' => ['store', 'destroy']]);
     }
     
     /**
@@ -31,6 +31,8 @@ class BookmarksController extends Controller
 	public function index()
 	{
 		/*Get the bookmarks*/
+        //$bookmarks = Bookmark::all();
+
         $bookmarks = Bookmark::all();
 
         /*Load the view and pass the bookmarks*/
@@ -79,11 +81,12 @@ class BookmarksController extends Controller
             /*We make a category object*/
             $bookmarks = new Bookmark();
 
-            $bookmarks->bookmark_title = $input['bookmark_title'];
-            $bookmarks->bookmark_url = $input['bookmark_url'];
-            $bookmarks->bookmark_image = $input['bookmark_image'];
-            $bookmarks->bookmark_created = $input['bookmark_created'];
-            $bookmarks->category_id = $input['category_id'];
+            $bookmarks->bookmark_title		= $input['bookmark_title'];
+            $bookmarks->bookmark_url		= $input['bookmark_url'];
+            $bookmarks->bookmark_image		= $input['bookmark_image'];
+            $bookmarks->bookmark_created	= $input['bookmark_created'];
+            $bookmarks->category_id			= $input['category_id'];
+            $bookmarks->user_id				= Auth::id();
 
             $bookmarks->save();
 
@@ -103,9 +106,10 @@ class BookmarksController extends Controller
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show($bookmark_id)
 	{
-		//
+		$bookmark = Bookmark::find($bookmark_id);
+		return \View::make('bookmarks.show')->with('bookmark', $bookmark);
 	}
 
 	/**
@@ -141,7 +145,7 @@ class BookmarksController extends Controller
 	 */
 	public function destroy($bookmark_id)
 	{
-		$bookmarks = CateBookmarkgory::find($bookmark_id);
+		$bookmarks = Bookmark::find($bookmark_id);
 		$bookmarks->delete();
 
 		/*Redirect*/

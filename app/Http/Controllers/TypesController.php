@@ -1,4 +1,5 @@
-<?php namespace App\Http\Controllers;
+<?php
+namespace App\Http\Controllers;
 
 use Illuminate\Routing\Controller;
 use Input;
@@ -6,19 +7,20 @@ use Validator;
 use Redirect;
 use Session;
 use App\Type;
+use Auth;
 
 class TypesController extends Controller
 {
 	/**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-    
+	 * Create a new controller instance.
+	 *
+	 * @return void
+	 */
+	public function __construct()
+	{
+		$this->middleware('auth', ['except' => ['store', 'destroy']]);
+	}
+	
 	/**
 	 * Display a listing of the resource.
 	 * GET /type
@@ -28,9 +30,9 @@ class TypesController extends Controller
 	public function index()
 	{
 		/*Get the types*/
-        $types = Type::all();
+		$types = Type::all();
 
-        /*Load the view and pass the types*/
+		/*Load the view and pass the types*/
 		return \View::make('types.index')->with('types', $types);
 	}
 
@@ -54,36 +56,38 @@ class TypesController extends Controller
 	 */
 	public function store()
 	{
-     $input = Input::all();
+		$input = Input::all();
 
 		/*Validation*/
-        $rules = array(
-        	'type_title' => 'required',
-        	'type_description' => 'required',
-        	'type_created' => 'required',
-        );
+		$rules = array(
+			'type_title'		=> 'required',
+			'type_description'	=> 'required',
+			'type_created'		=> 'required',
+			//'user_id'			=> 'required'
+		);
 
-        /*Run the validation rules on the inputs from the form*/
-        $validator = Validator::make($input, $rules);
+		/*Run the validation rules on the inputs from the form*/
+		$validator = Validator::make($input, $rules);
 
-        if($validator->passes())
-        {
-            /*We make a band object*/
-            $types = new Type();
+		if($validator->passes())
+		{
+			/*We make a band object*/
+			$types = new Type();
 
-            $types->type_title = $input['type_title'];
-            $types->type_description = $input['type_description'];
-            $types->type_created = $input['type_created'];
-            
-            $types->save();
+			$types->type_title = $input['type_title'];
+			$types->type_description = $input['type_description'];
+			$types->type_created = $input['type_created'];
+			$types->user_id = Auth::id();
+			
+			$types->save();
 
-            /*Redirect*/
-            Session::flash('message', 'Successfully created a bookmark!');
-            return Redirect::to('types');
-        }
-        else {
-            return Redirect::to('types/create')->withInput()->withErrors($validator);
-        }   
+			/*Redirect*/
+			Session::flash('message', 'Successfully created a bookmark!');
+			return Redirect::to('types');
+		}
+		else {
+			return Redirect::to('types/create')->withInput()->withErrors($validator);
+		}   
 	}
 
 	/**
