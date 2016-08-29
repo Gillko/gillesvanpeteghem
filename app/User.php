@@ -9,7 +9,7 @@ class User extends Authenticatable
 
     protected $table ='users';
 
-    protected $primaryKey = 'id';
+    protected $primaryKey = 'user_id';
 
     public $timestamps = false;
 
@@ -30,4 +30,34 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function categories()
+    {
+        return $this->hasMany('App\Category');
+    }
+
+    public function videos()
+    {
+        return $this->hasMany('App\Video');
+    }
+
+    public function types()
+    {
+        return $this->hasMany('App\Type');
+    }
+
+    public function tutorials()
+    {
+        return $this->hasMany('App\Tutorial');
+    }
+
+    public function subcategories()
+    {
+        return $this->hasMany('App\Subcategory');
+    }
+
+    public function bookmarks()
+    {
+        return $this->hasMany('App\Bookmark');
+    }
 }

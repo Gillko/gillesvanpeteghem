@@ -34,6 +34,11 @@ class Category extends Model {
 
     public function type()
     {
-        return $this->belongsTo('Type', 'type_id', 'type_id');
+        return $this->belongsTo('App\Type');
+    }
+
+    public function user()
+    {
+        return $this->belongsTo('App\User');
     }
 }
