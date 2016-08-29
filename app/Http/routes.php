@@ -15,9 +15,11 @@
     	return view('home');
     });
 
-    Route::resource('types', 'TypesController');
+    /*Route::resource('types', 'TypesController');
     Route::resource('categories', 'CategoriesController');
-    Route::resource('bookmarks', 'BookmarksController');
+    Route::resource('bookmarks', 'BookmarksController');*/
+
+    Route::get('/register', 'Auth\AuthController@getRegister');
 
 /*
 |--------------------------------------------------------------------------
@@ -37,19 +39,25 @@ Route::group(['middleware' => 'web'], function () {
         return view('home');
     });
 
-    Route::get('/register', 'Auth\AuthController@getRegister');
+    
+    
     /* =========== ROUTES FOR TYPES ===========  */
+    Route::resource('types', 'TypesController');
     Route::get('/types', 'TypesController@index');
     Route::get('/types/create', 'TypesController@create');
     Route::delete('/types/{type_id}', 'TypesController@destroy');
 
     /* =========== ROUTES FOR CATEGORY ===========  */
+    Route::resource('categories', 'CategoriesController');
     Route::get('/categories', 'CategoriesController@index');
     Route::get('/categories/create', 'CategoriesController@create');
     Route::delete('/categories/{category_id}', 'CategoriesController@destroy');
+    Route::get('/categories/show/{category_id}', 'CategoriesController@show');
 
-    /* =========== ROUTES FOR BOOKMARKS ===========  */  
+    /* =========== ROUTES FOR BOOKMARKS ===========  */ 
+    Route::resource('bookmarks', 'BookmarksController');
     Route::get('/bookmarks', 'BookmarksController@index');
     Route::get('/bookmarks/create', 'BookmarksController@create');
     Route::delete('/bookmarks/{bookmark_id}', 'BookmarksController@destroy');
+    Route::get('/bookmarks/show/{bookmark_id}', 'BookmarksController@show');
 });
