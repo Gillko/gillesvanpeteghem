@@ -1,70 +1,48 @@
 @extends('layouts.layout')
 @section('content')
-	<div class="container">
-		<div class="content">
-			<div class="grayBox">
-				<div class="row">
-					<div class="title large-3 large-centered column">
-						<h1>Reset Password</h1>
-					</div>
+	<div class="container-gv">
+		<div class="content-gv">
+			<div class="row">
+				<div class="large-4 large-centered column title-gv color-blue-gv">
+					<h1>Reset Password</h1>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="panel panel-default">
-						{{-- <div class="panel-heading">Reset Password</div> --}}
-						<div class="panel-body">
-							<form class="form-horizontal" role="form" method="POST" action="{{ url('/password/reset') }}">
-								{!! csrf_field() !!}
-								<input type="hidden" name="token" value="{{ $token }}">
-								<div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-									<label class="col-md-4 control-label">E-Mail Address</label>
-
-									<div class="col-md-6">
-										<input type="email" class="form-control" name="email" value="{{ $email or old('email') }}">
-
-										@if ($errors->has('email'))
-											<span class="help-block">
-												<strong>{{ $errors->first('email') }}</strong>
-											</span>
-										@endif
-									</div>
+				<div class="large-12">
+					<form data-abide role="form" method="POST" action="{{ url('/password/reset') }}">
+						{!! csrf_field() !!}
+						<input type="hidden" name="token" value="{{ $token }}">
+						<div class="{{ $errors->has('email') ? ' has-error' : '' }}">
+							<label>E-Mail Address</label>
+							<input type="email" name="email" value="{{ $email or old('email') }}">
+							@if ($errors->has('email'))
+								<div data-abide-error class="alert callout">
+									<p><i class="fi-alert"></i>{{ $errors->first('email') }}</p>
 								</div>
-								<div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-									<label class="col-md-4 control-label">Password</label>
-
-									<div class="col-md-6">
-										<input type="password" class="form-control" name="password">
-
-										@if ($errors->has('password'))
-											<span class="help-block">
-												<strong>{{ $errors->first('password') }}</strong>
-											</span>
-										@endif
-									</div>
-								</div>
-								<div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
-									<label class="col-md-4 control-label">Confirm Password</label>
-									<div class="col-md-6">
-										<input type="password" class="form-control" name="password_confirmation">
-
-										@if ($errors->has('password_confirmation'))
-											<span class="help-block">
-												<strong>{{ $errors->first('password_confirmation') }}</strong>
-											</span>
-										@endif
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="col-md-6 col-md-offset-4">
-										<button type="submit" class="btn btn-primary">
-											<i class="fa fa-btn fa-refresh"></i>Reset Password
-										</button>
-									</div>
-								</div>
-							</form>
+							@endif
 						</div>
-					</div>
+						<div class="{{ $errors->has('password') ? ' has-error' : '' }}">
+							<label>Password</label>
+							<input type="password" name="password">
+
+							@if ($errors->has('password'))
+								<div data-abide-error class="alert callout">
+									<p><i class="fi-alert"></i>{{ $errors->first('password') }}</p>
+								</div>
+							@endif
+						</div>
+						<div class="{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
+							<label>Confirm Password</label>
+							<input type="password" name="password_confirmation">
+
+							@if ($errors->has('password_confirmation'))
+								<div data-abide-error class="alert callout">
+									<p><i class="fi-alert"></i>{{ $errors->first('password_confirmation') }}</p>
+								</div>
+							@endif
+						</div>
+						<button type="submit" class="button expanded">Reset Password</button>
+					</form>
 				</div>
 			</div>
 		</div>

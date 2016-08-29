@@ -1,62 +1,39 @@
 @extends('layouts.layout')
 @section('content')
-	<div class="container">
-		<div class="content">
-			<div class="grayBox">
-				<div class="row">
-					<div class="title large-3 large-centered column">
-						<h1>login</h1>
-					</div>
+	<div class="container-gv">
+		<div class="content-gv">
+			<div class="row">
+				<div class="large-3 large-centered column title-gv color-blue-gv">
+					<h1>login</h1>
 				</div>
 			</div>
 			<div class="row">
 				<div class="large-12">
-					<form class="" role="" method="POST" action="{{ url('/login') }}">
+					<form data-abide role="" method="POST" action="{{ url('/login') }}">
 						{!! csrf_field() !!}
 						<div class="{{ $errors->has('email') ? ' has-error' : '' }}">
-							<label class="">E-Mail Address</label>
-
-							<div class="">
-								<input type="email" class="" name="email" value="{{ old('email') }}">
-
-								@if ($errors->has('email'))
-									<span class="">
-										<strong>{{ $errors->first('email') }}</strong>
-									</span>
-								@endif
-							</div>
+							<label>E-Mail Address</label>
+							<input type="email" name="email" value="{{ old('email') }}">
+							@if ($errors->has('email'))
+								<div data-abide-error class="alert callout">
+									<p><i class="fi-alert"></i>{{ $errors->first('email') }}</p>
+								</div>
+							@endif
 						</div>
 						<div class="{{ $errors->has('password') ? ' has-error' : '' }}">
 							<label class="">Password</label>
-
-							<div class="">
-								<input type="password" class="" name="password">
-
-								@if ($errors->has('password'))
-									<span class="">
-										<strong>{{ $errors->first('password') }}</strong>
-									</span>
-								@endif
-							</div>
-						</div>
-						<div class="">
-							<div class="">
-								<div class="">
-									<label>
-										<input type="checkbox" name="remember"> Remember Me
-									</label>
+							<input type="password" name="password">
+							@if ($errors->has('password'))
+								<div data-abide-error class="alert callout">
+									<p><i class="fi-alert"></i>{{ $errors->first('password') }}</p>
 								</div>
-							</div>
+							@endif
 						</div>
-						<div class="">
-							<div class="">
-								<button type="submit" class="">
-									<i class=""></i>Login
-								</button>
-
-								<a class="" href="{{ url('/password/reset') }}">Forgot Your Password?</a>
-							</div>
-						</div>
+						<label>
+							<input type="checkbox" name="remember">Remember Me
+						</label>
+						<button type="submit" class="button expanded">Login</button>
+						<a class="" href="{{ url('/password/reset') }}">Forgot Your Password?</a>
 					</form>
 				</div>
 			</div>

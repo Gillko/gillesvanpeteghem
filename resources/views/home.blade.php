@@ -1,34 +1,34 @@
 @extends('layouts.layout')
 @section('content')
-	<div class="container">
-		<div class="content">
-			<div class="backgroundBox-one-gv">
+	<div class="container-gv">
+		<div class="content-gv">
+			<div class="background-box-one-gv">
 				<div class="row">
-					<div class="quote large-12 column">
-						<h1 id="who">I'm Gilles, a webdeveloper</h1>
-						<p class="underline">&nbsp;</p>
+					<div class="large-12 column quote-gv">
+						<h1 class="quote-who-gv">I'm Gilles, a webdeveloper</h1>
+						<p class="underline-gv">&nbsp;</p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="quote large-12 column">
-						<h1 class="actual-quote">They don't make bugs like <br/> bunny anymore.</h1>
+					<div class="large-12 column quote-gv">
+						<h1 class="quote-actual-gv">They don't make bugs like <br/> bunny anymore.</h1>
 						<p>Olav Mjelde</p>
 					</div>
 				</div>
 			</div>
-			<div class="blueBox colorWhite">
+			<div class="blue-box-gv">
 				<div class="row">
-					<div class="title large-3 medium-5 small-10 large-uncentered medium-centered small-centered column">
+					<div class="large-2 medium-4 small-8 large-uncentered medium-centered small-centered column title-gv color-white-gv">
 						<h1 id="expertise">expertise</h1>
 					</div>
 				</div>
 			</div>
-			<div class="background-splitter-gv">
+			<div class="background-splitter-expertise-gv">
 				<div class="row">
-					<div class="part-gv large-6 medium-6 column grayLightBox">
+					<div class="large-6 medium-6 column expertise-gv gray-light-box-gv">
 						<div class="row fullWidth-gv">
 							<div class="large-12 medium-12 column large-uncentered medium-centered small-centered">
-								<h1 class="development">Development</h1>
+								<h1 class="development-gv">Development</h1>
 								<p>Elk project vraagt om een specifieke aanpak. Afhankelijk van wat de klant precies wenst, hanteer ik steeds de best passende methoden/oplossingen om zo een goede gebruiksvriendelijkheid na te streven en de gewenste doelstellingen te behalen.</p>
 								<ul>
 									<li>Frontend &amp; backend</li>
@@ -39,10 +39,10 @@
 							</div> 
 						</div>
 					</div>
-					<div class="part-gv large-6 medium-6 column grayLighterBox">
+					<div class="large-6 medium-6 column expertise-gv gray-lighter-box-gv">
 						<div class="row fullWidth-gv">
 							<div class="large-10 medium-12 column large-centered medium-centered small-centered">
-								<h1 class="hardware">Hardware</h1>
+								<h1 class="hardware-gv">Hardware</h1>
 								<p>Eender welke professional zal beamen dat 
 								de juiste/beste apparatuur hanteren het werk ten goede komt. Zo ook als developer. Graag stel 
 								ik mijn eigen hardware samen om mijn workflow te optimaliseren of voer ik herstelllingen uit waar nodig.</p>
@@ -58,69 +58,87 @@
 					</div>
 				</div>
 			</div>
-			<div class="whiteBox">
+			<div class="white-box-gv">
 				 <div class="row">
-					<div class="title large-3 medium-4 small-7 large-uncentered medium-centered small-centered column">
+					<div class="large-2 medium-3 small-5 large-centered medium-centered small-centered column title-gv color-blue-gv">
 						<h1 id="skills">skills</h1>
 					</div>
 				</div>
 				 <div class="row">
-					<div class="large-12 large-centered column skills-gv">
-						<img src="../resources/assets/img/html-5.png">
-						<img src="../resources/assets/img/css-3.png">
-						<img src="../resources/assets/img/jquery.png">
-						<img src="../resources/assets/img/cake-php.png">
-						<img src="../resources/assets/img/laravel.png">
-						<img src="../resources/assets/img/twitter-bootstrap.png">
-						<img src="../resources/assets/img/foundation.png">
-						<img src="../resources/assets/img/mysql.png">
+					<div class="large-10 large-centered column skills-gv">
+						<img src="../resources/assets/img/html-5.png" class="html5-gv" alt="html 5">
+						<img src="../resources/assets/img/css-3.png" class="css3-gv" alt="css 3">
+						<img src="../resources/assets/img/sass.png" class="sass-gv" alt="sass">
+						<img src="../resources/assets/img/foundation.png" class="foundation-gv" alt="foundation">
+						<img src="../resources/assets/img/laravel.png" class="laravel-gv" alt="laravel">
+						<img src="../resources/assets/img/twitter-bootstrap.png" class="bootstrap-gv" alt="twitter bootstrap">
+						<img src="../resources/assets/img/mysql.png" class="mysql-gv" alt="mysql">
+						<img src="../resources/assets/img/jquery.png" class="jquery-gv" alt="jquery">
+						<img src="../resources/assets/img/less.png" class="less-gv" alt="less">
+						<img src="../resources/assets/img/cake-php.png" class="cakephp-gv" alt="cakephp">
 					</div>
 				</div>
 			</div>
-			<div class="backgroundBox-two-gv">
+			<div class="background-box-two-gv">
 				 <div class="row">
-					<div class="quote large-8 medium-8 small-7 large-centered medium-centered small-centered column">
-						<h1 class="actual-quote">The only sure way to make a computer go faster is to throw it out the window.</h1>
+					<div class="large-8 medium-8 small-7 large-centered medium-centered small-centered column quote-gv">
+						<h1 class="quote-actual-gv">The only sure way to make a computer go faster is to throw it out the window.</h1>
 						<p>~ Anonymous ~</p>
 					</div>
 				</div>
 			</div>
-			<div class="whiteBox">
+			<div class="white-box-gv">
 				 <div class="row">
-					<div class="title large-3 medium-5 small-10 large-uncentered medium-centered small-centered column">
+					<div class="large-2 medium-4 small-8 large-uncentered medium-centered small-centered column title-gv color-blue-gv">
 						<h1 id="interests">interests</h1>
 					</div>
 				</div>
 				 <div class="row">
-					<div class="large-12 large-centered column">
+					<div class="large-12 large-centered column interest-text-gv">
 						<p>Een sector die razendsnel evolueert, vraagt om constante bijscholing. Het op de hoogte blijven van de laatste trends en de daarbijhorende nieuwste technologiën zijn uiteraard vanzelfsprekend. Daarnaast is het eveneens van groot belang om voldoende variatie/ontspanning te voorzien zodoende er steeds met een frisse blik gewerkt kan worden. Nieuwe energie put ik voornamelijk uit een spelletje snooker of poolbiljart, een aangename avond met vrienden of een gamesessie.</p>
 					</div>
 				</div>
 				 <div class="row interests-gv">
 					<div class="large-4 medium-4 column row-padding-bottom-gv">
-						<img src="../resources/assets/img/vrienden.png">
+						<div class="image-text-gv friends-gv">
+							<div class="image-gv">
+								<img src="../resources/assets/img/friends.png" alt="friends">
+							</div>
+						</div>
 					</div>
 					<div class="large-8 medium-8 column">
 						<div class="row row-padding-bottom-gv">
 							<div class="large-12 column">
-								<img src="../resources/assets/img/snooker.png">
+								<div class="image-text-gv snooker-gv">
+									<div class="image-gv">
+										<img src="../resources/assets/img/snooker.png" alt="snooker">
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="large-6 medium-6 column row-padding-bottom-gv">
-								<img src="../resources/assets/img/aion.png">
+								<div class="image-text-gv aion-gv">
+									<div class="image-gv">
+										<img src="../resources/assets/img/aion.png" alt="aion">
+									</div>
+								</div>
 							</div>
 							<div class="large-6 medium-6 column">
-								<img src="../resources/assets/img/movies-series.png">
+								<div class="image-text-gv multimedia-gv">
+									<div class="image-gv">
+										<img src="../resources/assets/img/multimedia.png" alt="multimedia">
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="background-splitter-about-gv">
-				<div class="blueBoxAbout about colorWhite">
+				<div class="background-about-gv about-gv color-white-gv">
 					<div class="row">
-						<div class="title large-2 medium-3 small-7 column large-uncentered  medium-centered  small-centered">
+						<div class="large-2 medium-3 small-7 column large-uncentered  medium-centered  small-centered title-gv color-white-gv">
 							<h1 id="about">About</h1>
 						</div>
 					</div>
@@ -135,8 +153,8 @@
 			</div>
 			<div class="socialBox blueDarker">
 				<div class="row">
-					<div class="large-12 medium-12 small-12 column social">
-						<div class="social-text">
+					<div class="large-12 medium-12 small-12 column social-gv">
+						<div class="social-text-gv">
 							<h1>Let's get social!</h1>
 							<img src="../resources/assets/img/arrow.png" alt="Gilles Vanpeteghem">
 						</div>

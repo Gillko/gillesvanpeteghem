@@ -1,76 +1,60 @@
 @extends('layouts.layout')
 @section('content')
-<div class="container">
-	<div class="content">
+<div class="container-gv">
+	<div class="content-gv">
 		<div class="row">
 			<div class="large-12">
-				<div class="">Register</div>
-				<form class="" role="form" method="POST" action="{{ url('/register') }}">
+				<div class="large-5 large-centered column title-gv color-blue-gv">
+					<h1>register</h1>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="large-12">
+				<form data-abide role="form" method="POST" action="{{ url('/register') }}">
 					{!! csrf_field() !!}
-
 					<div class="{{ $errors->has('name') ? ' has-error' : '' }}">
-						<label class="">Name</label>
-						<div class="">
-							<input type="text" class="" name="name" value="{{ old('name') }}">
-
-							@if ($errors->has('name'))
-								<span class="">
-									<strong>{{ $errors->first('name') }}</strong>
-								</span>
-							@endif
-						</div>
+						<label>Name</label>
+						<input type="text" name="name" value="{{ old('name') }}">
+						@if ($errors->has('name'))
+							<div data-abide-error class="alert callout">
+								<p><i class="fi-alert"></i>{{ $errors->first('name') }}</p>
+							</div>
+						@endif
 					</div>
 					<div class="{{ $errors->has('email') ? ' has-error' : '' }}">
 						<label class="">E-Mail Address</label>
-
-						<div class="">
-							<input type="email" class="" name="email" value="{{ old('email') }}">
-
-							@if ($errors->has('email'))
-								<span class="">
-									<strong>{{ $errors->first('email') }}</strong>
-								</span>
-							@endif
-						</div>
+						<input type="email" class="" name="email" value="{{ old('email') }}">
+						@if ($errors->has('email'))
+							<div data-abide-error class="alert callout">
+								<p><i class="fi-alert"></i>{{ $errors->first('email') }}</p>
+							</div>
+						@endif
 					</div>
 					<div class="{{ $errors->has('password') ? ' has-error' : '' }}">
-						<label class="">Password</label>
+						<label>Password</label>
+						<input type="password" class="" name="password">
 
-						<div class="">
-							<input type="password" class="" name="password">
-
-							@if ($errors->has('password'))
-								<span class="">
-									<strong>{{ $errors->first('password') }}</strong>
-								</span>
-							@endif
-						</div>
+						@if ($errors->has('password'))
+							<div data-abide-error class="alert callout">
+								<p><i class="fi-alert"></i>{{ $errors->first('password') }}</p>
+							</div>
+						@endif
 					</div>
 					<div class="{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
-						<label class="">Confirm Password</label>
-
-						<div class="">
-							<input type="password" class="" name="password_confirmation">
-
-							@if ($errors->has('password_confirmation'))
-								<span class="">
-									<strong>{{ $errors->first('password_confirmation') }}</strong>
-								</span>
-							@endif
-						</div>
+						<label>Confirm Password</label>
+						<input type="password" class="" name="password_confirmation">
+						@if ($errors->has('password_confirmation'))
+							<div data-abide-error class="alert callout">
+								<p><i class="fi-alert"></i>{{ $errors->first('password_confirmation') }}</p>
+							</div>
+						@endif
 					</div>
-					<div class="">
-						<div class="">
-							<button type="submit" class="">
-								<i class=""></i>Register
-							</button>
-						</div>
-					</div>
+					<button type="submit" class="button expanded">Register</button>
 				</form>
 			</div>
 		</div>
 	</div>
-	@include('layouts.footer')
 </div>
 @endsection
 @section('footer')

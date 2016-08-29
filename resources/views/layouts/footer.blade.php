@@ -1,7 +1,7 @@
 <footer class="footer">
 	<div class="row">
 		<div class="large-6 medium-6 small-12 columns">
-			<p class="text-left"><span class="blue">2016｜</span><span class="gray">Gilles Vanpeteghem</span></p>
+			<p class="text-left"><span>2016｜</span><span class="gray-gv">Gilles Vanpeteghem</span></p>
 		</div>
 		<div class="large-6 medium-6 small-12 columns text-right socialicons">
 			<a href="https://www.facebook.com/vanpeteghemgilles" target="_blank">

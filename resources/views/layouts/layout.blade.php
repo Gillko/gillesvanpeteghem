@@ -8,13 +8,14 @@
         <link rel="icon" href="{{ url('../resources/assets/img/favicon.ico') }}" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
         <link href="{{ url('../resources/assets/css/libraries/foundation/foundation.min.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ url('../resources/assets/css/libraries/foundation/foundation-icons/foundation-icons.css') }}" rel="stylesheet" type="text/css">
         <link href="{{ url('../resources/assets/css/app.css') }}" rel="stylesheet" type="text/css">
         <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 	</head>
 	<body>
-		<div class="wrapper">
+		<div class="wrapper-gv">
 			<!-- Responsive navigation -->
-			<div class="title-bar title-bar-center title-bar-background" data-responsive-toggle="example-menu" data-hide-for="medium">
+			<div class="title-bar title-bar-gv" data-responsive-toggle="example-menu" data-hide-for="medium">
 				<div class="title-bar-title title-bar-title-gv">
 					<a href="/">
 						<h1 class="logo">GILVAN</h1>
@@ -22,17 +23,17 @@
 				</div>
 				<button class="menu-icon menu-icon-gv" type="button" data-toggle></button>
 			</div>
-			<div class="top-bar-background">
+			<div class="top-bar-gv">
 				<div class="row">
 					<div class="large-12">
-						<div class="top-bar top-bar-background" id="example-menu">
-							<div class="top-bar-left">
-							<a href="/">
-								<h1 class="logo">GILVAN</h1>
+						<div class="top-bar top-bar-gv" id="example-menu">
+							<div class="top-bar-left top-bar-left-gv">
+								<a href="/">
+									<h1 class="logo">GILVAN</h1>
 								</a>
 							  </div>
-							  <div class="top-bar-right top-bar-background">
-								<ul class="dropdown menu menu-bottom" data-dropdown-menu>
+							  <div class="top-bar-right">
+								<ul class="dropdown menu menu-bottom-gv" data-dropdown-menu>
 									@if (Auth::guest())
 										<li>
 	                                        <a href="{{ url('/#expertise') }}">expertise</a>
@@ -88,7 +89,7 @@
 			</div>
 			@yield('content')
 		</div>
-		<div class="push"></div>
+		<div class="push-gv"></div>
     </div>
     @yield('footer')
 	<script src="{{ url('../resources/assets/js/libraries/jquery/jquery-1.12.1.min.js') }}"></script>
