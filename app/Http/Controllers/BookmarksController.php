@@ -8,21 +8,23 @@ use Validator;
 use Redirect;
 use Session;
 use App\Bookmark;
+use App\Tag;
+use App\Image;
 use Auth;
 
 class BookmarksController extends Controller
 {
 	/**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth', ['except' => ['store', 'destroy']]);
-    }
-    
-    /**
+	 * Create a new controller instance.
+	 *
+	 * @return void
+	 */
+	public function __construct()
+	{
+		$this->middleware('auth', ['except' => ['store', 'destroy']]);
+	}
+	
+	/**
 	 * Display a listing of the resource.
 	 * GET /bookmark
 	 *
@@ -31,11 +33,9 @@ class BookmarksController extends Controller
 	public function index()
 	{
 		/*Get the bookmarks*/
-        //$bookmarks = Bookmark::all();
+		$bookmarks = Bookmark::all();
 
-        $bookmarks = Bookmark::all();
-
-        /*Load the view and pass the bookmarks*/
+		/*Load the view and pass the bookmarks*/
 		return \View::make('bookmarks.index')->with('bookmarks', $bookmarks);
 	}
 
@@ -49,9 +49,11 @@ class BookmarksController extends Controller
 	{
 		$bookmarks = Bookmark::all();
 
-		$categories = \DB::table('categories')->lists('category_title', 'category_id');
+		$tags = Tag::where('tag_type', 'like', '%Bookmark%')->lists('tag_title', 'tag_id');
 
-		return \View::make('bookmarks.create')->with('categories', $categories);
+		$images = Image::where('image_type', 'like', '%Bookmark%')->lists('image_title', 'image_id');
+
+		return \View::make('bookmarks.create', compact('tags', 'images'));
 	}
 
 	/**
@@ -60,50 +62,51 @@ class BookmarksController extends Controller
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(Request $request)
 	{
-     $input = Input::all();
+	 $input = Input::all();
 
 		/*Validation*/
-        $rules = array(
-        	'bookmark_title'	=> 'required',
-        	'bookmark_url'		=> 'required',
-        	'bookmark_image'	=> 'required',
-        	'bookmark_created'	=> 'required',
-        	'category_id' 		=> 'required'
-        );
+		$rules = array(
+			'bookmark_title'	=> 'required',
+			'bookmark_url'		=> 'required',
+			'bookmark_created'	=> 'required'
+		);
 
-        /*Run the validation rules on the inputs from the form*/
-        $validator = Validator::make($input, $rules);
+		/*Run the validation rules on the inputs from the form*/
+		$validator = Validator::make($input, $rules);
 
-        if($validator->passes())
-        {
-            /*We make a category object*/
-            $bookmarks = new Bookmark();
+		if($validator->passes())
+		{
+			/*We make a bookmark object*/
+			$bookmarks = new Bookmark();
 
-            $bookmarks->bookmark_title		= $input['bookmark_title'];
-            $bookmarks->bookmark_url		= $input['bookmark_url'];
-            $bookmarks->bookmark_image		= $input['bookmark_image'];
-            $bookmarks->bookmark_created	= $input['bookmark_created'];
-            $bookmarks->category_id			= $input['category_id'];
-            $bookmarks->user_id				= Auth::id();
+			$bookmarks->bookmark_title			= $input['bookmark_title'];
+			$bookmarks->bookmark_description	= $input['bookmark_description'];
+			$bookmarks->bookmark_url			= $input['bookmark_url'];
+			$bookmarks->bookmark_created		= $input['bookmark_created'];
+			$bookmarks->user_id					= Auth::id();
 
-            $bookmarks->save();
+			$bookmarks->save();
 
-            /*Redirect*/
-            Session::flash('message', 'Successfully created a bookmark!');
-            return Redirect::to('bookmarks');
-        }
-        else {
-            return Redirect::to('bookmarks/create')->withInput()->withErrors($validator);
-        }
+			$bookmarks->tags()->attach($request->input('tag_list'));
+
+			$bookmarks->images()->attach($request->input('image_list'));
+
+			/*Redirect*/
+			Session::flash('message', 'Successfully created the bookmark!');
+			return Redirect::to('bookmarks');
+		}
+		else {
+			return Redirect::to('bookmarks/create')->withInput()->withErrors($validator);
+		}
 	}
 
 	/**
 	 * Display the specified resource.
-	 * GET /category/{id}
+	 * GET /bookmark/{bookmark_id}
 	 *
-	 * @param  int  $id
+	 * @param  int  $bookmark_id
 	 * @return Response
 	 */
 	public function show($bookmark_id)
@@ -114,33 +117,46 @@ class BookmarksController extends Controller
 
 	/**
 	 * Show the form for editing the specified resource.
-	 * GET /category/{id}/edit
+	 * GET /bookmark/{bookmark_id}/edit
 	 *
-	 * @param  int  $id
+	 * @param  int  $bookmark_id
 	 * @return Response
 	 */
-	public function edit($id)
+	public function edit($bookmark_id)
 	{
-		//
+		$bookmark = Bookmark::findOrFail($bookmark_id);
+		
+		$tags = Tag::where('tag_type', 'like', '%Bookmark%')->lists('tag_title', 'tag_id');
+
+		$images = Image::where('image_type', 'like', '%Bookmark%')->lists('image_title', 'image_id');
+
+		return view('bookmarks.edit', compact('bookmark', 'tags', 'images'));
 	}
 
 	/**
 	 * Update the specified resource in storage.
-	 * PUT /category/{id}
+	 * PUT /bookmark/{bookmark_id}
 	 *
-	 * @param  int  $id
+	 * @param  int  $bookmark_id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update(Request $request, $bookmark_id)
 	{
-		//
+		$bookmark = Bookmark::findOrFail($bookmark_id);
+		$bookmark->update($request->all());
+
+		$bookmark->tags()->sync((array)$request->input('tag_list', []));
+
+		$bookmark->images()->sync((array)$request->input('image_list', []));
+
+		return redirect('bookmarks');
 	}
 
 	/**
 	 * Remove the specified resource from storage.
-	 * DELETE /category/{id}
+	 * DELETE /bookmark/{bookmark_id}
 	 *
-	 * @param  int  $id
+	 * @param  int  $bookmark_id
 	 * @return Response
 	 */
 	public function destroy($bookmark_id)
