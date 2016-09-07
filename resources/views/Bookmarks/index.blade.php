@@ -9,25 +9,15 @@
 			</div>
 			<div class="row">
 				<div class="large-12 columns">
-					<div class="row">
-						@foreach($bookmarks as $bookmark)
-							<div class="large-2 columns">
-								<div class="category">
-									<p class=""><a href="{{ URL::to('/bookmarks/show/' . $bookmark->bookmark_id) }}">{{ $bookmark->category->category_title }}</a></p>
-									{{-- {{ $bookmark->bookmark_id }} <br />
-									{{ $bookmark->bookmark_title }} <br />
-									{{ $bookmark->bookmark_url }} <br />
-									{{ $bookmark->bookmark_image }} <br />
-									{{ $bookmark->bookmark_created }} <br />
-									{{ $bookmark->bookmark_modified }} <br />
-									{{ Form::open(array('url' => 'bookmarks/' . $bookmark->bookmark_id, 'class' => '')) }}
-									{{ Form::hidden('_method', 'DELETE') }}
-									{{ Form::button('Delete', array('type' => 'submit', 'class' => 'button alert'))}}
-									{{ Form::close() }} --}}
-								</div>
-							</div>
-						@endforeach
-					</div>
+					<a href="{{ URL::to('/bookmarks/create') }}">{{ Form::button('Create', array('class' => 'button success'))}}</a>
+					@foreach($bookmarks as $bookmark)
+						<p><a href="{{ URL::to('/bookmarks/' . $bookmark->bookmark_id) }}">{{ $bookmark->bookmark_id }}</a></p>
+						<p>{{ $bookmark->bookmark_title }}</p>
+						<p>{{ $bookmark->bookmark_description }}</p>
+						<p>{{ $bookmark->bookmark_url }}</p>
+						<p>{{ $bookmark->bookmark_created }}</p>
+						<p>{{ $bookmark->bookmark_modified }}</p>
+					@endforeach
 				</div>
 			</div>
 		</div>

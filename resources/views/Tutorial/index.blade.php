@@ -1,1 +1,0 @@
-C:\MAMP\htdocs\gillesvanpeteghem\resources/views/Tutorial/index.blade.php

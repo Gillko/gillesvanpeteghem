@@ -13,12 +13,30 @@
 			<div class="large-12">
 				<form data-abide role="form" method="POST" action="{{ url('/register') }}">
 					{!! csrf_field() !!}
-					<div class="{{ $errors->has('name') ? ' has-error' : '' }}">
-						<label>Name</label>
-						<input type="text" name="name" value="{{ old('name') }}">
-						@if ($errors->has('name'))
+					<div class="{{ $errors->has('user_firstname') ? ' has-error' : '' }}">
+						<label>Firstname</label>
+						<input type="text" name="user_firstname" value="{{ old('name') }}">
+						@if ($errors->has('user_firstname'))
 							<div data-abide-error class="alert callout">
-								<p><i class="fi-alert"></i>{{ $errors->first('name') }}</p>
+								<p><i class="fi-alert"></i>{{ $errors->first('user_firstname') }}</p>
+							</div>
+						@endif
+					</div>
+					<div class="{{ $errors->has('user_surname') ? ' has-error' : '' }}">
+						<label>Surname</label>
+						<input type="text" name="user_surname" value="{{ old('name') }}">
+						@if ($errors->has('user_surname'))
+							<div data-abide-error class="alert callout">
+								<p><i class="fi-alert"></i>{{ $errors->first('user_surname') }}</p>
+							</div>
+						@endif
+					</div>
+					<div class="{{ $errors->has('user_username') ? ' has-error' : '' }}">
+						<label>Username</label>
+						<input type="text" name="user_username" value="{{ old('name') }}">
+						@if ($errors->has('user_username'))
+							<div data-abide-error class="alert callout">
+								<p><i class="fi-alert"></i>{{ $errors->first('user_username') }}</p>
 							</div>
 						@endif
 					</div>
