@@ -1,10 +1,18 @@
-<?php namespace App;
+<?php
+
+namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Tutorial extends Model {
+class Tutorial extends Model
+{
 
-	protected $fillable = [];
+	/**
+	* The attributes that are mass assignable.
+	*
+	* @var array
+	*/
+	protected $fillable = ['tutorial_title', 'tutorial_description', 'tutorial_created', 'tutorial_modified'];
 
 	protected $table ='tutorials';
 
@@ -12,13 +20,53 @@ class Tutorial extends Model {
 
 	public $timestamps = false;
 
-	public function category()
-    {
-        return $this->belongsTo('App\Category');
-    }
+	/**
+	* A tutorial belongs to a user
+	*
+	* @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+	*/
+	public function user()
+	{
+		return $this->belongsTo('App\User');
+	}
 
-    public function user()
-    {
-        return $this->belongsTo('App\User');
-    }
+	/**
+	*Get the tags associated with the given tutorial.
+	*
+	*@return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+	*/
+	public function tags()
+	{
+		return $this->belongsToMany('App\Tag', 'tags_tutorials', 'tutorial_id', 'tag_id');
+	}
+
+	/**
+	*Get the images associated with the given tutorial.
+	*
+	*@return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+	*/
+	public function images()
+	{
+		return $this->belongsToMany('App\Image', 'images_tutorials', 'tutorial_id', 'image_id');
+	}
+
+	/**
+	*Get a list of tag ids associated with the current tutorial.
+	*
+	*@return array
+	*/
+	public function getTagListAttribute()
+	{
+		return $this->tags->lists('tag_id')->all();
+	}
+
+	/**
+	*Get a list of image ids associated with the current tutorial.
+	*
+	*@return array
+	*/
+	public function getImageListAttribute()
+	{
+		return $this->images->lists('image_id')->all();
+	}
 }

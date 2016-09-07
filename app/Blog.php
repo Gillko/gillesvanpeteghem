@@ -4,24 +4,23 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Video extends Model
+class Blog extends Model
 {
-
 	/**
 	* The attributes that are mass assignable.
 	*
 	* @var array
 	*/
-	protected $fillable = ['video_title', 'video_description', 'video_url', 'video_created', 'video_modified'];
+	protected $fillable = ['blog_title', 'blog_description', 'blog_created', 'blog_modified'];
 
-	protected $table ='videos';
+	protected $table ='blogs';
 
-	protected $primaryKey = 'video_id';
+	protected $primaryKey = 'blog_id';
 
 	public $timestamps = false;
 
 	/**
-	* A video belongs to a user
+	* A blog belongs to a user
 	*
 	* @return \Illuminate\Database\Eloquent\Relations\BelongsTo
 	*/
@@ -31,17 +30,17 @@ class Video extends Model
 	}
 
 	/**
-	*Get the tags associated with the given video.
+	* Get the tags associated with the given blog.
 	*
-	*@return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+	* @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
 	*/
 	public function tags()
 	{
-		return $this->belongsToMany('App\Tag', 'tags_videos');
+		return $this->belongsToMany('App\Tag', 'blogs_tags', 'blog_id', 'tag_id');
 	}
 
 	/**
-	*Get a list of tag ids associated with the current video.
+	*Get a list of tag ids associated with the current blog.
 	*
 	*@return array
 	*/
