@@ -107,6 +107,9 @@ body{
 				a{
 					color: $colorWhite;
 					text-transform: uppercase;
+					&:hover{
+						border-bottom: solid 1px;
+					}
 				}
 			}
 		}
@@ -278,13 +281,16 @@ body{
 				}
 				position: relative;
 				&.friends-gv:after{
-					content: "#friends";
+					content: "#family \A #friends";
+					white-space: pre;
 				}
 				&.snooker-gv:after{
-					content: "#snooker";
+					content: "#snooker \A #pool";
+					white-space: pre;
 				}
 				&.aion-gv:after{
-					content: "#aion";
+					content: "#gaming \A #aion";
+					white-space: pre;
 				}
 				&.multimedia-gv:after{
 					content: "#movies \A #series";
