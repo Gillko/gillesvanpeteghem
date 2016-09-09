@@ -39,6 +39,8 @@ Route::group(['middleware' => 'web'], function () {
 		return view('home');
 	});
 
+	//Route::get('/register', 'Auth\AuthController@getRegister');
+
 	/* =========== ROUTES FOR TAGS ===========  */
 	Route::resource('tags', 'TagsController');
 	Route::get('/tags', 'TagsController@index');

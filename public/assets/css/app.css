@@ -1,20 +1,25 @@
 /* === BEGIN FONTS === */
 @font-face {
   font-family: 'cairoregular';
-  src: url("../fonts/cairo-regular1.woff2") format("woff2"), url("../fonts/cairo-regular1.woff") format("woff"); }
+  src: url("../../assets/public/fonts/cairo-regular1.woff2") format("woff2"), url("../../assets/public/cairo-regular1.woff") format("woff"); }
 @font-face {
   font-family: 'arialregular';
-  src: url("../fonts/arial-webfont.woff2") format("woff2"), url("../fonts/arial-webfont.woff") format("woff");
+  src: url("../../assets/fonts/arial-webfont.woff2") format("woff2"), url("../../assets/fonts/arial-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'krungthep';
-  src: url("../fonts/krungthep-webfont.woff2") format("woff2"), url("../fonts/krungthep-webfont.woff") format("woff");
+  src: url("../../assets/fonts/krungthep-webfont.woff2") format("woff2"), url("../../assets/krungthep-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'bradley_hand_itc_ttregular';
-  src: url("../fonts/bradley_hand_itc_tt-webfont.woff2") format("woff2"), url("../fonts/bradley_hand_itc_tt-webfont.woff") format("woff");
+  src: url("../../assets/fonts/bradley_hand_itc_tt-webfont.woff2") format("woff2"), url("../../assets/fonts/bradley_hand_itc_tt-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'virtueregular';
+  src: url("../../assets/fonts/virtue-webfont.woff2") format("woff2"), url("../../assets/fonts/virtue-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 /* === END FONTS === */
@@ -26,20 +31,6 @@
 /* === END FONT SIZES === */
 /* === BEGIN FONT NAMES === */
 /* === END FONT NAMES === */
-/* === START BACKEND === */
-.category {
-  /* background-image: url('../img/folder.png');
-  background-repeat: no-repeat;
-  background-position: 0% 0%;
-  background-size: contain;
-  height: 50px;
-  p{
-  	padding-top: 30px;
-  	padding-left: 5px;
-  	color: $colorWhite;
-  } */ }
-
-/* === END BACKEND === */
 /* BEGIN DEFAULT*/
 .row-padding-bottom-gv {
   padding-bottom: 24px; }
@@ -54,7 +45,7 @@
   color: #666666; }
 
 .background-box-one-gv {
-  background-image: url("../img/backgroundOne.jpg");
+  background-image: url("../../assets/img/backgroundOne.jpg");
   background-repeat: no-repeat center center fixed;
   background-position: 100% 100%;
   -webkit-background-size: cover;
@@ -82,7 +73,7 @@
   padding-bottom: 75px; }
 
 .background-box-two-gv {
-  background-image: url("../img/backgroundTwo.jpg");
+  background-image: url("../../assets/img/backgroundTwo.jpg");
   background-repeat: no-repeat center center fixed;
   background-position: 100% 100%;
   -webkit-background-size: cover;
@@ -175,7 +166,7 @@ body {
     color: #2d77b8;
     padding-top: 75px; }
   .container-gv .content-gv .quote-gv h1.quote-actual-gv {
-    font-family: "krungthep";
+    font-family: "virtueregular";
     font-size: 23px;
     color: #ffffff; }
 .container-gv .content-gv .quote-gv p {
@@ -203,7 +194,7 @@ body {
   padding-top: 50px;
   padding-bottom: 50px; }
   .container-gv .content-gv .expertise-gv h1 {
-    font-family: "krungthep";
+    font-family: "virtueregular";
     font-size: 23px;
     color: #2d77b8;
     text-align: center;
@@ -212,12 +203,12 @@ body {
     padding-bottom: 30px;
     display: inline-block; }
     .container-gv .content-gv .expertise-gv h1.development-gv {
-      background-image: url("../img/development.png");
+      background-image: url("../../assets/img/development.png");
       background-repeat: no-repeat;
       background-size: 57px 50px;
       padding-left: 100px; }
     .container-gv .content-gv .expertise-gv h1.hardware-gv {
-      background-image: url("../img/hardware.png");
+      background-image: url("../../assets/img/hardware.png");
       background-repeat: no-repeat;
       background-size: 34px 50px;
       padding-left: 65px; }
@@ -320,7 +311,7 @@ body {
   opacity: 1; }
 .container-gv .content-gv .background-about-gv.about-gv {
   color: #ffffff;
-  background-image: url("../img/gillesvanpeteghem.png");
+  background-image: url("../../assets/img/gillesvanpeteghem.png");
   background-repeat: no-repeat;
   background-position: 50% 100%;
   background-size: contain;

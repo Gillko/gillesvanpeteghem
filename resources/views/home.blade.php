@@ -66,16 +66,16 @@
 				</div>
 				 <div class="row">
 					<div class="large-10 large-centered column skills-gv">
-						<img src="../resources/assets/img/html-5.png" class="html5-gv" alt="html 5">
-						<img src="../resources/assets/img/css-3.png" class="css3-gv" alt="css 3">
-						<img src="../resources/assets/img/sass.png" class="sass-gv" alt="sass">
-						<img src="../resources/assets/img/foundation.png" class="foundation-gv" alt="foundation">
-						<img src="../resources/assets/img/laravel.png" class="laravel-gv" alt="laravel">
-						<img src="../resources/assets/img/twitter-bootstrap.png" class="bootstrap-gv" alt="twitter bootstrap">
-						<img src="../resources/assets/img/mysql.png" class="mysql-gv" alt="mysql">
-						<img src="../resources/assets/img/jquery.png" class="jquery-gv" alt="jquery">
-						<img src="../resources/assets/img/less.png" class="less-gv" alt="less">
-						<img src="../resources/assets/img/cake-php.png" class="cakephp-gv" alt="cakephp">
+						<img src="../../assets/img/html-5.png" class="html5-gv" alt="html 5">
+						<img src="../../assets/img/css-3.png" class="css3-gv" alt="css 3">
+						<img src="../../assets/img/sass.png" class="sass-gv" alt="sass">
+						<img src="../../assets/img/foundation.png" class="foundation-gv" alt="foundation">
+						<img src="../../assets/img/laravel.png" class="laravel-gv" alt="laravel">
+						<img src="../../assets/img/twitter-bootstrap.png" class="bootstrap-gv" alt="twitter bootstrap">
+						<img src="../../assets/img/mysql.png" class="mysql-gv" alt="mysql">
+						<img src="../../assets/img/jquery.png" class="jquery-gv" alt="jquery">
+						<img src="../../assets/img/less.png" class="less-gv" alt="less">
+						<img src="../../assets/img/cake-php.png" class="cakephp-gv" alt="cakephp">
 					</div>
 				</div>
 			</div>
@@ -102,7 +102,7 @@
 					<div class="large-4 medium-4 column row-padding-bottom-gv">
 						<div class="image-text-gv friends-gv">
 							<div class="image-gv">
-								<img src="../resources/assets/img/friends.png" alt="friends">
+								<img src="../../assets/img/friends.png" alt="friends">
 							</div>
 						</div>
 					</div>
@@ -111,7 +111,7 @@
 							<div class="large-12 column">
 								<div class="image-text-gv snooker-gv">
 									<div class="image-gv">
-										<img src="../resources/assets/img/snooker.png" alt="snooker">
+										<img src="../../assets/img/snooker.png" alt="snooker">
 									</div>
 								</div>
 							</div>
@@ -120,14 +120,14 @@
 							<div class="large-6 medium-6 column row-padding-bottom-gv">
 								<div class="image-text-gv aion-gv">
 									<div class="image-gv">
-										<img src="../resources/assets/img/aion.png" alt="aion">
+										<img src="../../assets/img/aion.png" alt="aion">
 									</div>
 								</div>
 							</div>
 							<div class="large-6 medium-6 column">
 								<div class="image-text-gv multimedia-gv">
 									<div class="image-gv">
-										<img src="../resources/assets/img/multimedia.png" alt="multimedia">
+										<img src="../../assets/img/multimedia.png" alt="multimedia">
 									</div>
 								</div>
 							</div>
@@ -156,7 +156,7 @@
 					<div class="large-12 medium-12 small-12 column social-gv">
 						<div class="social-text-gv">
 							<h1>Let's get social!</h1>
-							<img src="../resources/assets/img/arrow.png" alt="Gilles Vanpeteghem">
+							<img src="../../assets/img/arrow.png" alt="Gilles Vanpeteghem">
 						</div>
 					</div>
 				</div>

@@ -3,7 +3,6 @@
 //@import "node_modules/foundation/scss/foundation";
 
 @import "variables";
-@import "app-backend";
 
 /* BEGIN DEFAULT*/
 .row-padding-bottom-gv{
@@ -19,7 +18,7 @@
 	color: $colorGray;
 }
 .background-box-one-gv{
-	background-image: url('../img/backgroundOne.jpg');
+	background-image: url('../../assets/img/backgroundOne.jpg');
 	background-repeat: no-repeat center center fixed;
 	background-position: 100% 100%;
 	-webkit-background-size: cover;
@@ -41,7 +40,7 @@
 	padding-bottom: 75px;
 }
 .background-box-two-gv{
-	background-image: url('../img/backgroundTwo.jpg');
+	background-image: url('../../assets/img/backgroundTwo.jpg');
 	background-repeat: no-repeat center center fixed;
 	background-position: 100% 100%;
 	-webkit-background-size: cover;
@@ -153,7 +152,7 @@ body{
 					padding-top: 75px;
 				}
 				&.quote-actual-gv{
-					font-family: $Krungthep;
+					font-family: $Virtue;
 					font-size: $h1;
 					color: $colorWhite;
 				}
@@ -190,7 +189,7 @@ body{
 			padding-top: 50px;
 			padding-bottom: 50px;
 			h1{
-				font-family: $Krungthep;
+				font-family: $Virtue;
 				font-size: $h1;
 				color: $colorBlue;
 				text-align: center;
@@ -199,13 +198,13 @@ body{
 				padding-bottom: 30px;
 				display: inline-block;
 				&.development-gv{
-					background-image: url('../img/development.png');
+					background-image: url('../../assets/img/development.png');
 					background-repeat: no-repeat;
 					background-size: 57px 50px;
 					padding-left: 100px;
 				}
 				&.hardware-gv{
-					background-image: url('../img/hardware.png');
+					background-image: url('../../assets/img/hardware.png');
 					background-repeat: no-repeat;
 					background-size: 34px 50px;
 					padding-left: 65px;
@@ -340,7 +339,7 @@ body{
 		.background-about-gv{
 			&.about-gv{
 				color: $colorWhite;
-				background-image: url('../img/gillesvanpeteghem.png');
+				background-image: url('../../assets/img/gillesvanpeteghem.png');
 				background-repeat: no-repeat;
 				background-position: 50% 100%;
 				background-size: contain;

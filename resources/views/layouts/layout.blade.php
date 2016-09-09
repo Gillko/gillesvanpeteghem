@@ -4,12 +4,12 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Gilles Vanpeteghem</title>
-		<link rel="shortcut icon" href="{{ url('../resources/assets/img/favicon.ico') }}" type="image/x-icon">
-		<link rel="icon" href="{{ url('../resources/assets/img/favicon.ico') }}" type="image/x-icon">
+		<link rel="shortcut icon" href="{{ url('../../assets/img/favicon.ico') }}" type="image/x-icon">
+		<link rel="icon" href="{{ url('../../assets/img/favicon.ico') }}" type="image/x-icon">
 		<link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-		<link href="{{ url('../resources/assets/css/libraries/foundation/foundation.min.css') }}" rel="stylesheet" type="text/css">
-		<link href="{{ url('../resources/assets/css/libraries/foundation/foundation-icons/foundation-icons.css') }}" rel="stylesheet" type="text/css">
-		<link href="{{ url('../resources/assets/css/app.css') }}" rel="stylesheet" type="text/css">
+		<link href="{{ url('../../assets/css/libraries/foundation/foundation.min.css') }}" rel="stylesheet" type="text/css">
+		<link href="{{ url('../../assets/css/libraries/foundation/foundation-icons/foundation-icons.css') }}" rel="stylesheet" type="text/css">
+		<link href="{{ url('../../assets/css/app.css') }}" rel="stylesheet" type="text/css">
 		<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 	</head>
 	<body>
@@ -113,9 +113,9 @@
 		<div class="push-gv"></div>
 	</div>
 	@yield('footer')
-	<script src="{{ url('../resources/assets/js/libraries/jquery/jquery-1.12.1.min.js') }}"></script>
-	<script src="{{ url('../resources/assets/js/libraries/foundation/foundation.min.js') }}"></script>
-	<script src="{{ url('../resources/assets/js/libraries/foundation/app.js') }}"></script>
-	<script src="{{ url('../resources/assets/js/app.js') }}"></script>
+	<script src="{{ url('../../assets/js/libraries/jquery/jquery-1.12.1.min.js') }}"></script>
+	<script src="{{ url('../../assets/js/libraries/foundation/foundation.min.js') }}"></script>
+	<script src="{{ url('../../assets/js/libraries/foundation/app.js') }}"></script>
+	<script src="{{ url('../../assets/js/app.js') }}"></script>
 </body>
 </html>

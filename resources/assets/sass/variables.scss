@@ -1,32 +1,36 @@
 /* === BEGIN FONTS === */
 @font-face {
 	font-family: 'cairoregular';
-	src: url('../fonts/cairo-regular1.woff2') format('woff2'),
-		 url('../fonts/cairo-regular1.woff') format('woff');
+	src: url('../../assets/public/fonts/cairo-regular1.woff2') format('woff2'),
+		 url('../../assets/public/cairo-regular1.woff') format('woff');
 }
-
 @font-face {
 	font-family: 'arialregular';
-	src: url('../fonts/arial-webfont.woff2') format('woff2'),
-		 url('../fonts/arial-webfont.woff') format('woff');
+	src: url('../../assets/fonts/arial-webfont.woff2') format('woff2'),
+		 url('../../assets/fonts/arial-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
-
 @font-face {
 	font-family: 'krungthep';
-	src: url('../fonts/krungthep-webfont.woff2') format('woff2'),
-		 url('../fonts/krungthep-webfont.woff') format('woff');
+	src: url('../../assets/fonts/krungthep-webfont.woff2') format('woff2'),
+		 url('../../assets/krungthep-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
-
 @font-face {
 	font-family: 'bradley_hand_itc_ttregular';
-	src: url('../fonts/bradley_hand_itc_tt-webfont.woff2') format('woff2'),
-		 url('../fonts/bradley_hand_itc_tt-webfont.woff') format('woff');
+	src: url('../../assets/fonts/bradley_hand_itc_tt-webfont.woff2') format('woff2'),
+		 url('../../assets/fonts/bradley_hand_itc_tt-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
+}
+@font-face {
+    font-family: 'virtueregular';
+    src: url('../../assets/fonts/virtue-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/virtue-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 /* === END FONTS === */
 
@@ -62,4 +66,5 @@ $Cairo:				'cairoregular';
 $Arial:				'arialregular';
 $Krungthep:			'krungthep';
 $Bradley:			'bradley_hand_itc_ttregular';
+$Virtue:			'virtueregular';
 /* === END FONT NAMES === */
