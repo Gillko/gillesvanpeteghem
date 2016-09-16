@@ -3,6 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Ik ben Gilles Vanpeteghem (°1990), een geboren en getogen Gentenaar. Sinds mijn jeugdjaren ben ik uitermate geïnteresseerd in alle computergerelateerde aspecten. In eerste instantie lag de nadruk op gaming en hardware. Later kreeg ik de smaak van het programmeren te pakken en besloot ik hiervan mijn beroep te maken.Sinds 2014 mag ik mij Bachelor in de Grafische en Digitale Media noemen, gespecialiseerd in Multimediaproductie ProDEV.Heeft u interesse in mijn profiel, wenst u mijn portfolio te bekijken of bent u net als ik een fervente pool- en/of snookerliefhebber? Aarzel dan niet om mij te contacteren via mail of onderstaande kanalen.">
+		<meta name="keywords" content="gilles, vanpeteghem, gilko, html5, css3, laravel, cakephp, web, webdeveloper, developer">
+		<!-- META FACEBOOK SHARE-->
+		<meta property="og:title" content="Gilles Vanpeteghem" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://www.gillesvanpeteghem.be" />
+		<meta property="og:description" content="Ik ben Gilles Vanpeteghem (°1990), een geboren en getogen Gentenaar. Sinds mijn jeugdjaren ben ik uitermate geïnteresseerd in alle computergerelateerde aspecten. In eerste instantie lag de nadruk op gaming en hardware. Later kreeg ik de smaak van het programmeren te pakken en besloot ik hiervan mijn beroep te maken." />
+		<meta property="og:image" content="" />
+		<meta property="og:image:url" content="{{ url('assets/img/gillesvanpeteghem_facebook.png') }}" />
 		<title>Gilles Vanpeteghem</title>
 		<link rel="shortcut icon" href="{{ url('../../assets/img/favicon.ico') }}" type="image/x-icon">
 		<link rel="icon" href="{{ url('../../assets/img/favicon.ico') }}" type="image/x-icon">
@@ -15,24 +24,19 @@
 	<body>
 		<div class="wrapper-gv">
 			<!-- Responsive navigation -->
-			<div class="title-bar title-bar-gv" data-responsive-toggle="example-menu" data-hide-for="medium">
-				<div class="title-bar-title title-bar-title-gv">
-					<a href="/">
-						<h1 class="logo">GILVAN</h1>
-					</a>
-				</div>
-				<button class="menu-icon menu-icon-gv" type="button" data-toggle></button>
-			</div>
 			<div class="top-bar-gv">
 				<div class="row">
 					<div class="large-12">
-						<div class="top-bar top-bar-gv" id="example-menu">
+						<div class="title-bar title-bar-gv" data-responsive-toggle="example-menu" data-hide-for="medium">
+							<button class="menu-icon menu-icon-gv" type="button" data-toggle></button>
+						</div>
+						<div class="top-bar top-bar-gv">
 							<div class="top-bar-left top-bar-left-gv">
 								<a href="/">
 									<h1 class="logo">GILVAN</h1>
 								</a>
-							  </div>
-							  <div class="top-bar-right">
+							</div>
+							<div class="top-bar-right" id="example-menu">
 								<ul class="dropdown menu menu-bottom-gv" data-dropdown-menu>
 									@if (Auth::guest())
 										<li>
@@ -103,7 +107,7 @@
 										</li>
 									@endif
 								</ul>
-							  </div>
+							</div>
 						</div>
 					</div>
 				</div>

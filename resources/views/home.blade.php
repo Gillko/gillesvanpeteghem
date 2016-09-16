@@ -5,7 +5,7 @@
 			<div class="background-box-one-gv">
 				<div class="row">
 					<div class="large-12 column quote-gv">
-						<h1 class="quote-who-gv">I'm Gilles, a webdeveloper</h1>
+						<h1 class="quote-who-gv">I'm Gilles, a web developer</h1>
 						<p class="underline-gv">&nbsp;</p>
 					</div>
 				</div>
@@ -95,7 +95,7 @@
 				</div>
 				 <div class="row">
 					<div class="large-12 large-centered column interest-text-gv">
-						<p>Een sector die razendsnel evolueert, vraagt om constante bijscholing. Het op de hoogte blijven van de laatste trends en de daarbijhorende nieuwste technologiën zijn uiteraard vanzelfsprekend. Daarnaast is het eveneens van groot belang om voldoende variatie/ontspanning te voorzien zodoende er steeds met een frisse blik gewerkt kan worden. Nieuwe energie put ik voornamelijk uit een spelletje snooker of poolbiljart, een aangename avond met vrienden of een gamesessie.</p>
+						<p>Een sector die razendsnel evolueert, vraagt om constante bijscholing. Het op de hoogte blijven van de laatste trends en de daarbijhorende nieuwste technologiën is uiteraard vanzelfsprekend. Daarnaast is het eveneens van groot belang om in voldoende variatie/ontspanning te voorzien zodoende er steeds met een frisse blik gewerkt kan worden. Nieuwe energie put ik voornamelijk uit een spelletje snooker of poolbiljart, een aangename avond met vrienden of een gamesessie.</p>
 					</div>
 				</div>
 				 <div class="row interests-gv">
@@ -146,7 +146,7 @@
 						<div class="large-5 column about-information-gv">
 							<p>Ik ben Gilles Vanpeteghem (°1990), een geboren en getogen Gentenaar. Sinds mijn jeugdjaren ben ik uitermate geïnteresseerd in alle computergerelateerde aspecten. In eerste instantie lag de nadruk op gaming en hardware. Later kreeg ik de smaak van het programmeren te pakken en besloot ik hiervan mijn beroep te maken.</p>
 							<p>Sinds 2014 mag ik mij Bachelor in de Grafische en Digitale Media noemen, gespecialiseerd in Multimediaproductie ProDEV.</p>
-							<p>Heeft u interesse in mijn profiel, wenst u mijn portfolio te bekijken of bent u net als ik een fervente pool- en/of snookerliefhebber? Aarzel dan niet om mij te contacteren via mail of onderstaande kanalen.</p>
+							<p>Heeft u interesse in mijn profiel, wenst u mijn portfolio te bekijken of bent u net als ik een fervente pool- en/of snookerliefhebber? Aarzel dan niet om mij te contacteren via <a href="mailto:gilles_vanpeteghem@hotmail.com">mail</a> of onderstaande kanalen.</p>
 						</div>
 					</div>
 				</div>

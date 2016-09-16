@@ -88,6 +88,8 @@ body{
 /* === BEGIN NAVIGATION === */
 .title-bar-gv{
 	text-align: center;
+	padding-top: 30px;
+	background: $colorBlue;
 	.menu-icon-gv{
 		display: block;
 		margin: 0 auto;
@@ -194,7 +196,7 @@ body{
 				color: $colorBlue;
 				text-align: center;
 				text-transform: uppercase;
-				padding-top: 5px;
+				padding-top: 10px;
 				padding-bottom: 30px;
 				display: inline-block;
 				&.development-gv{
@@ -347,6 +349,12 @@ body{
 			}
 			.about-information-gv{
 				padding-bottom: 25px;
+				a{
+					text-decoration: underline;
+					font-style: italic;
+					color: $colorWhite;
+					font-weight: bold;
+				}
 				img{
 					display: block;
 					margin: 0 auto;
@@ -464,6 +472,11 @@ footer{
 	}
 }
 @media only screen and (max-width: 639px) {
+	/* === BEGIN DEFAULT === */
+	.fullWidth-gv {
+	   width: auto;
+	}
+	/* === END DEFAULT === */
 	/* === BEGIN NAVIGATION === */
 	.title-bar-gv{
 		background-color: $colorBlue;
@@ -486,9 +499,10 @@ footer{
 			}
 		}
 		.top-bar-left-gv{
-			display: none;
-			visibility: hidden;
-			height: 0px;
+			padding-top: 0px;
+			h1{
+				text-align: center;
+			}
 		}
 	}
 	/* === END NAVIGATION === */
