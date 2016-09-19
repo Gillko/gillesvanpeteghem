@@ -27,14 +27,14 @@
 			<div class="top-bar-gv">
 				<div class="row">
 					<div class="large-12">
-						<div class="title-bar title-bar-gv" data-responsive-toggle="example-menu" data-hide-for="medium">
-							<button class="menu-icon menu-icon-gv" type="button" data-toggle></button>
-						</div>
 						<div class="top-bar top-bar-gv">
 							<div class="top-bar-left top-bar-left-gv">
 								<a href="/">
 									<h1 class="logo">GILVAN</h1>
 								</a>
+								<div class="title-bar title-bar-gv" data-responsive-toggle="example-menu" data-hide-for="medium">
+									<button class="menu-icon menu-icon-gv" type="button" data-toggle></button>
+								</div>
 							</div>
 							<div class="top-bar-right" id="example-menu">
 								<ul class="dropdown menu menu-bottom-gv" data-dropdown-menu>
