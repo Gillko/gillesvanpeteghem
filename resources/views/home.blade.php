@@ -65,7 +65,7 @@
 					</div>
 				</div>
 				 <div class="row">
-					<div class="large-10 large-centered column skills-gv">
+					<div class="large-10 medium-10 small-5 large-centered medium-centered small-centered column skills-gv">
 						<img src="../../assets/img/html-5.png" class="html5-gv" alt="html 5">
 						<img src="../../assets/img/css-3.png" class="css3-gv" alt="css 3">
 						<img src="../../assets/img/sass.png" class="sass-gv" alt="sass">
