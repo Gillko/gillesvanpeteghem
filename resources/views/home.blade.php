@@ -58,7 +58,7 @@
 			</div>
 			<div class="white-box-gv">
 				 <div class="row">
-					<div class="large-3 medium-5 small-7 large-centered medium-centered small-centered column title-gv color-blue-gv">
+					<div class="large-3 medium-5 small-9 large-centered medium-centered small-centered column title-gv color-blue-gv">
 						<h1 id="skills">{{ trans('home.skillsTitle') }}</h1>
 					</div>
 				</div>
