@@ -140,6 +140,10 @@ body {
       text-transform: uppercase; }
       .top-bar-gv ul.menu-bottom-gv li a:hover {
         border-bottom: solid 1px; }
+    .top-bar-gv ul.menu-bottom-gv li.language {
+      font-size: 10px; }
+      .top-bar-gv ul.menu-bottom-gv li.language a:hover {
+        border-bottom: 0px; }
   .top-bar-gv .top-bar-left-gv {
     padding-top: 20px; }
     .top-bar-gv .top-bar-left-gv h1.logo {

@@ -27,42 +27,52 @@
 			<div class="top-bar-gv">
 				<div class="row">
 					<div class="large-12">
-						<div class="title-bar title-bar-gv" data-responsive-toggle="example-menu" data-hide-for="medium">
-							<button class="menu-icon menu-icon-gv" type="button" data-toggle></button>
-						</div>
 						<div class="top-bar top-bar-gv">
 							<div class="top-bar-left top-bar-left-gv">
 								<a href="/">
 									<h1 class="logo">GILVAN</h1>
 								</a>
+								<div class="title-bar title-bar-gv" data-responsive-toggle="example-menu" data-hide-for="medium">
+									<button class="menu-icon menu-icon-gv" type="button" data-toggle></button>
+								</div>
 							</div>
 							<div class="top-bar-right" id="example-menu">
 								<ul class="dropdown menu menu-bottom-gv" data-dropdown-menu>
 									@if (Auth::guest())
 										<li>
-											<a href="{{ url('/#expertise') }}">expertise</a>
+											<a href="{{ url('/#expertise') }}">{{ trans('home.expertiseNav') }}</a>
 										</li>
 										<li>
-											<a href="{{ url('/#skills') }}">skills</a>
+											<a href="{{ url('/#skills') }}">{{ trans('home.skillsNav') }}</a>
 										</li>
 										<li>
-											<a href="{{ url('/#interests') }}">interests</a>
+											<a href="{{ url('/#interests') }}">{{ trans('home.interestsNav') }}</a>
 										</li>
 										<li>
-											<a href="{{ url('/#about') }}">about</a>
+											<a href="{{ url('/#about') }}">{{ trans('home.aboutNav') }}</a>
 										</li>
+										<li class="language">
+									        {{ Config::get('languages')[App::getLocale()] }}
+									    </li>
+								        @foreach (Config::get('languages') as $lang => $language)
+								        	@if ($lang != App::getLocale())
+									        	<li class="language">
+													<a href="{{ route('lang.switch', $lang) }}">{{$language}}</a>
+												</li>
+											@endif
+								        @endforeach
 									@else
 										<li>
-											<a href="{{ url('/#expertise') }}">expertise</a>
+											<a href="{{ url('/#expertise') }}">{{ trans('home.expertiseNav') }}</a>
 										</li>
 										<li>
-											<a href="{{ url('/#skills') }}">skills</a>
+											<a href="{{ url('/#skills') }}">{{ trans('home.skillsNav') }}</a>
 										</li>
 										<li>
-											<a href="{{ url('/#skills') }}">interests</a>
+											<a href="{{ url('/#skills') }}">{{ trans('home.interestsNav') }}</a>
 										</li>
 										<li>
-											<a href="{{ url('/#about') }}">about</a>
+											<a href="{{ url('/#about') }}">{{ trans('home.aboutNav') }}</a>
 										</li>
 										<li class="">
 											<a href="#" class="" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -106,7 +116,7 @@
 											</ul>
 										</li>
 									@endif
-								</ul>
+								</ul>	
 							</div>
 						</div>
 					</div>

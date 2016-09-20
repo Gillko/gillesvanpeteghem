@@ -112,6 +112,14 @@ body{
 						border-bottom: solid 1px;
 					}
 				}
+				&.language{
+					font-size: $language;
+					a{
+						&:hover{
+							border-bottom: 0px;
+						}
+					}
+				}
 			}
 		}
 	}

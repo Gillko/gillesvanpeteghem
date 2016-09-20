@@ -5,7 +5,7 @@
 			<div class="background-box-one-gv">
 				<div class="row">
 					<div class="large-12 column quote-gv">
-						<h1 class="quote-who-gv">I'm Gilles, a web developer</h1>
+						<h1 class="quote-who-gv">{{ trans('home.title') }}</h1>
 						<p class="underline-gv">&nbsp;</p>
 					</div>
 				</div>
@@ -19,7 +19,7 @@
 			<div class="blue-box-gv">
 				<div class="row">
 					<div class="large-2 medium-4 small-8 large-uncentered medium-centered small-centered column title-gv color-white-gv">
-						<h1 id="expertise">expertise</h1>
+						<h1 id="expertise">{{ trans('home.expertiseTitle') }}</h1>
 					</div>
 				</div>
 			</div>
@@ -28,13 +28,13 @@
 					<div class="large-6 medium-6 column expertise-gv gray-light-box-gv">
 						<div class="row fullWidth-gv">
 							<div class="large-12 medium-12 column large-uncentered medium-centered small-centered">
-								<h1 class="development-gv">Development</h1>
-								<p>Elk project vraagt om een specifieke aanpak. Afhankelijk van wat de klant precies wenst, hanteer ik steeds de best passende methoden/oplossingen om zo een goede gebruiksvriendelijkheid na te streven en de gewenste doelstellingen te behalen.</p>
+								<h1 class="development-gv">{{ trans('home.developmentTitle') }}</h1>
+								<p>{{ trans('home.development') }}</p>
 								<ul>
-									<li>Frontend &amp; backend</li>
-									<li>CMS</li>
-									<li>Responsive websites</li>
-									<li>Mobile development</li>
+									<li>{{ trans('home.developmentItemOne') }}</li>
+									<li>{{ trans('home.developmentItemTwo') }}</li>
+									<li>{{ trans('home.developmentItemThree') }}</li>
+									<li>{{ trans('home.developmentItemFour') }}</li>
 								</ul>
 							</div> 
 						</div>
@@ -42,16 +42,14 @@
 					<div class="large-6 medium-6 column expertise-gv gray-lighter-box-gv">
 						<div class="row fullWidth-gv">
 							<div class="large-10 medium-12 column large-centered medium-centered small-centered">
-								<h1 class="hardware-gv">Hardware</h1>
-								<p>Eender welke professional zal beamen dat 
-								de juiste/beste apparatuur hanteren het werk ten goede komt. Zo ook als developer. Graag stel 
-								ik mijn eigen hardware samen om mijn workflow te optimaliseren of voer ik herstelllingen uit waar nodig.</p>
+								<h1 class="hardware-gv">{{ trans('home.hardwareTitle') }}</h1>
+								<p>{{ trans('home.hardware') }}</p>
 								 <ul>
-									<li>Schermherstellingen (iPhone/iPad)</li>
-									<li>Samenstellen van PC op maat</li>
-									<li>Vervangen van batterij (iPhone)</li>
-									<li>Inwendig onderhoud (bv. verwijderen van stof)</li>
-									<li>PC/Mac boosten</li>
+									<li>{{ trans('home.hardwareItemOne') }}</li>
+									<li>{{ trans('home.hardwareItemTwo') }}</li>
+									<li>{{ trans('home.hardwareItemThree') }}</li>
+									<li>{{ trans('home.hardwareItemFour') }}</li>
+									<li>{{ trans('home.hardwareItemFive') }}</li>
 								</ul>
 							</div>
 						</div>
@@ -60,12 +58,12 @@
 			</div>
 			<div class="white-box-gv">
 				 <div class="row">
-					<div class="large-2 medium-3 small-5 large-centered medium-centered small-centered column title-gv color-blue-gv">
-						<h1 id="skills">skills</h1>
+					<div class="large-3 medium-5 small-7 large-centered medium-centered small-centered column title-gv color-blue-gv">
+						<h1 id="skills">{{ trans('home.skillsTitle') }}</h1>
 					</div>
 				</div>
 				 <div class="row">
-					<div class="large-10 large-centered column skills-gv">
+				 	<div class="large-10 medium-10 small-5 large-centered medium-centered small-centered column skills-gv">
 						<img src="../../assets/img/html-5.png" class="html5-gv" alt="html 5">
 						<img src="../../assets/img/css-3.png" class="css3-gv" alt="css 3">
 						<img src="../../assets/img/sass.png" class="sass-gv" alt="sass">
@@ -89,13 +87,13 @@
 			</div>
 			<div class="white-box-gv">
 				 <div class="row">
-					<div class="large-2 medium-4 small-8 large-uncentered medium-centered small-centered column title-gv color-blue-gv">
-						<h1 id="interests">interests</h1>
+					<div class="large-3 medium-4 small-8 large-uncentered medium-centered small-centered column title-gv color-blue-gv">
+						<h1 id="interests">{{ trans('home.interestsTitle') }}</h1>
 					</div>
 				</div>
 				 <div class="row">
 					<div class="large-12 large-centered column interest-text-gv">
-						<p>Een sector die razendsnel evolueert, vraagt om constante bijscholing. Het op de hoogte blijven van de laatste trends en de daarbijhorende nieuwste technologiën is uiteraard vanzelfsprekend. Daarnaast is het eveneens van groot belang om in voldoende variatie/ontspanning te voorzien zodoende er steeds met een frisse blik gewerkt kan worden. Nieuwe energie put ik voornamelijk uit een spelletje snooker of poolbiljart, een aangename avond met vrienden of een gamesessie.</p>
+						<p>{{ trans('home.interests') }}</p>
 					</div>
 				</div>
 				 <div class="row interests-gv">
@@ -139,14 +137,14 @@
 				<div class="background-about-gv about-gv color-white-gv">
 					<div class="row">
 						<div class="large-2 medium-3 small-7 column large-uncentered  medium-centered  small-centered title-gv color-white-gv">
-							<h1 id="about">About</h1>
+							<h1 id="about">{{ trans('home.aboutTitle') }}</h1>
 						</div>
 					</div>
 					<div class="row">
 						<div class="large-5 column about-information-gv">
-							<p>Ik ben Gilles Vanpeteghem (°1990), een geboren en getogen Gentenaar. Sinds mijn jeugdjaren ben ik uitermate geïnteresseerd in alle computergerelateerde aspecten. In eerste instantie lag de nadruk op gaming en hardware. Later kreeg ik de smaak van het programmeren te pakken en besloot ik hiervan mijn beroep te maken.</p>
-							<p>Sinds 2014 mag ik mij Bachelor in de Grafische en Digitale Media noemen, gespecialiseerd in Multimediaproductie ProDEV.</p>
-							<p>Heeft u interesse in mijn profiel, wenst u mijn portfolio te bekijken of bent u net als ik een fervente pool- en/of snookerliefhebber? Aarzel dan niet om mij te contacteren via <a href="mailto:gilles_vanpeteghem@hotmail.com">mail</a> of onderstaande kanalen.</p>
+							<p>{{ trans('home.aboutParagraphOne') }}</p>
+							<p>{{ trans('home.aboutParagraphTwo') }}</p>
+							<p>{{ trans('home.aboutParagraphThreePartOne') }} <a href="mailto:gilles_vanpeteghem@hotmail.com">e-mail</a> {{ trans('home.aboutParagraphThreePartTwo') }}</p>
 						</div>
 					</div>
 				</div>

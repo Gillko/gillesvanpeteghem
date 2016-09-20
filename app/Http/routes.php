@@ -19,7 +19,9 @@
 	Route::resource('tutorials', 'TutorialsController');
 	Route::resource('bookmarks', 'BookmarksController');*/
 
-	Route::get('/register', 'Auth\AuthController@getRegister');
+	//Route::get('/register', 'Auth\AuthController@getRegister');
+
+	//Route::get('lang/{lang}', ['as'=>'lang.switch', 'uses'=>'LanguageController@switchLang']);
 
 /*
 |--------------------------------------------------------------------------
@@ -39,7 +41,9 @@ Route::group(['middleware' => 'web'], function () {
 		return view('home');
 	});
 
-	//Route::get('/register', 'Auth\AuthController@getRegister');
+	Route::get('lang/{lang}', ['as'=>'lang.switch', 'uses'=>'LanguageController@switchLang']);
+
+	Route::get('/register', 'Auth\AuthController@getRegister');
 
 	/* =========== ROUTES FOR TAGS ===========  */
 	Route::resource('tags', 'TagsController');
