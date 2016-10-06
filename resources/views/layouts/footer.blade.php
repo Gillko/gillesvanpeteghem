@@ -1,9 +1,9 @@
 <footer class="footer">
 	<div class="row">
-		<div class="large-6 medium-6 small-12 columns">
-			<p class="text-left"><span>2016｜</span><span class="gray-gv">Gilles Vanpeteghem</span></p>
+		<div class="large-6 medium-6 small-12 text-left columns">
+			<p class="footer-text-gv"><span>2016｜</span><span class="gray-gv">Gilles Vanpeteghem</span></p>
 		</div>
-		<div class="large-6 medium-6 small-12 columns text-right socialicons">
+		<div class="large-6 medium-6 small-12 columns text-right footer-social-icons-gv">
 			<a href="https://www.facebook.com/vanpeteghemgilles" target="_blank">
 				<img src="{{ url('../../assets/img/facebook.png') }}" alt="https://www.facebook.com/vanpeteghemgilles">
 			</a>

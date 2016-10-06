@@ -101,6 +101,28 @@ body{
 .top-bar-gv{
 	background-color: $colorBlue;
 	ul{
+		&.language{
+			font-size: $language;
+			float: right;
+			padding-top: 10px;
+			li{
+				list-style-type: none;
+				display: inline;
+				padding: 8px;
+				a{
+					color: $colorWhite;
+					text-transform: uppercase;
+					&:hover{
+						color: $colorBlack;
+					}
+				}
+			}
+			a{
+				&:hover{
+					border-bottom: 0px;
+				}
+			}
+		}
 		&.menu-bottom-gv{
 			background-color: $colorBlue;
 			padding-top: 43px;
@@ -110,14 +132,6 @@ body{
 					text-transform: uppercase;
 					&:hover{
 						border-bottom: solid 1px;
-					}
-				}
-				&.language{
-					font-size: $language;
-					a{
-						&:hover{
-							border-bottom: 0px;
-						}
 					}
 				}
 			}
@@ -511,6 +525,14 @@ footer{
 			h1{
 				text-align: center;
 			}
+		}
+	}
+	footer{
+		.footer-text-gv{
+			text-align: center;
+		}
+		.footer-social-icons-gv{
+			text-align: center;
 		}
 	}
 	/* === END NAVIGATION === */

@@ -25,6 +25,18 @@
 		<div class="wrapper-gv">
 			<!-- Responsive navigation -->
 			<div class="top-bar-gv">
+				<ul class="language">
+					<li class="language">
+						{{ Config::get('languages')[App::getLocale()] }}
+					</li>
+					@foreach (Config::get('languages') as $lang => $language)
+						@if ($lang != App::getLocale())
+							<li class="language">
+								<a href="{{ route('lang.switch', $lang) }}">{{$language}}</a>
+							</li>
+						@endif
+					@endforeach
+				</ul>
 				<div class="row">
 					<div class="large-12">
 						<div class="top-bar top-bar-gv">
@@ -51,16 +63,6 @@
 										<li>
 											<a href="{{ url('/#about') }}">{{ trans('home.aboutNav') }}</a>
 										</li>
-										<li class="language">
-									        {{ Config::get('languages')[App::getLocale()] }}
-									    </li>
-								        @foreach (Config::get('languages') as $lang => $language)
-								        	@if ($lang != App::getLocale())
-									        	<li class="language">
-													<a href="{{ route('lang.switch', $lang) }}">{{$language}}</a>
-												</li>
-											@endif
-								        @endforeach
 									@else
 										<li>
 											<a href="{{ url('/#expertise') }}">{{ trans('home.expertiseNav') }}</a>
@@ -116,7 +118,7 @@
 											</ul>
 										</li>
 									@endif
-								</ul>	
+								</ul>   
 							</div>
 						</div>
 					</div>
