@@ -27,8 +27,6 @@
 				</div>
 			</div>
 		</div>
+		@include('layouts.footer')
 	</div>
-@endsection
-@section('footer')
-	@include('layouts.footer')
 @endsection
