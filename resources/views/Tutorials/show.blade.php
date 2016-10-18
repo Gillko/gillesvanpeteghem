@@ -2,18 +2,19 @@
 @section('content')
 	<div class="container-gv">
 		<div class="content-gv">
-			<div class="row">
+			{{-- <div class="row">
 				<div class="large-3 large-centered column title-gv color-blue-gv">
 					<h1>{{ $tutorial->tutorial_title }}</h1>
 				</div>
-			</div>
-			</div>
+			</div> --}}
 			<div class="row">
-				<div class="large-12 columns">
-					<p>{{ $tutorial->tutorial_id }}</p>
-					<p>{{ $tutorial->tutorial_title }}</p>
+				<div class="large-12 fullWidth-gv columns">
+					{{-- <p>{{ $tutorial->tutorial_id }}</p> --}}
+					<h1 class="title-tutorial-gv">{{ $tutorial->tutorial_title }}</h1>
+					<p class="created-gv">Created on {{ $tutorial->tutorial_created }}</p>
+					{{-- <p class="created-gv">Created on {{ $tutorial->tutorial_created->format('d-m-Y H:m:s') }}<br/>Last modified on {{ $tutorial->tutorial_modified->format('d-m-Y H:m:s') }}</p> --}}
 					{!! html_entity_decode($tutorial->tutorial_description) !!}
-					<p>{{ $tutorial->tutorial_created }}</p>
+					<p></p>
 					<p>{{ $tutorial->tutorial_modified }}</p>
 					@unless ($tutorial->tags->isEmpty())
 						<p>Tags:</p>

@@ -12,11 +12,12 @@
 				<div class="large-12 columns">
 					<a href="{{ URL::to('/tutorials/create') }}">{{ Form::button('Create', array('class' => 'button success'))}}</a>
 					@foreach($tutorials as $tutorial)
-						<p><a href="{{ URL::to('/tutorials/' . $tutorial->tutorial_id) }}">{{ $tutorial->tutorial_id }}</a></p>
-						<p>{{ $tutorial->tutorial_title }}</p>
+						{{-- <p><a href="{{ URL::to('/tutorials/' . $tutorial->tutorial_id) }}">{{ $tutorial->tutorial_id }}</a></p> --}}
+						<p><a href="{{ URL::to('/tutorials/' . $tutorial->tutorial_id) }}">{{ $tutorial->tutorial_title }}</a></p>
+						{{-- <p>{{ $tutorial->tutorial_title }}</p>
 						<p>{!! html_entity_decode($tutorial->tutorial_description) !!}</p>
 						<p>{{ $tutorial->tutorial_created }}</p>
-						<p>{{ $tutorial->tutorial_modified }}</p>
+						<p>{{ $tutorial->tutorial_modified }}</p> --}}
 						<p>{{ Form::open(array('url' => 'tutorials/' . $tutorial->tutorial_id, 'class' => '')) }}
 					@endforeach
 				</div>

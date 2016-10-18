@@ -431,6 +431,32 @@ footer{
 	}
 }
 
+/* === BEGIN CREATING CONTENT === */
+.container-gv{
+	.content-gv{
+		h1{
+			&.title-tutorial-gv{
+				padding-top: 50px;
+				font-size: $h1;
+			}
+		}
+		span{
+			&.error-tutorial-gv{
+				border: solid 1px;
+				background-color: $colorLightRed;
+				padding: 5px;
+			}
+		}
+		.created-gv,
+		.modified-gv{
+			font-size: $created;
+			font-style: italic;
+		}
+	}
+}
+
+/* === END CREATING CONTENT === */
+
 /* === BEGIN OVERRRIDE FOUNDATION CSS === */
 .dropdown{
 	&.menu{

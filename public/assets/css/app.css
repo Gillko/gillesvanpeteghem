@@ -379,6 +379,20 @@ footer {
   footer .footer {
     height: 120px; }
 
+/* === BEGIN CREATING CONTENT === */
+.container-gv .content-gv h1.title-tutorial-gv {
+  padding-top: 50px;
+  font-size: 23px; }
+.container-gv .content-gv span.error-tutorial-gv {
+  border: solid 1px;
+  background-color: #e06666;
+  padding: 5px; }
+.container-gv .content-gv .created-gv,
+.container-gv .content-gv .modified-gv {
+  font-size: 11px;
+  font-style: italic; }
+
+/* === END CREATING CONTENT === */
 /* === BEGIN OVERRRIDE FOUNDATION CSS === */
 .dropdown.menu .is-dropdown-submenu-parent.is-down-arrow > a::after {
   border-color: #aac7ca transparent transparent; }

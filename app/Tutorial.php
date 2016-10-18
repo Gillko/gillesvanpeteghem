@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+//use Carbon\Carbon;
 
 class Tutorial extends Model
 {
@@ -69,4 +70,14 @@ class Tutorial extends Model
 	{
 		return $this->images->lists('image_id')->all();
 	}
+
+	/*public function getTutorialCreatedAttribute()
+	{
+	    return Carbon::parse($this->attributes['tutorial_created']);
+	}
+
+	public function getTutorialModifiedAttribute()
+	{
+	    return Carbon::parse($this->attributes['tutorial_modified']);
+	}*/
 }
