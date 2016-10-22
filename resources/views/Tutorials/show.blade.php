@@ -11,11 +11,12 @@
 				<div class="large-12 fullWidth-gv columns">
 					{{-- <p>{{ $tutorial->tutorial_id }}</p> --}}
 					<h1 class="title-tutorial-gv">{{ $tutorial->tutorial_title }}</h1>
-					<p class="created-gv">Created on {{ $tutorial->tutorial_created }}</p>
+					<p class="created-gv">Created on {{ $tutorial->tutorial_created }}<br/>
+					Modified on {{ $tutorial->tutorial_modified }}</p>
 					{{-- <p class="created-gv">Created on {{ $tutorial->tutorial_created->format('d-m-Y H:m:s') }}<br/>Last modified on {{ $tutorial->tutorial_modified->format('d-m-Y H:m:s') }}</p> --}}
 					{!! html_entity_decode($tutorial->tutorial_description) !!}
 					<p></p>
-					<p>{{ $tutorial->tutorial_modified }}</p>
+					
 					@unless ($tutorial->tags->isEmpty())
 						<p>Tags:</p>
 						@foreach ($tutorial->tags as $tag)
@@ -25,7 +26,7 @@
 					@unless ($tutorial->images->isEmpty())
 						<p>Images:</p>
 						@foreach ($tutorial->images as $image)
-							<p><a href="{{ URL::to('/images/show/' . $image->image_id) }}">{{ $image->image_title }}</a></p>
+							<p><a href="{{ URL::to('/images/show/' . $image->image_id) }}">{{ $image->image_title }}</a> ({{ $image->image_url }})</p>
 						@endforeach
 					@endunless
 					<a href="{{ URL::to('/tutorials/' . $tutorial->tutorial_id . '/edit') }}">{{ Form::button('Edit', array('class' => 'button succes'))}}</a>
