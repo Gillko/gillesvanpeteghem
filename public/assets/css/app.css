@@ -383,10 +383,11 @@ footer {
 .container-gv .content-gv h1.title-tutorial-gv {
   padding-top: 50px;
   font-size: 23px; }
-.container-gv .content-gv span.error-tutorial-gv {
+.container-gv .content-gv p.error-tutorial-gv {
   border: solid 1px;
   background-color: #e06666;
-  padding: 5px; }
+  padding: 5px;
+  color: #ffffff; }
 .container-gv .content-gv .created-gv,
 .container-gv .content-gv .modified-gv {
   font-size: 11px;
