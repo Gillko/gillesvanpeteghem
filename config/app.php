@@ -161,8 +161,6 @@ return [
         Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class,
 
         Collective\Html\HtmlServiceProvider::class,
-        Unisharp\Ckeditor\ServiceProvider::class,
-
     ],
 
     /*

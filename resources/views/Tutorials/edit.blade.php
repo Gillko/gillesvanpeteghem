@@ -1,4 +1,19 @@
 @extends('layouts.layout')
+@section('head')
+	<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+	<script>tinymce.init({
+		  selector: 'textarea',
+		  height: 500,
+		  plugins: [
+		    'advlist autolink lists link image charmap print preview anchor',
+		    'searchreplace visualblocks code fullscreen',
+		    'insertdatetime media table contextmenu paste code'
+		  ],
+		  toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+		  content_css: '//www.tinymce.com/css/codepen.min.css'
+		});
+	</script>
+@endsection
 @section('content')
 	<div class="container-gv">
 		<div class="content-gv">
@@ -25,44 +40,6 @@
 				</div>
 			</div>
 		</div>
-		<script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
-		<script>
-			CKEDITOR.replace( 'tutorial_description' );
-		</script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<script>
-		$('#tutorial_description').on('keydown', function(ev) {
-			var keyCode = ev.keyCode || ev.which;
-
-			if (keyCode == 9) {
-				ev.preventDefault();
-				var start = this.selectionStart;
-				var end = this.selectionEnd;
-				var val = this.value;
-				var selected = val.substring(start, end);
-				var re, count;
-
-				if(ev.shiftKey) {
-					re = /^\t/gm;
-					count = -selected.match(re).length;
-					this.value = val.substring(0, start) + selected.replace(re, '') + val.substring(end);
-					// todo: add support for shift-tabbing without a selection
-				} else {
-					re = /^/gm;
-					count = selected.match(re).length;
-					this.value = val.substring(0, start) + selected.replace(re, '\t') + val.substring(end);
-				}
-
-				if(start === end) {
-					this.selectionStart = end + count;
-				} else {
-					this.selectionStart = start;
-				}
-
-				this.selectionEnd = end + count;
-			}
-		});
-		</script>
 		@include('layouts.footer')
 	</div>
 @endsection
