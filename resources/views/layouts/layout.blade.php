@@ -20,6 +20,7 @@
 		<link href="{{ url('../../assets/css/libraries/foundation/foundation-icons/foundation-icons.css') }}" rel="stylesheet" type="text/css">
 		<link href="{{ url('../../assets/css/app.css') }}" rel="stylesheet" type="text/css">
 		<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+		@yield('head')
 	</head>
 	<body>
 		<div class="wrapper-gv">
@@ -133,5 +134,6 @@
 	<script src="{{ url('../../assets/js/libraries/foundation/foundation.min.js') }}"></script>
 	<script src="{{ url('../../assets/js/libraries/foundation/app.js') }}"></script>
 	<script src="{{ url('../../assets/js/app.js') }}"></script>
+	@yield('bottom-scripts')
 </body>
 </html>
