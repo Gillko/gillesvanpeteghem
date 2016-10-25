@@ -15,6 +15,7 @@
 					{!! html_entity_decode($image->image_description) !!}
 					<p>{{ $image->image_created }}</p>
 					<p>{{ $image->image_modified }}</p>
+					<p>{{ $image->image_url }}</p>
 					<img src="{{asset('uploads/' . $image->image_url )}}" width="100"/><br/><br/>
 					@unless ($image->tags->isEmpty())
 						<p>Tags:</p>
