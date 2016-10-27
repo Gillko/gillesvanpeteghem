@@ -123,7 +123,8 @@ body {
 .title-bar-gv {
   text-align: center;
   padding-top: 30px;
-  background: #2d77b8; }
+  background: #2d77b8;
+  display: none; }
   .title-bar-gv .menu-icon-gv {
     display: block;
     margin: 0 auto; }
@@ -131,7 +132,8 @@ body {
     padding-bottom: 20px; }
 
 .top-bar-gv {
-  background-color: #2d77b8; }
+  background-color: #2d77b8;
+  display: block; }
   .top-bar-gv ul.language {
     font-size: 10px;
     float: right;
@@ -388,6 +390,8 @@ footer {
   background-color: #e06666;
   padding: 5px;
   color: #ffffff; }
+.container-gv .content-gv span.notice-tutorial-cakephp-gv {
+  color: #3f414c; }
 .container-gv .content-gv .created-gv,
 .container-gv .content-gv .modified-gv {
   font-size: 11px;
@@ -427,7 +431,8 @@ footer {
   /* === END DEFAULT === */
   /* === BEGIN NAVIGATION === */
   .title-bar-gv {
-    background-color: #2d77b8; }
+    background-color: #2d77b8;
+    display: block; }
     .title-bar-gv h1 {
       text-align: center;
       text-transform: uppercase;
@@ -437,15 +442,17 @@ footer {
       padding-right: 5px;
       color: #ffffff; }
 
-  .top-bar-gv ul {
-    padding-top: 0px; }
-    .top-bar-gv ul li {
-      text-align: center;
-      display: block; }
-  .top-bar-gv .top-bar-left-gv {
-    padding-top: 0px; }
-    .top-bar-gv .top-bar-left-gv h1 {
-      text-align: center; }
+  .top-bar-gv {
+    height: auto; }
+    .top-bar-gv ul {
+      padding-top: 0px; }
+      .top-bar-gv ul li {
+        text-align: center;
+        display: block; }
+    .top-bar-gv .top-bar-left-gv {
+      padding-top: 0px; }
+      .top-bar-gv .top-bar-left-gv h1 {
+        text-align: center; }
 
   footer .footer-text-gv {
     text-align: center; }
