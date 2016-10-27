@@ -82,7 +82,7 @@
 												{{ Auth::user()->user_username }} <span class=""></span>
 											</a>
 
-											<ul class="dropdown menu submenu-background-gv" data-dropdown-menu>
+											<ul class="dropdown submenu menu submenu-background-gv" data-dropdown-menu>
 												<li>
 													<a href="{{ url('/tutorials') }}">tutorials</a>
 												</li>
