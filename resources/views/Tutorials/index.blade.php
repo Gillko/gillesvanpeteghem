@@ -7,7 +7,6 @@
 					<h1>tutorials</h1>
 				</div>
 			</div>
-			</div>
 			<div class="row">
 				<div class="large-12 columns">
 					<a href="{{ URL::to('/tutorials/create') }}">{{ Form::button('Create', array('class' => 'button success'))}}</a>
@@ -23,6 +22,5 @@
 				</div>
 			</div>
 		</div>
-		@include('layouts.footer')
 	</div>
 @endsection

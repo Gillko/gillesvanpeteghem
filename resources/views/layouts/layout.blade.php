@@ -126,14 +126,14 @@
 				</div>
 			</div>
 			@yield('content')
+			<div class="push-gv"></div>
 		</div>
-		<div class="push-gv"></div>
-	</div>
-	@yield('footer')
-	<script src="{{ url('../../assets/js/libraries/jquery/jquery-1.12.1.min.js') }}"></script>
-	<script src="{{ url('../../assets/js/libraries/foundation/foundation.min.js') }}"></script>
-	<script src="{{ url('../../assets/js/libraries/foundation/app.js') }}"></script>
-	<script src="{{ url('../../assets/js/app.js') }}"></script>
-	@yield('bottom-scripts')
-</body>
+		@include('layouts.footer')
+	
+		<script src="{{ url('../../assets/js/libraries/jquery/jquery-1.12.1.min.js') }}"></script>
+		<script src="{{ url('../../assets/js/libraries/foundation/foundation.min.js') }}"></script>
+		<script src="{{ url('../../assets/js/libraries/foundation/app.js') }}"></script>
+		<script src="{{ url('../../assets/js/app.js') }}"></script>
+		@yield('bottom-scripts')
+	</body>
 </html>
