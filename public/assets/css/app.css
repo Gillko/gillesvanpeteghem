@@ -44,6 +44,9 @@
 .gray-gv {
   color: #666666; }
 
+.push-gv {
+  height: 120px; }
+
 .background-box-one-gv {
   background-image: url("../../assets/img/backgroundOne.jpg");
   background-repeat: no-repeat center center fixed;
@@ -362,8 +365,6 @@ body {
     position: relative; }
     .container-gv .social-gv .social-text-gv h1 {
       color: #2d77b8; }
-.container-gv .push-gv {
-  height: 120px; }
 
 footer {
   background-color: #f2f2f2;
@@ -382,22 +383,93 @@ footer {
     height: 120px; }
 
 /* === BEGIN CREATING CONTENT === */
+.container-gv .content-gv .heading-tutorial-gv {
+  /*&.heading-two-tutorial-gv{
+  	color: $colorHeadingTwo;
+  	font-size: $h2;
+  	//border-bottom: solid 1px $colorHeadingTwo;
+  }*/ }
+  .container-gv .content-gv .heading-tutorial-gv.heading-one-tutorial-gv {
+    color: #f1c232;
+    font-size: 23px; }
+.container-gv .content-gv .indentation-tutorial-gv.indent-1-gv {
+  padding-left: 30px; }
+.container-gv .content-gv .indentation-tutorial-gv.indent-2-gv {
+  padding-left: 60px; }
 .container-gv .content-gv h1.title-tutorial-gv {
   padding-top: 50px;
   font-size: 23px; }
-.container-gv .content-gv p.error-tutorial-gv {
-  border: solid 1px;
-  background-color: #e06666;
+.container-gv .content-gv p.tutorial-paragraph-gv {
+  border: solid 1px #000000;
   padding: 5px;
   color: #ffffff; }
+.container-gv .content-gv p.error-tutorial-cakephp-gv {
+  background-color: #cf453f; }
+.container-gv .content-gv p.success-tutorial-cakephp-gv {
+  background-color: #579f4c; }
+.container-gv .content-gv p.warning-tutorial-cakephp-gv {
+  background-color: #f2c200;
+  color: #000000; }
+.container-gv .content-gv p.tutorial-lightgreen-cakephp-gv {
+  background-color: #dff0d8;
+  color: #858c88;
+  border: 0px;
+  padding: 15px; }
+.container-gv .content-gv p.tutorial-darkbrown-sublime-gv {
+  background-color: #272822; }
 .container-gv .content-gv span.notice-tutorial-cakephp-gv {
   color: #3f414c; }
+.container-gv .content-gv span.tutorial-red-cakephp-gv {
+  color: #ff0000; }
+.container-gv .content-gv span.tutorial-lightbrown-sublime-gv {
+  color: #756a4f; }
+.container-gv .content-gv span.tutorial-blue-sublime-gv {
+  color: #62c4cb; }
+.container-gv .content-gv span.tutorial-red-sublime-gv {
+  color: #ce253d; }
+.container-gv .content-gv span.tutorial-yellow-sublime-gv {
+  color: #ecc860; }
+.container-gv .content-gv span.tutorial-green-sublime-gv {
+  color: #a5da2a; }
+.container-gv .content-gv span.tutorial-purple-sublime-gv {
+  color: #b37ad4; }
+.container-gv .content-gv span.google-tutorial-blue-gv {
+  color: #4a7ad6; }
+.container-gv .content-gv span.google-tutorial-green-gv {
+  color: #307444; }
+.container-gv .content-gv span.google-tutorial-gray-gv {
+  color: #58535d; }
+.container-gv .content-gv span.GRC-tutorial-blue-gv {
+  color: #2924ff; }
+.container-gv .content-gv span.GRC-tutorial-red-gv {
+  border: solid 1px #ff1c1c;
+  color: #000000;
+  padding: 3px; }
+.container-gv .content-gv ul.list-tutorial-gv li {
+  list-style-type: none;
+  font-size: 14px; }
 .container-gv .content-gv .created-gv,
 .container-gv .content-gv .modified-gv {
   font-size: 11px;
   font-style: italic; }
 
 /* === END CREATING CONTENT === */
+/* === BEGIN JQUERY COLORFY === */
+.markdown .tag {
+  color: #f92672; }
+.markdown .class,
+.markdown .source {
+  color: #a5da2a; }
+.markdown .comment {
+  color: #75715e; }
+
+.textarea {
+  background-color: #272822;
+  color: #ffffff;
+  overflow: auto !important;
+  width: 100%; }
+
+/* === END JQUERY COLORFY === */
 /* === BEGIN OVERRRIDE FOUNDATION CSS === */
 .dropdown.menu .is-dropdown-submenu-parent.is-down-arrow > a::after {
   border-color: #aac7ca transparent transparent; }

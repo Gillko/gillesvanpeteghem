@@ -17,6 +17,9 @@
 .gray-gv{
 	color: $colorGray;
 }
+.push-gv{
+	height: 120px;
+}
 .background-box-one-gv{
 	background-image: url('../../assets/img/backgroundOne.jpg');
 	background-repeat: no-repeat center center fixed;
@@ -408,9 +411,7 @@ body{
 			}
 		}
 	}
-	.push-gv{
-		height: 120px;
-	}
+	
 }
 footer{
 	background-color: $grayLighter;
@@ -436,6 +437,26 @@ footer{
 /* === BEGIN CREATING CONTENT === */
 .container-gv{
 	.content-gv{
+		.heading-tutorial-gv{
+			&.heading-one-tutorial-gv{
+				color: $colorHeadingOne;
+				font-size: $h1;
+				//border-bottom: solid 1px $colorHeadingOne;
+			}
+			/*&.heading-two-tutorial-gv{
+				color: $colorHeadingTwo;
+				font-size: $h2;
+				//border-bottom: solid 1px $colorHeadingTwo;
+			}*/
+		}
+		.indentation-tutorial-gv{
+			&.indent-1-gv{
+				padding-left: 30px;
+			}
+			&.indent-2-gv{
+				padding-left: 60px;
+			}
+		}
 		h1{
 			&.title-tutorial-gv{
 				padding-top: 50px;
@@ -443,16 +464,80 @@ footer{
 			}
 		}
 		p{
-			&.error-tutorial-gv{
-				border: solid 1px;
-				background-color: $colorLightRed;
+			&.tutorial-paragraph-gv{
+				border: solid 1px $colorBlack;
 				padding: 5px;
 				color: $colorWhite;
+			}
+			&.error-tutorial-cakephp-gv{
+				background-color: $colorErrorCakePHP;
+			}
+			&.success-tutorial-cakephp-gv{
+				background-color: $colorSuccessCakePHP;
+			}
+			&.warning-tutorial-cakephp-gv{
+				background-color: $colorWarningCakePHP;
+				color: $colorBlack;
+			}
+			&.tutorial-lightgreen-cakephp-gv{
+				background-color: $colorLightGreenCakePHP;
+				color: $colorGrayCakePHP;
+				border: 0px;
+				padding: 15px;
+			}
+			&.tutorial-darkbrown-sublime-gv{
+				background-color: $colorSublimeDarkBrown;
 			}
 		}
 		span{
 			&.notice-tutorial-cakephp-gv{
 				color: $colorNoticeCakePHP;
+			}
+			&.tutorial-red-cakephp-gv{
+				color: $colorRedCakePHP;
+			}
+			&.tutorial-lightbrown-sublime-gv{
+				color: $colorSublimeLightBrown;
+			}
+			&.tutorial-blue-sublime-gv{
+				color: $colorSublimeBlue;
+			}
+			&.tutorial-red-sublime-gv{
+				color: $colorSublimeRed;
+			}
+			&.tutorial-yellow-sublime-gv{
+				color: $colorSublimeYellow;
+			}
+			&.tutorial-green-sublime-gv{
+				color: $colorSublimeGreen;
+			}
+			&.tutorial-purple-sublime-gv{
+				color: $colorSublimePurple;
+			}
+			&.google-tutorial-blue-gv{
+				color: $colorGoogleBlue;
+			}
+			&.google-tutorial-green-gv{
+				color: $colorGoogleGreen;
+			}
+			&.google-tutorial-gray-gv{
+				color: $colorGoogleGray;
+			}
+			&.GRC-tutorial-blue-gv{
+				color: $colorBlueGRC;
+			}
+			&.GRC-tutorial-red-gv{
+				border: solid 1px $colorRedGRC;
+				color: $colorBlack;
+				padding: 3px;
+			}
+		}
+		ul{
+			&.list-tutorial-gv{
+				li{
+					list-style-type: none;
+					font-size: $ul;
+				}
 			}
 		}
 		.created-gv,
@@ -464,6 +549,28 @@ footer{
 }
 
 /* === END CREATING CONTENT === */
+
+
+/* === BEGIN JQUERY COLORFY === */
+.markdown{
+	.tag{
+		color: $colorParagraphSublimeRed;
+	}
+	.class,
+	.source{
+		color: $colorSublimeGreen;
+	}
+	.comment{
+		color: $colorSublimeGray;
+	}
+}
+.textarea {
+	background-color: $colorSublimeDarkBrown;
+	color: $colorWhite;
+	overflow: auto !important;
+	width: 100%;
+}
+/* === END JQUERY COLORFY === */
 
 /* === BEGIN OVERRRIDE FOUNDATION CSS === */
 .dropdown{

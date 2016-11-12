@@ -42,13 +42,40 @@ $grayLighter:		#f2f2f2;
 
 
 /* === BEGIN TEXT COLORS === */
-$colorWhite:			#ffffff;
-$colorBlack:			#000000;
-$colorGray:				#666666;
-$colorBlue:				#2d77b8;
-$colorBlueSecond:		#aac7ca;
-$colorLightRed:			#e06666;
-$colorNoticeCakePHP:	#3f414c;
+$colorWhite:				#ffffff;
+$colorBlack:				#000000;
+$colorGray:					#666666;
+$colorBlue:					#2d77b8;
+$colorBlueSecond:			#aac7ca;
+
+$colorNoticeCakePHP:		#3f414c;
+$colorErrorCakePHP:			#cf453f;
+$colorWarningCakePHP:		#f2c200;
+$colorSuccessCakePHP:		#579f4c;
+$colorLightGreenCakePHP:	#dff0d8;
+$colorRedCakePHP:			#ff0000;
+$colorGrayCakePHP:			#858c88;
+
+$colorSublimeBlue:			#62c4cb;
+$colorSublimeRed:			#ce253d;
+$colorSublimeYellow:		#ecc860;
+$colorSublimeGreen:			#a5da2a;
+$colorSublimePurple:		#b37ad4;
+$colorSublimeLightBrown:	#756a4f;
+$colorSublimeDarkBrown:		#272822;
+$colorSublimeGray:			#75715e;
+
+$colorGoogleBlue:			#4a7ad6;
+$colorGoogleGreen:			#307444;
+$colorGoogleGray:			#58535d;
+
+$colorBlueGRC:				#2924ff;
+$colorRedGRC:				#ff1c1c;
+
+$colorHeadingOne:			#f1c232;
+$colorHeadingTwo:			#6fa8dc;
+
+$colorParagraphSublimeRed:	#f92672;
 /* === END TEXT COLORS === */
 
 
@@ -57,6 +84,7 @@ $social:			40px;
 $quote:				31px;
 $logo:				36px;
 $h1:				23px;
+$h2:				18px;
 $p-title:			18px;
 $p:					14px;
 $ul:				14px;
