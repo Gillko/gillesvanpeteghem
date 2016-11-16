@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 @section('head')
-	<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+	{{-- <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
 	<script>tinymce.init({
 		  selector: 'textarea',
 		  height: 500,
@@ -12,7 +12,11 @@
 		  toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
 		  content_css: '//www.tinymce.com/css/codepen.min.css'
 		});
-	</script>
+	</script> --}}
+	<script src="../../../assets/js/libraries/jquery/jquery-1.12.1.min.js"></script>
+	<link rel="stylesheet" href="../../../assets/css/libraries/codemirror/codemirror.css">
+	<script src="../../../assets/js/libraries/codemirror/codemirror.js"></script>
+	<script src="../../../assets/js/libraries/codemirror/xml.js"></script>
 @endsection
 @section('content')
 	<div class="container-gv">
@@ -28,7 +32,7 @@
 						{{ Form::label('tutorial_title', 'Title')}}
 						{{ Form::text('tutorial_title') }}
 						{{ Form::label('tutorial_description', 'Description')}}
-						{{ Form::textarea('tutorial_description') }}
+						{{ Form::textarea('tutorial_description', null, array('id' => 'textarea', 'class' => 'textarea')) }}
 						{{ Form::label('tutorial_created', 'Created')}}
 						{{ Form::datetime('tutorial_created', Carbon\Carbon::now()->format('Y-m-d H:m:s')) }}
 						{{ Form::label('tag_list', 'Tags')}}
@@ -42,4 +46,12 @@
 			</div>
 		</div>
 	</div>
+	<script>
+		var editor = CodeMirror.fromTextArea(document.getElementById("textarea"), {
+			mode: "application/xml",
+			styleActiveLine: true,
+			lineNumbers: true,
+			lineWrapping: true
+		});
+	</script>
 @endsection

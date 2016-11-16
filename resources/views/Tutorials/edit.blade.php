@@ -53,13 +53,12 @@
 	{{-- <script type="text/javascript">
 		$('#textarea').colorfy("markdown");
 	</script> --}}
-
-	 <script>
-var editor = CodeMirror.fromTextArea(document.getElementById("textarea"), {
-  mode: "application/xml",
-  styleActiveLine: true,
-  lineNumbers: true,
-  lineWrapping: true
-});
-</script>
+	<script>
+		var editor = CodeMirror.fromTextArea(document.getElementById("textarea"), {
+			mode: "application/xml",
+			styleActiveLine: true,
+			lineNumbers: true,
+			lineWrapping: true
+		});
+	</script>
 @endsection
