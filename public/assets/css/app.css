@@ -391,6 +391,8 @@ footer {
 
 .container-gv .content-gv .indentation-tutorial-gv.indent-1-gv {
   padding-left: 30px; }
+  .container-gv .content-gv .indentation-tutorial-gv.indent-1-gv.numbers-gv {
+    padding-left: 45px; }
 
 .container-gv .content-gv .indentation-tutorial-gv.indent-2-gv {
   padding-left: 60px; }
@@ -423,6 +425,10 @@ footer {
 .container-gv .content-gv p.tutorial-darkbrown-sublime-gv {
   background-color: #272822; }
 
+.container-gv .content-gv p.tutorial-black-cmd-gv {
+  background-color: #000000;
+  color: #ffffff; }
+
 .container-gv .content-gv span.notice-tutorial-cakephp-gv {
   color: #3f414c; }
 
@@ -444,6 +450,9 @@ footer {
 .container-gv .content-gv span.tutorial-green-sublime-gv {
   color: #a5da2a; }
 
+.container-gv .content-gv span.tutorial-gray-sublime-gv {
+  color: #75715e; }
+
 .container-gv .content-gv span.tutorial-purple-sublime-gv {
   color: #b37ad4; }
 
@@ -464,8 +473,17 @@ footer {
   color: #000000;
   padding: 3px; }
 
+.container-gv .content-gv span.cmd-tutorial-green-gv {
+  color: #005200; }
+
+.container-gv .content-gv span.lt-gv::before {
+  content: "<"; }
+
 .container-gv .content-gv ul.list-tutorial-gv li {
   list-style-type: none;
+  font-size: 14px; }
+
+.container-gv .content-gv ol.list-tutorial-gv li {
   font-size: 14px; }
 
 .container-gv .content-gv .created-gv,

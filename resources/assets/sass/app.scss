@@ -452,6 +452,9 @@ footer{
 		.indentation-tutorial-gv{
 			&.indent-1-gv{
 				padding-left: 30px;
+				&.numbers-gv{
+					padding-left: 45px;
+				}
 			}
 			&.indent-2-gv{
 				padding-left: 60px;
@@ -488,6 +491,10 @@ footer{
 			&.tutorial-darkbrown-sublime-gv{
 				background-color: $colorSublimeDarkBrown;
 			}
+			&.tutorial-black-cmd-gv{
+				background-color: $colorBlack;
+				color: $colorWhite;
+			}
 		}
 		span{
 			&.notice-tutorial-cakephp-gv{
@@ -511,6 +518,9 @@ footer{
 			&.tutorial-green-sublime-gv{
 				color: $colorSublimeGreen;
 			}
+			&.tutorial-gray-sublime-gv{
+				color: $colorSublimeGray;
+			}
 			&.tutorial-purple-sublime-gv{
 				color: $colorSublimePurple;
 			}
@@ -531,11 +541,26 @@ footer{
 				color: $colorBlack;
 				padding: 3px;
 			}
+			&.cmd-tutorial-green-gv{
+				color: $colorGreenCMD;
+			}
+			&.lt-gv{
+				&::before{
+					content: "<";
+				}
+			}
 		}
 		ul{
 			&.list-tutorial-gv{
 				li{
 					list-style-type: none;
+					font-size: $ul;
+				}
+			}
+		}
+		ol{
+			&.list-tutorial-gv{
+				li{
 					font-size: $ul;
 				}
 			}
