@@ -72,7 +72,7 @@
 											<a href="{{ url('/#skills') }}">{{ trans('home.skillsNav') }}</a>
 										</li>
 										<li>
-											<a href="{{ url('/#skills') }}">{{ trans('home.interestsNav') }}</a>
+											<a href="{{ url('/#interests') }}">{{ trans('home.interestsNav') }}</a>
 										</li>
 										<li>
 											<a href="{{ url('/#about') }}">{{ trans('home.aboutNav') }}</a>
