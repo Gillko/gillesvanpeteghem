@@ -491,6 +491,15 @@ footer {
   font-size: 11px;
   font-style: italic; }
 
+.container-gv .content-gv table {
+  font-size: 14px;
+  border: solid 2px #c5c5c5; }
+  .container-gv .content-gv table td {
+    padding: 1px 5px 1px 5px;
+    background-color: #ffffff; }
+  .container-gv .content-gv table th.header-database-table-gv {
+    background-color: #98bfda; }
+
 /* === END CREATING CONTENT === */
 /* === BEGIN JQUERY COLORFY === */
 .markdown .tag {

@@ -570,6 +570,19 @@ footer{
 			font-size: $created;
 			font-style: italic;
 		}
+		table{
+			font-size: $p;
+			border: solid 2px $colorGrayMYSQL;
+			td{
+				padding: 1px 5px 1px 5px;
+				background-color: $colorWhite;
+			}
+			th{
+				&.header-database-table-gv{
+					background-color: $colorBlueMYSQL;
+				}
+			}
+		}
 	}
 }
 
