@@ -3,19 +3,13 @@
 	<div class="container-gv">
 		<div class="content-gv">
 			<div class="row">
-				<div class="large-3 large-centered column title-gv color-blue-gv">
-					<h1>{{ $project->project_title }}</h1>
-				</div>
-			</div>
-			<div class="row">
-				<div class="large-12 columns">
-					<div class="category">
-						<p>{{ $project->project_id }}</p>
-						<p>{{ $project->project_title }}</p>
-						<p>{{ $project->project_description }}</p>
+				<div class="large-12 fullWidth-gv columns">
+						<h1 class="title-tutorial-gv">{{ $project->project_title }}</h1>
 						<p>{{ $project->project_url }}</p>
-						<p>{{ $project->project_created }}</p>
-						<p>{{ $project->project_modified }}</p>
+						<p class="created-gv">Created on {{ $project->project_created }}<br/>
+						Modified on {{ $project->project_modified }}</p>
+						{!! html_entity_decode($project->project_description) !!}
+
 						@unless ($project->tags->isEmpty())
 							<p>Tags:</p>
 							@foreach ($project->tags as $tag)

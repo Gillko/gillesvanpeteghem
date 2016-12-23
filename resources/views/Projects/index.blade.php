@@ -13,7 +13,6 @@
 					@foreach($projects as $project)
 						<p><a href="{{ URL::to('/projects/' . $project->project_id) }}">{{ $project->project_id }}</a></p>
 						<p>{{ $project->project_title }}</p>
-						<p>{{ $project->project_description }}</p>
 						<p>{{ $project->project_url }}</p>
 						<p>{{ $project->project_created }}</p>
 						<p>{{ $project->project_modified }}</p>

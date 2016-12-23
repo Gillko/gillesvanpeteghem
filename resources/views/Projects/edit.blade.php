@@ -1,4 +1,10 @@
 @extends('layouts.layout')
+@section('head')
+	<script src="../../../assets/js/libraries/jquery/jquery-1.12.1.min.js"></script>
+	<link rel="stylesheet" href="../../../assets/css/libraries/codemirror/codemirror.css">
+	<script src="../../../assets/js/libraries/codemirror/codemirror.js"></script>
+	<script src="../../../assets/js/libraries/codemirror/xml.js"></script>
+@endsection
 @section('content')
 	<div class="container-gv">
 		<div class="content-gv">
@@ -13,7 +19,7 @@
 						{{ Form::label('project_title', 'Title')}}
 						{{ Form::text('project_title') }}
 						{{ Form::label('project_description', 'Description')}}
-						{{ Form::textarea('project_description') }}
+						{{ Form::textarea('project_description', null, array('id' => 'textarea', 'class' => 'textarea')) }}
 						{{ Form::label('project_url', 'URL')}}
 						{{ Form::text('project_url') }}
 						{{ Form::label('project_image', 'Image')}}
@@ -32,4 +38,12 @@
 			</div>
 		</div>
 	</div>
+	<script>
+		var editor = CodeMirror.fromTextArea(document.getElementById("textarea"), {
+			mode: "application/xml",
+			styleActiveLine: true,
+			lineNumbers: true,
+			lineWrapping: true
+		});
+	</script>
 @endsection
