@@ -582,6 +582,13 @@ footer{
 					background-color: $colorBlueMYSQL;
 				}
 			}
+			tbody{
+				tr{
+					&.userID{
+						color: $colorHoverStatePrimaryKey;
+					}
+				}
+			}
 		}
 	}
 }

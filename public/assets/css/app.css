@@ -493,7 +493,17 @@ footer {
 
 .container-gv .content-gv table {
   font-size: 14px;
-  border: solid 2px #c5c5c5; }
+  border: solid 2px #c5c5c5;
+  /* tbody{
+				tr{
+					&.userID{
+						//color: $colorHoverStatePrimaryKey;
+						&:hover{
+							color: $colorHoverStatePrimaryKey;
+						}
+					}
+				}
+			} */ }
   .container-gv .content-gv table td {
     padding: 1px 5px 1px 5px;
     background-color: #ffffff; }
