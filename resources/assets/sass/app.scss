@@ -459,11 +459,27 @@ footer{
 			&.indent-2-gv{
 				padding-left: 60px;
 			}
+			&.indent-3-gv{
+				padding-left: 90px;
+			}
 		}
 		h1{
 			&.title-tutorial-gv{
 				padding-top: 50px;
 				font-size: $h1;
+			}
+			&.title-laravel-error-gv{
+				background-color: $colorLaravelErrorTitleBackground;
+				color: $colorLaravelErrorTitle;
+				font: 20px Georgia, "Times New Roman", Times, serif;
+				padding: 20px;
+				border-top-left-radius: 16px;
+				border-top-right-radius: 16px;
+				border-top: 1px solid #ccc;
+				border-right: 1px solid #ccc;
+				border-left: 1px solid #ccc;
+				overflow: hidden;
+				word-wrap: break-word;
 			}
 		}
 		p{
@@ -514,6 +530,9 @@ footer{
 			}
 			&.tutorial-yellow-sublime-gv{
 				color: $colorSublimeYellow;
+			}
+			&.tutorial-orange-sublime-gv{
+				color: $colorSublimeOrange;
 			}
 			&.tutorial-green-sublime-gv{
 				color: $colorSublimeGreen;
@@ -588,6 +607,43 @@ footer{
 						color: $colorHoverStatePrimaryKey;
 					}
 				}
+			}
+		}
+		.laravel-errors-gv{
+			.list-exception-laravel-gv{
+				border-bottom-right-radius: 16px;
+				border-bottom-left-radius: 16px;
+				border-bottom: 1px solid #ccc;
+				border-right: 1px solid #ccc;
+				border-left: 1px solid #ccc;
+				padding: 10px 28px;
+			}
+			ol{
+				font-family: 'Verdana';
+				font-size: 12px;
+			}
+			span{
+				&.exception-counter-laravel-gv{
+					background-color: #fff;
+					color: #333;
+					padding: 6px;
+					float: left;
+					margin-right: 10px;
+					float: left;
+					display: block;
+				}
+				&.exception-title-laravel-gv{
+					margin-left: 3em;
+					margin-bottom: 0.7em;
+					display: block;
+				}
+				&.exception-message-laravel-gv{
+					margin-left: 3em;
+					display: block;
+				}
+			}
+			.solution{
+				padding-top: 20px;
 			}
 		}
 	}

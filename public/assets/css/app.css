@@ -397,9 +397,25 @@ footer {
 .container-gv .content-gv .indentation-tutorial-gv.indent-2-gv {
   padding-left: 60px; }
 
+.container-gv .content-gv .indentation-tutorial-gv.indent-3-gv {
+  padding-left: 90px; }
+
 .container-gv .content-gv h1.title-tutorial-gv {
   padding-top: 50px;
   font-size: 23px; }
+
+.container-gv .content-gv h1.title-laravel-error-gv {
+  background-color: #dddddd;
+  color: #333333;
+  font: 20px Georgia, "Times New Roman", Times, serif;
+  padding: 20px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  overflow: hidden;
+  word-wrap: break-word; }
 
 .container-gv .content-gv p.tutorial-paragraph-gv {
   border: solid 1px #000000;
@@ -447,6 +463,9 @@ footer {
 .container-gv .content-gv span.tutorial-yellow-sublime-gv {
   color: #ecc860; }
 
+.container-gv .content-gv span.tutorial-orange-sublime-gv {
+  color: #fd971f; }
+
 .container-gv .content-gv span.tutorial-green-sublime-gv {
   color: #a5da2a; }
 
@@ -493,22 +512,47 @@ footer {
 
 .container-gv .content-gv table {
   font-size: 14px;
-  border: solid 2px #c5c5c5;
-  /* tbody{
-				tr{
-					&.userID{
-						//color: $colorHoverStatePrimaryKey;
-						&:hover{
-							color: $colorHoverStatePrimaryKey;
-						}
-					}
-				}
-			} */ }
+  border: solid 2px #c5c5c5; }
   .container-gv .content-gv table td {
     padding: 1px 5px 1px 5px;
     background-color: #ffffff; }
   .container-gv .content-gv table th.header-database-table-gv {
     background-color: #98bfda; }
+  .container-gv .content-gv table tbody tr.userID {
+    color: #f1c232; }
+
+.container-gv .content-gv .laravel-errors-gv .list-exception-laravel-gv {
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  padding: 10px 28px; }
+
+.container-gv .content-gv .laravel-errors-gv ol {
+  font-family: 'Verdana';
+  font-size: 12px; }
+
+.container-gv .content-gv .laravel-errors-gv span.exception-counter-laravel-gv {
+  background-color: #fff;
+  color: #333;
+  padding: 6px;
+  float: left;
+  margin-right: 10px;
+  float: left;
+  display: block; }
+
+.container-gv .content-gv .laravel-errors-gv span.exception-title-laravel-gv {
+  margin-left: 3em;
+  margin-bottom: 0.7em;
+  display: block; }
+
+.container-gv .content-gv .laravel-errors-gv span.exception-message-laravel-gv {
+  margin-left: 3em;
+  display: block; }
+
+.container-gv .content-gv .laravel-errors-gv .solution {
+  padding-top: 20px; }
 
 /* === END CREATING CONTENT === */
 /* === BEGIN JQUERY COLORFY === */
