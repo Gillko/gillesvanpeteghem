@@ -4,6 +4,8 @@
 		=> 'expertise',
 		'skillsNav'
 		=> 'skills',
+		'projectsNav'
+		=> "Projects",
 		'interestsNav'
 		=> 'interests',
 		'aboutNav'
@@ -40,6 +42,8 @@
 	    => 'PC/Mac boosting',
 	    'skillsTitle'
 	    => 'skills',
+	    'projectsTitle'
+	    => 'projects',
 	    'interestsTitle'
 	    => 'interests',
 	    'interests'

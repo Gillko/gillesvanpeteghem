@@ -59,6 +59,9 @@
 											<a href="{{ url('/#skills') }}">{{ trans('home.skillsNav') }}</a>
 										</li>
 										<li>
+											<a href="{{ url('/#projects') }}">{{ trans('home.projectsNav') }}</a>
+										</li>
+										<li>
 											<a href="{{ url('/#interests') }}">{{ trans('home.interestsNav') }}</a>
 										</li>
 										<li>
@@ -70,6 +73,9 @@
 										</li>
 										<li>
 											<a href="{{ url('/#skills') }}">{{ trans('home.skillsNav') }}</a>
+										</li>
+										<li>
+											<a href="{{ url('/#projects') }}">{{ trans('home.projectsNav') }}</a>
 										</li>
 										<li>
 											<a href="{{ url('/#interests') }}">{{ trans('home.interestsNav') }}</a>

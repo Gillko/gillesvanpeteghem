@@ -77,7 +77,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="background-box-two-gv">
+			<div class="background-box-gv background-box-two-gv">
 				 <div class="row">
 					<div class="large-8 medium-8 small-7 large-centered medium-centered small-centered column quote-gv">
 						<h1 class="quote-actual-gv">The only sure way to make a computer go faster is to throw it out the window.</h1>
@@ -87,6 +87,50 @@
 			</div>
 			<div class="white-box-gv">
 				 <div class="row">
+					<div class="large-3 medium-4 small-8 large-centered medium-centered small-centered column title-gv color-blue-gv">
+						<h1 id="projects">{{ trans('home.projectsTitle') }}</h1>
+					</div>
+				</div>
+				<div class="row projects-gv">
+					<div class="large-4 column row-padding-bottom-gv">
+						<a href="http://www.snookview.be" target="_blank">
+							<div class="project-text-gv snookview-gv">
+								<div class="project-gv gray-light-box-gv">
+									<p>snookview</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="large-4 column row-padding-bottom-gv">
+						<a href="http://www.gillesvanpeteghem.be" target="_blank">
+							<div class="project-text-gv gillesvanpeteghem-gv">
+								<div class="project-gv gray-lighter-box-gv">
+									<p>gilles vanpeteghem</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="large-4 column row-padding-bottom-gv">
+						<a href="http://www.olipoli.be" target="_blank">
+							<div class="project-text-gv olipoli-gv">
+								<div class="project-gv gray-light-box-gv">
+									<p>olipoli</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="background-box-gv background-box-three-gv">
+				 <div class="row">
+					<div class="large-8 medium-8 small-7 large-centered medium-centered small-centered column quote-gv">
+						<h1 class="quote-actual-gv">The question of whether computers can think is like the question of whether submarines can swim.</h1>
+						<p>~ Edsger W. Dijkstra ~</p>
+					</div>
+				</div>
+			</div>
+			<div class="white-box-gv">
+				<div class="row">
 					<div class="large-3 medium-4 small-8 large-uncentered medium-centered small-centered column title-gv color-blue-gv">
 						<h1 id="interests">{{ trans('home.interestsTitle') }}</h1>
 					</div>
