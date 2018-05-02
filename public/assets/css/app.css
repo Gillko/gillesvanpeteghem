@@ -317,6 +317,10 @@ body {
   .container-gv .content-gv .projects-gv .project-text-gv.olipoli-gv:after {
     content: "olipoli.be";
     white-space: pre; }
+  .container-gv .content-gv .projects-gv .project-text-gv.elinedelasorte-gv:after{
+      content: "elinedelasorte.be";
+      white-space: pre;
+    }
 .container-gv .content-gv .projects-gv .project-text-gv:after {
   color: #2d77b8;
   font-family: "bradley_hand_itc_ttregular";

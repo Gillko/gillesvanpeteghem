@@ -350,6 +350,10 @@ body{
 					content: "olipoli.be";
 					white-space: pre;
 				}
+				&.elinedelasorte-gv:after{
+					content: "elinedelasorte.be";
+					white-space: pre;
+				}
 			}
 			.project-text-gv:after{
 				color: $colorBlue;
