@@ -29,10 +29,13 @@
 							<p><a href="{{ URL::to('/images/show/' . $image->image_id) }}">{{ $image->image_title }}</a> ({{ $image->image_url }})</p>
 						@endforeach
 					@endunless
-					<a href="{{ URL::to('/tutorials/' . $tutorial->tutorial_id . '/edit') }}">{{ Form::button('Edit', array('class' => 'button succes'))}}</a>
-					{{ Form::open(array('url' => 'tutorials/' . $tutorial->tutorial_id, 'class' => '')) }}
-					{{ Form::hidden('_method', 'DELETE') }}
-					{{ Form::button('Delete', array('type' => 'submit', 'class' => 'button alert'))}}
+
+					@if (Auth::check())
+						<a href="{{ URL::to('/tutorials/' . $tutorial->tutorial_id . '/edit') }}">{{ Form::button('Edit', array('class' => 'button succes'))}}</a>
+						{{ Form::open(array('url' => 'tutorials/' . $tutorial->tutorial_id, 'class' => '')) }}
+						{{ Form::hidden('_method', 'DELETE') }}
+						{{ Form::button('Delete', array('type' => 'submit', 'class' => 'button alert'))}}
+					@endif
 					{{ Form::close() }}
 				</div>
 			</div>

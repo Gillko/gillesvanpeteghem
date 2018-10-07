@@ -13,7 +13,7 @@ class Tutorial extends Model
 	*
 	* @var array
 	*/
-	protected $fillable = ['tutorial_title', 'tutorial_description', 'tutorial_created', 'tutorial_modified'];
+	protected $fillable = ['tutorial_title', 'tutorial_description', 'tutorial_created', 'tutorial_modified', 'tutorial_active'];
 
 	protected $table ='tutorials';
 
