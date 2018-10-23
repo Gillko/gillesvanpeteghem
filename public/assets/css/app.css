@@ -317,6 +317,10 @@ body {
   .container-gv .content-gv .projects-gv .project-text-gv.olipoli-gv:after {
     content: "olipoli.be";
     white-space: pre; }
+  .container-gv .content-gv .projects-gv .project-text-gv.elinedelasorte-gv:after{
+      content: "elinedelasorte.be";
+      white-space: pre;
+    }
 .container-gv .content-gv .projects-gv .project-text-gv:after {
   color: #2d77b8;
   font-family: "bradley_hand_itc_ttregular";
@@ -471,6 +475,8 @@ footer {
   padding-left: 60px; }
 .container-gv .content-gv .indentation-tutorial-gv.indent-3-gv {
   padding-left: 90px; }
+.container-gv .content-gv .indentation-tutorial-gv.indent-4-gv {
+  padding-left: 120px; }
 .container-gv .content-gv h1.title-tutorial-gv {
   padding-top: 50px;
   font-size: 23px; }

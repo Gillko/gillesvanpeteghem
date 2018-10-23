@@ -119,6 +119,15 @@
 							</div>
 						</a>
 					</div>
+					<div class="large-12 column row-padding-bottom-gv">
+						<a href="http://www.elinedelasorte.be" target="_blank">
+							<div class="project-text-gv elinedelasorte-gv">
+								<div class="project-gv gray-lighter-box-gv">
+									<p>eline delasorte</p>
+								</div>
+							</div>
+						</a>
+					</div>
 				</div>
 			</div>
 			<div class="background-box-gv background-box-three-gv">
