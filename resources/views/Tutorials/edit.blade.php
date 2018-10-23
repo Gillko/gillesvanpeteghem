@@ -8,7 +8,13 @@
 
 	<link rel="stylesheet" href="../../../assets/css/libraries/codemirror/codemirror.css">
 	<script src="../../../assets/js/libraries/codemirror/codemirror.js"></script>
-	<script src="../../../assets/js/libraries/codemirror/xml.js"></script>
+	<script src="../../../assets/js/libraries/codemirror/addon/fold/xml-fold.js"></script>
+	<script src="../../../assets/js/libraries/codemirror/addon/edit/matchtags.js"></script>
+	<script src="../../../assets/js/libraries/codemirror/addon/edit/closetag.js"></script>
+	<script src="../../../assets/js/libraries/codemirror/mode/xml/xml.js"></script>
+	<script src="../../../assets/js/libraries/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+	<script src="../../../assets/js/libraries/jquery/minify-prettify/minify-prettify.js"></script>
 	{{-- <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
 	<script>tinymce.init({
 		  selector: 'textarea',
@@ -37,7 +43,7 @@
 						{{ Form::label('tutorial_title', 'Title')}}
 						{{ Form::text('tutorial_title') }}
 						{{ Form::label('tutorial_description', 'Description')}}
-						{{ Form::textarea('tutorial_description', null, array('id' => 'textarea', 'class' => 'textarea')) }}
+						{{ Form::textarea('tutorial_description', htmlentities($tutorial->tutorial_description), array('id' => 'textarea', 'class' => 'textarea')) }}
 						{{ Form::label('tutorial_modified', 'Modified')}}
 						{{ Form::datetime('tutorial_modified', Carbon\Carbon::now()->format('Y-m-d H:m:s')) }}
 						{{ Form::label('tag_list', 'Tags')}}
@@ -55,10 +61,14 @@
 	</script> --}}
 	<script>
 		var editor = CodeMirror.fromTextArea(document.getElementById("textarea"), {
-			mode: "application/xml",
-			styleActiveLine: true,
-			lineNumbers: true,
-			lineWrapping: true
+			value: "<html>\n  " + document.documentElement.innerHTML + "\n</html>",
+		    mode: "text/html",
+		    matchTags: {bothTags: true},
+		    extraKeys: {"Ctrl-J": "toMatchingTag"},
+		    autoCloseTags: true
+			// styleActiveLine: true,
+			// lineNumbers: true,
+			// lineWrapping: true
 		});
 	</script>
 @endsection

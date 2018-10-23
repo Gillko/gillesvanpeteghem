@@ -1,5 +1,10 @@
 @extends('layouts.layout')
 @section('content')
+	<style>
+		span{
+			/*float:left;*/
+		}
+	</style>
 	<div class="container-gv">
 		<div class="content-gv">
 			{{-- <div class="row">
@@ -38,4 +43,8 @@
 			</div>
 		</div>
 	</div>
+	<script>
+		// var str = document.getElementById('trim').innerHTML;
+		// str.replace(' ', '');
+	</script>
 @endsection
