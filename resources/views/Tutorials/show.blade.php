@@ -2,7 +2,7 @@
 @section('content')
 	<style>
 		span{
-			/*float:left;*/
+			float:left;
 		}
 	</style>
 	<div class="container-gv">

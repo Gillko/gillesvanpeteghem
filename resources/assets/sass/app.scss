@@ -575,6 +575,43 @@ footer{
 				word-wrap: break-word;
 			}
 		}
+		div{
+			&.tutorial-paragraph-gv{
+				border: solid 1px $colorBlack;
+				padding: 5px;
+				color: $colorWhite;
+				ul{
+					li{
+						list-style: none;
+						clear: both;
+					}
+				}
+			}
+			&.error-tutorial-cakephp-gv{
+				background-color: $colorErrorCakePHP;
+			}
+			&.success-tutorial-cakephp-gv{
+				background-color: $colorSuccessCakePHP;
+			}
+			&.warning-tutorial-cakephp-gv{
+				background-color: $colorWarningCakePHP;
+				color: $colorBlack;
+			}
+			&.tutorial-lightgreen-cakephp-gv{
+				background-color: $colorLightGreenCakePHP;
+				color: $colorGrayCakePHP;
+				border: 0px;
+				padding: 15px;
+			}
+			&.tutorial-darkbrown-sublime-gv{
+				background-color: $colorSublimeDarkBrown;
+			}
+			&.tutorial-black-cmd-gv{
+				background-color: $colorBlack;
+				color: $colorWhite;
+			}
+		}
+		/*possible delete*/
 		p{
 			&.tutorial-paragraph-gv{
 				border: solid 1px $colorBlack;
@@ -605,6 +642,7 @@ footer{
 				color: $colorWhite;
 			}
 		}
+		/*possible delete*/
 		span{
 			&.notice-tutorial-cakephp-gv{
 				color: $colorNoticeCakePHP;
@@ -660,6 +698,9 @@ footer{
 				&::before{
 					content: "<";
 				}
+			}
+			&.tutorial-italic-gv{
+				font-style: italic;
 			}
 		}
 		ul{

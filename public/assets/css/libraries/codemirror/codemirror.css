@@ -43,7 +43,8 @@
 /* CURSOR */
 
 .CodeMirror-cursor {
-  border-left: 1px solid black;
+  /*border-left: 1px solid black;*/
+  border-left: 1px solid #fff; /* changed by gilko*/
   border-right: none;
   width: 0;
 }
@@ -315,8 +316,10 @@ div.CodeMirror-dragcursors {
   visibility: visible;
 }
 
-.CodeMirror-selected { background: #d9d9d9; }
-.CodeMirror-focused .CodeMirror-selected { background: #d7d4f0; }
+/*.CodeMirror-selected { background: red; }
+.CodeMirror-focused .CodeMirror-selected { background: red; }*/
+.CodeMirror-selected { background: rgba(255, 255, 255, .2); } /* changed by gilko */
+.CodeMirror-focused .CodeMirror-selected { background: rgba(255, 255, 255, .4); } /* changed by gilko */
 .CodeMirror-crosshair { cursor: crosshair; }
 .CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection { background: #d7d4f0; }
 .CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection { background: #d7d4f0; }
