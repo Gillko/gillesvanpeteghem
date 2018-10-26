@@ -170,7 +170,8 @@ body{
 /* === BEGIN CONTAINER & CONTENT === */
 .container-gv{
 	.content-gv{
-		p{
+		p,
+		div{
 			font-family: $Arial;
 			font-size: $p;
 		}
@@ -580,6 +581,7 @@ footer{
 				border: solid 1px $colorBlack;
 				padding: 5px;
 				color: $colorWhite;
+				margin-bottom: 1rem;
 				ul{
 					li{
 						list-style: none;
@@ -641,6 +643,16 @@ footer{
 				background-color: $colorBlack;
 				color: $colorWhite;
 			}
+			&.GRC-tutorial-blue-gv{
+				color: $colorBlueGRC;
+				margin-bottom: 0rem;
+			}
+			&.GRC-tutorial-red-gv{
+				border: solid 1px $colorRedGRC;
+				color: $colorBlack;
+				padding: 3px;
+				margin-bottom: 0rem;
+			}
 		}
 		/*possible delete*/
 		span{
@@ -682,14 +694,6 @@ footer{
 			}
 			&.google-tutorial-gray-gv{
 				color: $colorGoogleGray;
-			}
-			&.GRC-tutorial-blue-gv{
-				color: $colorBlueGRC;
-			}
-			&.GRC-tutorial-red-gv{
-				border: solid 1px $colorRedGRC;
-				color: $colorBlack;
-				padding: 3px;
 			}
 			&.cmd-tutorial-green-gv{
 				color: $colorGreenCMD;

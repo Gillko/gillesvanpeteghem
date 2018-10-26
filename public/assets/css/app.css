@@ -167,7 +167,8 @@ body {
 
 /* === END NAVIGATION === */
 /* === BEGIN CONTAINER & CONTENT === */
-.container-gv .content-gv p {
+.container-gv .content-gv p,
+.container-gv .content-gv div {
   font-family: "arialregular";
   font-size: 14px; }
 
@@ -492,7 +493,8 @@ footer {
   .container-gv .content-gv div.tutorial-paragraph-gv {
     border: solid 1px #000000;
     padding: 5px;
-    color: #ffffff; }
+    color: #ffffff;
+    margin-bottom: 1rem; }
     .container-gv .content-gv div.tutorial-paragraph-gv ul li {
       list-style: none;
       clear: both; }
@@ -534,6 +536,14 @@ footer {
   .container-gv .content-gv p.tutorial-black-cmd-gv {
     background-color: #000000;
     color: #ffffff; }
+  .container-gv .content-gv p.GRC-tutorial-blue-gv {
+    color: #2924ff;
+    margin-bottom: 0rem; }
+  .container-gv .content-gv p.GRC-tutorial-red-gv {
+    border: solid 1px #ff1c1c;
+    color: #000000;
+    padding: 3px;
+    margin-bottom: 0rem; }
   .container-gv .content-gv span.notice-tutorial-cakephp-gv {
     color: #3f414c; }
   .container-gv .content-gv span.tutorial-red-cakephp-gv {
@@ -560,12 +570,6 @@ footer {
     color: #307444; }
   .container-gv .content-gv span.google-tutorial-gray-gv {
     color: #58535d; }
-  .container-gv .content-gv span.GRC-tutorial-blue-gv {
-    color: #2924ff; }
-  .container-gv .content-gv span.GRC-tutorial-red-gv {
-    border: solid 1px #ff1c1c;
-    color: #000000;
-    padding: 3px; }
   .container-gv .content-gv span.cmd-tutorial-green-gv {
     color: #005200; }
   .container-gv .content-gv span.lt-gv::before {
@@ -636,8 +640,6 @@ footer {
   color: #ffffff;
   overflow: auto !important;
   width: 100%; }
-  .textarea::focus {
-    color: #fff; }
 
 /* === END JQUERY COLORFY === */
 /* === BEGIN OVERRRIDE FOUNDATION CSS === */
