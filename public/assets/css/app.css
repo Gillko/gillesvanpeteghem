@@ -515,6 +515,36 @@ footer {
   .container-gv .content-gv div.tutorial-black-cmd-gv {
     background-color: #000000;
     color: #ffffff; }
+  .container-gv .content-gv div.tutorial-finder-window-gv {
+    width: 75%;
+    height: 250px;
+    background-color: #e7eaed;
+    padding-top: 10px;
+    border-radius: 5px; }
+    .container-gv .content-gv div.tutorial-finder-window-gv .tutorial-finder-circles-gv {
+      padding-bottom: 20px;
+      height: 20px; }
+      .container-gv .content-gv div.tutorial-finder-window-gv .tutorial-finder-circles-gv span {
+        margin-left: 3px; }
+        .container-gv .content-gv div.tutorial-finder-window-gv .tutorial-finder-circles-gv span:first-child {
+          margin-left: 15px; }
+        .container-gv .content-gv div.tutorial-finder-window-gv .tutorial-finder-circles-gv span.tutorial-finder-circle-gv {
+          width: 10px;
+          height: 10px;
+          border-radius: 10px;
+          display: inline-block; }
+          .container-gv .content-gv div.tutorial-finder-window-gv .tutorial-finder-circles-gv span.tutorial-finder-circle-gv.tutorial-finder-circle-red-gv {
+            background-color: #ff5d5c; }
+          .container-gv .content-gv div.tutorial-finder-window-gv .tutorial-finder-circles-gv span.tutorial-finder-circle-gv.tutorial-finder-circle-yellow-gv {
+            background-color: #ffbc4f; }
+          .container-gv .content-gv div.tutorial-finder-window-gv .tutorial-finder-circles-gv span.tutorial-finder-circle-gv.tutorial-finder-circle-green-gv {
+            background-color: #21c957; }
+    .container-gv .content-gv div.tutorial-finder-window-gv .tutorial-gif-gv {
+      display: inline-block;
+      height: 220px;
+      overflow: scroll;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px; }
   .container-gv .content-gv p.tutorial-paragraph-gv {
     border: solid 1px #000000;
     padding: 5px;
