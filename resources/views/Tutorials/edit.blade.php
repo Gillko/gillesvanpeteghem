@@ -50,6 +50,8 @@
 						{{ Form::select('tag_list[]', $tags, null, ['multiple']) }}
 						{{ Form::label('image_list', 'Images')}}
 						{{ Form::select('image_list[]', $images, null, ['multiple']) }}
+						{{ Form::label('tutorial_active', 'Active')}}
+						{{ Form::text('tutorial_active') }}
 						{{ Form::submit('Edit the Tutorial!', array('class' => 'button expanded')) }}
 					{{ Form::close() }}
 				</div>

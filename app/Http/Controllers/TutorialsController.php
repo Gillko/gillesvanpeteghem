@@ -84,6 +84,7 @@ class TutorialsController extends Controller
             $tutorials->tutorial_title			= $input['tutorial_title'];
             $tutorials->tutorial_description 	= $input['tutorial_description'];
             $tutorials->tutorial_created 		= $input['tutorial_created'];
+            $tutorials->tutorial_active			= $input['tutorial_active'];
             $tutorials->user_id					= Auth::id();
 
             $tutorials->save();

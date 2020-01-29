@@ -43,6 +43,8 @@
 						{{ Form::select('tag_list[]', $tags, null, ['multiple']) }}
 						{{ Form::label('image_list', 'Images')}}
 						{{ Form::select('image_list[]', $images, null, ['multiple']) }}
+						{{ Form::label('tutorial_active', 'Active')}}
+						{{ Form::text('tutorial_active') }}
 
 						{{ Form::submit('Create the Tutorial!', array('class' => 'button expanded')) }}
 					{{ Form::close() }}
