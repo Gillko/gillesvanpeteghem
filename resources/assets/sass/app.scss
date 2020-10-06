@@ -355,6 +355,10 @@ body{
 					content: "elinedelasorte.be";
 					white-space: pre;
 				}
+				&.tandartspraktijkvanhecke-gv:after{
+					content: "tandartspraktijkvanhecke.be";
+					white-space: pre;
+				}
 			}
 			.project-text-gv:after{
 				color: $colorBlue;

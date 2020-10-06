@@ -92,16 +92,7 @@
 					</div>
 				</div>
 				<div class="row projects-gv">
-					<div class="large-4 column row-padding-bottom-gv">
-						<a href="http://www.snookview.be" target="_blank">
-							<div class="project-text-gv snookview-gv">
-								<div class="project-gv gray-light-box-gv">
-									<p>snookview</p>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="large-4 column row-padding-bottom-gv">
+					<div class="large-6 column row-padding-bottom-gv">
 						<a href="http://www.gillesvanpeteghem.be" target="_blank">
 							<div class="project-text-gv gillesvanpeteghem-gv">
 								<div class="project-gv gray-lighter-box-gv">
@@ -110,7 +101,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="large-4 column row-padding-bottom-gv">
+					<div class="large-6 column row-padding-bottom-gv">
 						<a href="http://www.olipoli.be" target="_blank">
 							<div class="project-text-gv olipoli-gv">
 								<div class="project-gv gray-light-box-gv">
@@ -119,11 +110,20 @@
 							</div>
 						</a>
 					</div>
-					<div class="large-12 column row-padding-bottom-gv">
+					<div class="large-6 column row-padding-bottom-gv">
 						<a href="http://www.elinedelasorte.be" target="_blank">
 							<div class="project-text-gv elinedelasorte-gv">
 								<div class="project-gv gray-lighter-box-gv">
 									<p>eline delasorte</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="large-6 column row-padding-bottom-gv">
+						<a href="https://tandartspraktijkvanhecke.be/" target="_blank">
+							<div class="project-text-gv tandartspraktijkvanhecke-gv">
+								<div class="project-gv gray-lighter-box-gv">
+									<p>tandartspraktijkvanhecke</p>
 								</div>
 							</div>
 						</a>

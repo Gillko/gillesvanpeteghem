@@ -54,7 +54,7 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => 'localhost:3306',
+            'host'      => 'localhost',
             'database'  => 'gillesvanpeteghem',
             'username'  => 'root',
             'password'  => 'root',
